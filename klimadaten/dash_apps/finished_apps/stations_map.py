@@ -23,8 +23,7 @@ def fetch_station_data(country=None):
 sapp.layout = html.Div([
     dcc.Dropdown(
         id='country-dropdown',
-        options=[{'label': country, 'value': country} for country in
-                 Station.objects.values_list('country', flat=True).distinct()],
+        options=list(Station.objects.values_list('country', flat=True).distinct().order_by('country')),
         value='ALL',
         clearable=False,
     ),
@@ -45,5 +44,9 @@ def update_map(selected_country):
         mode='markers',
         marker=dict(size=8, color="blue", line=dict(width=1, color='rgba(102, 102, 102)')),
     ))
-    fig.update_layout(geo=dict(scope='europe'))
+    fig.update_layout(
+        geo=dict(scope='europe'),
+        # autosize=True,  # Allow the figure to resize automatically
+        height=700,  # Set a specific height for your figure if autosize is not used
+    )
     return fig
