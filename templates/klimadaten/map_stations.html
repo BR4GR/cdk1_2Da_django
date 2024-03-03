@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% load plotly_dash %}
+
+{% block content %}
+    
+    <div class="{% plotly_class name='StationsMap' %} " style=" width: 50%; min-height: 600px;">
+        {% plotly_app name='StationsMap' ratio=1  %}
+    </div>
+    
+{% endblock content %}
