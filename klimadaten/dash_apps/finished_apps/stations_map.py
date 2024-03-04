@@ -1,24 +1,17 @@
+import plotly.express as px
+import pandas as pd
 from dash import dcc, html
 from dash.dependencies import Input, Output
-import plotly.graph_objects as go
 from django_plotly_dash import DjangoDash
 from klimadaten.models import Station
 
+EUROPE_NORTH = 71.5  # North Cape in Norway
+EUROPE_SOUTH = 36  # Punta de Tarifa in Spain
+EUROPE_WEST = -25  # Iceland
+EUROPE_EAST = 60  # Ural Mountains in Russia
+
 # Create a Dash app for displaying stations on a map
 sapp = DjangoDash('StationsMap')
-
-
-# Assuming you have a function to fetch stations data based on a selected country
-def fetch_station_data(country=None):
-    stations = Station.objects.all()
-    if country and country != 'ALL':
-        stations = stations.filter(country=country)
-    lats = [station.lat for station in stations]
-    lons = [station.lon for station in stations]
-    names = [station.name for station in stations]
-    # Add more data extraction as necessary
-    return lats, lons, names
-
 
 sapp.layout = html.Div([
     dcc.Dropdown(
@@ -36,17 +29,32 @@ sapp.layout = html.Div([
     [Input('country-dropdown', 'value')]
 )
 def update_map(selected_country):
-    lats, lons, names = fetch_station_data(selected_country)
-    fig = go.Figure(data=go.Scattergeo(
-        lon=lons,
-        lat=lats,
-        text=names,
-        mode='markers',
-        marker=dict(size=8, color="blue", line=dict(width=1, color='rgba(102, 102, 102)')),
-    ))
-    fig.update_layout(
-        geo=dict(scope='europe'),
-        # autosize=True,  # Allow the figure to resize automatically
-        height=700,  # Set a specific height for your figure if autosize is not used
+    df = fetch_station_data(selected_country)
+    fig = px.scatter_mapbox(
+        df,
+        lat="lat",
+        lon="lon",
+        hover_name="name",
+        hover_data=["elevation"],
+        color_discrete_sequence=["fuchsia"],
+        zoom=7,
+        # height=300,
     )
+    fig.update_layout(mapbox_style="open-street-map")
+    fig.update_layout(margin={"r": 0, "t": 0, "l": 0, "b": 0})
+    fig.update_layout(
+        mapbox_bounds={"west": EUROPE_WEST, "east": EUROPE_EAST, "south": EUROPE_SOUTH,
+                       "north": EUROPE_NORTH})
     return fig
+
+
+def fetch_station_data(country=None):
+    stations = Station.objects.all()
+    if country and country != 'ALL':
+        stations = stations.filter(country=country)
+
+    # Create a DataFrame directly from the queryset
+    df = pd.DataFrame.from_records(
+        stations.values('name', 'lat', 'lon', 'elevation')
+    )
+    return df

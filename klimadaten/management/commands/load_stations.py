@@ -3,14 +3,13 @@ import csv
 from decimal import Decimal
 from django.conf import settings
 from klimadaten.models import Station
-from ittertools import islice
-
+from itertools import islice
 
 # Constants for Europe's geographic boundaries
-EUROPE_NORTH = 71.5 # North Cape in Norway
-EUROPE_SOUTH = 36 # Punta de Tarifa in Spain
-EUROPE_WEST = -25 # Iceland
-EUROPE_EAST = 60 # Ural Mountains in Russia
+EUROPE_NORTH = 71.5  # North Cape in Norway
+EUROPE_SOUTH = 36  # Punta de Tarifa in Spain
+EUROPE_WEST = -25  # Iceland
+EUROPE_EAST = 60  # Ural Mountains in Russia
 
 
 def dms_to_dd(dms):
@@ -42,7 +41,7 @@ class Command(BaseCommand):
     help = 'Load data from CSV file into the database'
 
     def handle(self, *args, **kwargs):
-        file_path = settings.BASE_DIR / 'klimadaten' / 'data' / 'stations_RR.csv'
+        file_path = settings.BASE_DIR / 'klimadaten' / 'data' / 'stations_FXx.txt'
         try:
             with open(file_path, mode='r', encoding='utf-8') as csv_file:
                 reader = csv.reader(islice(csv_file, 17, None))
