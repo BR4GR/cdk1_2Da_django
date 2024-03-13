@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd0fa105-535c-41f9-88ec-c56e8f965de0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/cdk1_2Da.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/cdk1_2Da.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/klimadaten/dash_apps/finished_apps/stations_map.py" beforeDir="false" afterPath="$PROJECT_DIR$/klimadaten/dash_apps/finished_apps/stations_map.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cdk1_2Da/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/cdk1_2Da/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/klimadaten/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/klimadaten/migrations/0002_alter_station_options.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/klimadaten/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/klimadaten/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,9 +48,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2d3X8Mu886FYFB9KpwmpKLphcBF" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -72,6 +73,11 @@
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "com.github.copilot.settings.ApplicationConfigurable",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -144,12 +150,12 @@
       </map>
     </option>
   </component>
-  <component name="WfRunsListSearchHistory"><![CDATA[{
-  "history": [
+  <component name="WfRunsListSearchHistory">{
+  &quot;history&quot;: [
     {
     }
   ],
-  "lastFilter": {
+  &quot;lastFilter&quot;: {
   }
-}]]></component>
+}</component>
 </project>

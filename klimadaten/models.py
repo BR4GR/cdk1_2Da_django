@@ -11,6 +11,3 @@ class Station(models.Model):
 
     def __str__(self):
         return f"{self.name} in {self.country}"
-
-    class Meta:
-        ordering = ['name']

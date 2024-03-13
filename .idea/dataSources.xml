@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="db" uuid="8d6bbde0-852a-4e3f-9394-ab5e2dac5eb2">
-      <driver-ref>sqlite.xerial</driver-ref>
+    <data-source source="LOCAL" name="cdk1_2da_django@localhost" uuid="eb95daf5-71f5-41d7-affb-8c6474b38f34">
+      <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
-      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:\\wsl$\Debian\home\delfin\projects\cdk1_2Da\db.sqlite3</jdbc-url>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/cdk1_2da_django</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>
