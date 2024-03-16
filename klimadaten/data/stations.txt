@@ -1,0 +1,2002 @@
+EUROPEAN CLIMATE ASSESSMENT & DATASET (ECA&D), file created on 19-02-2024
+THESE DATA CAN BE USED FREELY PROVIDED THAT THE FOLLOWING SOURCE IS ACKNOWLEDGED:
+
+Klein Tank, A.M.G. and Coauthors, 2002. Daily dataset of 20th-century surface
+air temperature and precipitation series for the European Climate Assessment.
+Int. J. of Climatol., 22, 1441-1453.
+Data and metadata available at https://www.ecad.eu
+
+FILE FORMAT (MISSING VALUE CODE IS -9999):
+
+ 01- 05 STAID  : Station identifier
+ 07- 46 STANAME: Station name
+ 48- 49 CN     : Country code (ISO3116 countrycodes)
+ 51- 59 LAT    : Latitude in degrees:minutes:seconds (+: North, -: South)
+ 61- 70 LON    : Longitude in degrees:minutes:seconds (+: East, -: West)
+ 72- 76 HGTH   : Station elevation in meters
+
+STAID,STANAME                                 ,CN,      LAT,       LON,HGHT
+
+   11,KREMSMUENSTER (TAWES)                       ,AT  ,+48:03:18,+014:07:51,  382
+   12,GRAZ-UNIVERSITAET                           ,AT  ,+47:04:40,+015:26:56,  367
+   13,INNSBRUCK-UNIV                              ,AT  ,+47:15:36,+011:23:03,  578
+   14,SALZBURG-FLUGHAFEN                          ,AT  ,+47:47:21,+013:00:29,  430
+   15,SONNBLICK (TAWES)                           ,AT  ,+47:03:15,+012:57:27, 3109
+   16,WIEN-HOHE WARTE                             ,AT  ,+48:14:54,+016:21:23,  198
+   40,BAMBERG                                     ,DE  ,+49:52:31,+010:55:18,  240
+   42,BREMEN                                      ,DE  ,+53:02:47,+008:47:57,    4
+   43,DRESDEN WAHNSDORF                           ,DE  ,+51:07:00,+013:40:59,  246
+   44,FRANKFURT                                   ,DE  ,+50:02:47,+008:35:54,  112
+   45,HALLE                                       ,DE  ,+51:30:52,+011:57:02,   93
+   47,HAMBURG FUHLSBUETTEL                        ,DE  ,+53:38:06,+009:59:24,   11
+   48,HOHENPEISSENBERG                            ,DE  ,+47:48:06,+011:00:42,  977
+   49,JENA STERNWARTE                             ,DE  ,+50:55:36,+011:35:03,  155
+   50,KAISERSLAUTERN                              ,DE  ,+49:25:31,+007:44:12,  285
+   51,KARLSRUHE                                   ,DE  ,+49:02:21,+008:21:54,  112
+   52,MUENCHEN                                    ,DE  ,+48:09:51,+011:32:39,  515
+   53,MUENSTER                                    ,DE  ,+51:57:02,+007:35:29,   62
+   54,POTSDAM                                     ,DE  ,+52:23:00,+013:03:50,   81
+   58,ZUGSPITZE                                   ,DE  ,+47:25:19,+010:59:12, 2964
+   65,DALATANGI                                   ,IS  ,+65:16:05,-013:34:32,    9
+   66,REYKJAVIK                                   ,IS  ,+64:07:37,-021:54:09,   52
+   67,STYKKISHOLMUR                               ,IS  ,+65:04:26,-022:44:00,   13
+   68,TEIGARHORN                                  ,IS  ,+64:40:33,-014:20:38,   14
+  106,HAMMER ODDE FYR                             ,DK  ,+55:17:52,+014:46:18,    7
+  120,BIRR                                        ,IE  ,+53:05:25,-007:52:35,   70
+  121,DUBLIN PHOENIX PARK                         ,IE  ,+53:21:50,-006:19:09,   49
+  122,MALIN HEAD                                  ,IE  ,+55:22:18,-007:20:24,   21
+  123,VALENTIA OBSERVATORY                        ,IE  ,+51:56:22,-010:13:19,    9
+  160,DEN HELDER                                  ,NL  ,+52:57:41,+004:44:49,    4
+  161,DE KOOY                                     ,NL  ,+52:55:36,+004:46:51,    1
+  162,DE BILT                                     ,NL  ,+52:05:56,+005:10:46,    1
+  164,EELDE                                       ,NL  ,+53:07:24,+006:35:04,    5
+  166,VLISSINGEN                                  ,NL  ,+51:26:29,+003:35:44,    8
+  168,MAASTRICHT                                  ,NL  ,+50:54:19,+005:45:42,  114
+  179,BJOERNOEYA                                  ,NO  ,+74:31:00,+019:01:00,   16
+  186,SVALBARD AIRPORT                            ,NO  ,+78:15:00,+015:28:00,   28
+  187,HOPEN                                       ,NO  ,+76:30:00,+025:04:00,    6
+  188,GLOMFJORD                                   ,NO  ,+66:49:00,+013:58:59,   39
+  189,JAN MAYEN                                   ,NO  ,+70:55:59,-008:40:00,   10
+  190,KARASJOK                                    ,NO  ,+69:28:00,+025:30:11,  129
+  192,FAERDER FYR                                 ,NO  ,+59:01:36,+010:31:48,    6
+  193,OSLO BLINDERN                               ,NO  ,+59:56:34,+010:43:14,   94
+  194,UTSIRA FYR                                  ,NO  ,+59:18:28,+004:52:41,   55
+  195,VARDOE                                      ,NO  ,+70:22:01,+031:05:04,   14
+  199,LIEPAJA                                     ,LV  ,+56:28:59,+021:01:00,    7
+  203,LUXEMBOURG AIRPORT                          ,LU  ,+49:37:33,+006:12:12,  376
+  229,BADAJOZ/TALAVERA LA REAL                    ,ES  ,+38:52:59,-006:49:45,  185
+  230,MADRID - RETIRO                             ,ES  ,+40:24:42,-003:40:41,  667
+  231,MALAGA AEROPUERTO                           ,ES  ,+36:40:00,-004:29:17,    7
+  232,NAVACERRADA                                 ,ES  ,+40:46:50,-004:00:37, 1894
+  233,SALAMANCA AEROPUERTO                        ,ES  ,+40:57:33,-005:29:53,  790
+  234,SAN SEBASTIAN - IGUELDO                     ,ES  ,+43:18:27,-002:02:21,  251
+  236,TORTOSA - OBSERVATORIO DEL EBRO             ,ES  ,+40:49:14,+000:29:29,   44
+  237,VALENCIA                                    ,ES  ,+39:28:50,-000:21:59,   11
+  238,ZARAGOZA AEROPUERTO                         ,ES  ,+41:39:42,-001:00:29,  247
+  264,OKSOEY FYR                                  ,NO  ,+58:04:00,+008:03:02,    9
+  265,BERGEN FLORIDA                              ,NO  ,+60:22:59,+005:19:59,   12
+  266,BODOE VI                                    ,NO  ,+67:16:01,+014:21:32,   11
+  268,VORU                                        ,EE  ,+57:50:45,+027:01:09,   82
+  269,VILSANDI                                    ,EE  ,+58:22:59,+021:48:55,    6
+  299,TASIILAQ                                    ,GL  ,+65:36:39,-037:38:12,   54
+  307,THYBOROEN                                   ,DK  ,+56:42:24,+008:12:54,    2
+  308,ESBJERG LUFTHAVN                            ,DK  ,+55:31:41,+008:33:45,   25
+  309,ALICANTE EL ALTET                           ,ES  ,+38:16:58,-000:34:14,   43
+  324,LINDENBERG                                  ,DE  ,+52:12:34,+014:07:13,   98
+  328,TROMSO                                      ,NO  ,+69:39:14,+018:55:41,  100
+  329,ONA II                                      ,NO  ,+62:51:34,+006:32:21,   13
+  331,TORUNGEN FYR                                ,NO  ,+58:22:59,+008:47:30,   12
+  335,BARCELONA -FABRA OBSERVATORY                ,ES  ,+41:25:05,+002:07:26,  412
+  336,ALBACETE LOS LLANOS                         ,ES  ,+38:57:07,-001:51:47,  704
+  337,CORDOBA AEROPUERTO                          ,ES  ,+37:50:39,-004:50:45,   90
+  356,AACHEN                                      ,DE  ,+50:47:02,+006:05:42,  202
+  411,MARKNESSE                                   ,NL  ,+52:42:06,+005:53:15,   -3
+  412,ALICANTE                                    ,ES  ,+38:22:21,-000:29:39,   81
+  413,LAUWERSOOG                                  ,NL  ,+53:24:42,+006:11:57,    2
+  414,BURGOS-VILLAFRIA                            ,ES  ,+42:21:21,-003:37:57,  890
+  415,CADIZ                                       ,ES  ,+36:30:03,-006:15:24,    1
+  416,CIUDAD REAL                                 ,ES  ,+38:59:21,-003:55:10,  628
+  417,GRANADA                                     ,ES  ,+37:08:12,-003:37:53,  687
+  418,HUELVA (RONDA DEL ESTE)                     ,ES  ,+37:16:48,-006:54:34,   19
+  419,HUESCA                                      ,ES  ,+42:04:59,-000:19:35,  541
+  420,A CORUNA                                    ,ES  ,+43:22:01,-008:25:09,   58
+  421,MURCIA                                      ,ES  ,+38:00:10,-001:10:09,   61
+  422,PAMPLONA                                    ,ES  ,+42:46:36,-001:39:00,  459
+  423,SEVILLA/SAN PABLO                           ,ES  ,+37:25:00,-005:52:45,   34
+  424,SORIA                                       ,ES  ,+41:46:30,-002:28:59, 1082
+  425,VALLADOLID                                  ,ES  ,+41:39:00,-004:46:00,  735
+  438,CABAUW                                      ,NL  ,+51:58:09,+004:55:32,    0
+  442,VOLKEL                                      ,NL  ,+51:39:29,+005:42:24,   20
+  446,RIGA                                        ,LV  ,+56:57:45,+024:02:24,   17
+  451,BERKHOUT                                    ,NL  ,+52:38:34,+004:58:44,   -2
+  453,HEINO                                       ,NL  ,+52:26:03,+006:15:32,    3
+  454,HUPSEL                                      ,NL  ,+52:04:04,+006:39:24,   29
+  455,TENERIFE/LOS RODEOS                         ,ES  ,+28:28:39,-016:19:45,  632
+  464,ARCEN                                       ,NL  ,+51:29:49,+006:11:45,   19
+  467,UFS TW EMS                                  ,DE  ,+54:10:00,+006:21:00,    0
+  468,HELGOLAND                                   ,DE  ,+54:10:35,+007:53:35,    4
+  469,LIST/SYLT                                   ,DE  ,+55:00:45,+008:24:45,   26
+  470,SCHLESWIG                                   ,DE  ,+54:31:44,+009:32:57,   43
+  471,WESTERMARKELSDORF/FEHMARN                   ,DE  ,+54:31:46,+011:03:42,    3
+  472,ROSTOCK-WARNEMUNDE                          ,DE  ,+54:10:54,+012:04:55,    4
+  473,GREIFSWALD                                  ,DE  ,+54:05:52,+013:24:27,    2
+  474,EMDEN-FLUGPLATZ                             ,DE  ,+53:23:21,+007:13:36,    0
+  475,NEURUPPIN                                   ,DE  ,+52:54:19,+012:48:30,   38
+  476,HANNOVER                                    ,DE  ,+52:27:56,+009:40:46,   55
+  477,MAGDEBURG                                   ,DE  ,+52:06:11,+011:35:03,   76
+  478,HERWIJNEN                                   ,NL  ,+51:51:28,+005:08:43,    0
+  479,DUSSELDORF                                  ,DE  ,+51:17:49,+006:46:12,   37
+  480,KASSEL                                      ,DE  ,+51:17:52,+009:26:36,  231
+  482,LEIPZIG-SCHKEUDITZ                          ,DE  ,+51:26:09,+012:14:29,  131
+  483,DRESDEN-KLOTZSCHE                           ,DE  ,+51:07:45,+013:45:21,  227
+  484,GORLITZ                                     ,DE  ,+51:09:47,+014:57:11,  238
+  485,NURBURG-BARWEILER                           ,DE  ,+50:21:39,+006:52:13,  485
+  486,MEININGEN                                   ,DE  ,+50:33:45,+010:22:37,  450
+  487,ERFURT-BINDERSLEBEN                         ,DE  ,+50:59:04,+010:57:47,  316
+  488,FICHTELBERG                                 ,DE  ,+50:25:45,+012:57:19, 1213
+  489,WURZBURG                                    ,DE  ,+49:46:17,+009:57:32,  268
+  490,HOF                                         ,DE  ,+50:18:47,+011:52:39,  565
+  491,SAARBRUCKEN/ENSHEIM                         ,DE  ,+49:12:51,+007:06:29,  320
+  492,NURNBERG                                    ,DE  ,+49:30:15,+011:03:24,  314
+  493,STRAUBING                                   ,DE  ,+48:49:42,+012:33:37,  351
+  494,AUGSBURG                                    ,DE  ,+48:25:35,+010:56:35,  461
+  495,KONSTANZ                                    ,DE  ,+47:40:41,+009:11:27,  443
+  496,KEMPTEN                                     ,DE  ,+47:43:27,+010:20:11,  705
+  500,NIEUW BEERTA                                ,NL  ,+53:11:39,+007:08:57,    0
+  567,WILHELMINADORP                              ,NL  ,+51:31:32,+003:53:00,    1
+  593,SCHIPHOL                                    ,NL  ,+52:18:56,+004:47:25,   -3
+  594,HOORN TERSCHELLING                          ,NL  ,+53:23:27,+005:20:44,    0
+  596,STAVOREN                                    ,NL  ,+52:53:48,+005:22:59,   -1
+  597,LELYSTAD                                    ,NL  ,+52:27:25,+005:31:10,   -3
+  598,ROTTERDAM                                   ,NL  ,+51:57:38,+004:26:48,   -4
+  599,GILZE-RIJEN                                 ,NL  ,+51:33:54,+004:56:07,   11
+  600,ELL                                         ,NL  ,+51:11:48,+005:45:45,   30
+  601,VLIELAND                                    ,NL  ,+53:14:24,+004:55:14,    4
+  602,HOEK VAN HOLLAND                            ,NL  ,+51:59:27,+004:07:18,   11
+  603,LEEUWARDEN                                  ,NL  ,+53:13:23,+005:45:06,    0
+  604,WOENSDRECHT                                 ,NL  ,+51:26:52,+004:20:30,   14
+  675,H.C. ANDERSEN AIRPORT-1                     ,DK  ,+55:28:28,+010:19:49,   15
+  676,ROESNAES FYR                                ,DK  ,+55:44:36,+010:52:09,   14
+  677,BORNHOLMS LUFTHAVN                          ,DK  ,+55:04:04,+014:44:57,   15
+  812,KAHLER ASTEN (WST)                          ,DE  ,+51:10:54,+008:29:24,  839
+  942,KARASJOK-MARKANNJARGA                       ,NO  ,+69:27:48,+025:30:07,  131
+  953,NESBYEN-TODOKK                              ,NO  ,+60:34:01,+009:08:00,  166
+  955,SUOLOVUOPMI-LULIT                           ,NO  ,+69:34:46,+023:32:03,  381
+  970,CASEMENT AERODROME                          ,IE  ,+53:18:21,-006:26:20,   94
+  978,KOLKA                                       ,LV  ,+57:44:48,+022:35:22,    5
+  986,ALUKSNE                                     ,LV  ,+57:26:21,+027:02:07,  197
+  990,SALDUS                                      ,LV  ,+56:40:31,+022:30:12,  112
+  993,DOBELE                                      ,LV  ,+56:36:00,+023:18:00,   44
+ 1001,DAUGAVPILS                                  ,LV  ,+55:56:03,+026:39:33,  125
+ 1042,LYNGOR FYR                                  ,NO  ,+58:38:00,+009:09:01,    4
+ 1043,TVEITSUND                                   ,NO  ,+59:01:37,+008:31:14,  252
+ 1044,LINDESNES FYR                               ,NO  ,+57:58:59,+007:02:53,   13
+ 1045,LISTA FYR                                   ,NO  ,+58:06:36,+006:34:05,   14
+ 1046,SOLA                                        ,NO  ,+58:53:03,+005:38:12,    7
+ 1048,GARDERMOEN                                  ,NO  ,+60:12:23,+011:04:49,  202
+ 1051,TAFJORD                                     ,NO  ,+62:14:00,+007:25:00,   15
+ 1052,VAERNES                                     ,NO  ,+63:30:00,+010:53:24,   12
+ 1055,ORLAND                                      ,NO  ,+63:42:01,+009:36:05,   10
+ 1056,SKROVA FYR                                  ,NO  ,+68:09:01,+014:39:02,   11
+ 1057,BARDUFOSS                                   ,NO  ,+69:03:32,+018:32:25,   76
+ 1058,SIHCCAJAVRI                                 ,NO  ,+68:45:19,+023:32:18,  382
+ 1059,FRUHOLMEN FYR                               ,NO  ,+71:05:35,+023:59:42,   13
+ 1388,IZANA                                       ,ES  ,+28:18:32,-016:29:57, 2371
+ 1389,MELILLA                                     ,ES  ,+35:16:40,-002:57:19,   47
+ 1392,SANTANDER CENTRO                            ,ES  ,+43:27:52,-003:49:08,   64
+ 1393,BILBAO AEROPUERTO                           ,ES  ,+43:17:53,-002:54:20,   42
+ 1394,SANTIAGO DE COMPOSTELA/LABACOLLA            ,ES  ,+42:53:16,-008:24:38,  370
+ 1395,VIGO PEINADOR                               ,ES  ,+42:14:21,-008:37:26,  261
+ 1396,PONFERRADA                                  ,ES  ,+42:33:50,-006:36:00,  534
+ 1397,LEON VIRGEN DEL CAMINO                      ,ES  ,+42:35:20,-005:38:57,  916
+ 1398,LOGRONO-AGONCILLO                           ,ES  ,+42:27:07,-002:19:51,  353
+ 1399,ZAMORA                                      ,ES  ,+41:31:00,-005:44:00,  656
+ 1401,REUS/AEROPUERTO                             ,ES  ,+41:08:58,+001:10:44,   71
+ 1404,MURCIA/SAN JAVIER                           ,ES  ,+37:47:20,-000:48:11,    4
+ 1405,JEREZ DE LA FRONTERA                        ,ES  ,+36:45:02,-006:03:20,   27
+ 1406,TARIFA                                      ,ES  ,+36:00:55,-005:35:51,   32
+ 1472,SHEPETIVKA                                  ,UA  ,+50:10:12,+027:03:00,  277
+ 1482,LUBNY                                       ,UA  ,+50:01:12,+033:00:00,  156
+ 1519,UMAN                                        ,UA  ,+48:46:12,+030:13:48,  214
+ 1567,ASKANIIA NOVA                               ,UA  ,+46:30:00,+033:54:00,   28
+ 1718,DUBLIN AIRPORT                              ,IE  ,+53:25:41,-006:14:27,   71
+ 1750,JOHNSTOWN CASTLE                            ,IE  ,+52:17:30,-006:30:00,   49
+ 1756,MARKREE CASTLE                              ,IE  ,+54:10:30,-008:27:21,   39
+ 2006,BROCKEN                                     ,DE  ,+51:48:00,+010:37:12, 1142
+ 2135,ROCHES POINT                                ,IE  ,+51:47:35,-008:14:38,   43
+ 2137,ROSSLARE                                    ,IE  ,+52:15:00,-006:19:48,   23
+ 2138,KILKENNY                                    ,IE  ,+52:40:12,-007:16:12,   63
+ 2139,SHANNON                                     ,IE  ,+52:41:24,-008:55:05,    6
+ 2140,CLAREMORRIS                                 ,IE  ,+53:43:12,-008:58:48,   69
+ 2142,CLONES                                      ,IE  ,+54:10:48,-007:13:48,   87
+ 2143,BELMULLET                                   ,IE  ,+54:13:48,-010:00:00,    9
+ 2215,ANDOYA                                      ,NO  ,+69:18:00,+016:08:59,   14
+ 2216,SLETTNES FYR                                ,NO  ,+71:05:02,+028:13:04,    8
+ 2230,BERGEN/FLESLAND                             ,NO  ,+60:17:21,+005:13:35,   48
+ 2563,DEELEN                                      ,NL  ,+52:03:18,+005:52:19,   50
+ 2565,HOOGEVEEN                                   ,NL  ,+52:44:56,+006:34:23,   15
+ 2566,EINDHOVEN                                   ,NL  ,+51:26:58,+005:22:36,   22
+ 2569,TWENTHE                                     ,NL  ,+52:16:23,+006:53:26,   33
+ 2570,VALKENBURG                                  ,NL  ,+52:10:13,+004:25:45,    0
+ 2571,WESTDORPE                                   ,NL  ,+51:13:28,+003:51:39,    1
+ 2574,FOKSTUGU                                    ,NO  ,+62:06:51,+009:17:13,  972
+ 2576,KONGSBERG BRANNSTASJON                      ,NO  ,+59:37:28,+009:38:16,  170
+ 2579,ROROS AIRPORT                               ,NO  ,+62:34:37,+011:21:06,  625
+ 2589,RYGGE                                       ,NO  ,+58:22:59,+010:47:17,   40
+ 2590,SARPSBORG                                   ,NO  ,+59:17:08,+011:06:52,   57
+ 2600,TRYVASSHOGDA                                ,NO  ,+59:59:04,+010:40:09,  514
+ 2603,DREVSJO                                     ,NO  ,+61:53:13,+012:02:53,  672
+ 2605,KISE PA HEDMARK                             ,NO  ,+60:46:50,+010:48:42,  128
+ 2620,OSTRE TOTEN - APELSVOLL                     ,NO  ,+60:42:00,+010:52:00,  264
+ 2627,GULSVIK II                                  ,NO  ,+60:22:58,+009:36:24,  142
+ 2640,GVARV - NES                                 ,NO  ,+59:22:59,+009:12:05,   93
+ 2656,KJEVIK                                      ,NO  ,+58:12:01,+008:04:05,   12
+ 2667,LYSEBOTN                                    ,NO  ,+59:03:24,+006:38:57,    9
+ 2669,OBRESTAD FYR                                ,NO  ,+58:39:33,+005:33:19,   24
+ 2677,FET I EIDFJORD                              ,NO  ,+60:24:30,+007:16:46,  735
+ 2685,SLATTEROY FYR                               ,NO  ,+59:54:29,+005:04:05,   25
+ 2711,SUNNDALSORA III                             ,NO  ,+62:40:30,+008:33:32,    6
+ 2720,TRONDHEIM - VOLL                            ,NO  ,+63:24:38,+010:27:12,  127
+ 2726,NAMSSKOGAN                                  ,NO  ,+64:44:31,+012:50:45,  140
+ 2727,NORDOYAN FYR                                ,NO  ,+64:47:52,+010:32:57,   33
+ 2733,BODOE - VAGONES                             ,NO  ,+67:16:59,+014:28:00,   33
+ 2750,TORSVAG FYR                                 ,NO  ,+70:14:44,+019:30:02,   21
+ 2751,CUOVDDATMOHKKI                              ,NO  ,+69:22:00,+024:25:59,  286
+ 2754,MAKKAUR FYR                                 ,NO  ,+70:42:02,+030:04:05,    9
+ 2755,ISFJORD RADIO                               ,NO  ,+78:04:00,+013:37:59,    7
+ 2756,SVEAGRUVA                                   ,NO  ,+77:52:59,+016:43:00,    9
+ 2758,MUENSTER/OSNABRUECK (AIRPORT)               ,DE  ,+52:08:07,+007:42:00,   48
+ 2759,BERLIN-TEMPELHOF                            ,DE  ,+52:28:06,+013:24:14,   48
+ 2760,TRIER-PETRISBERG                            ,DE  ,+49:44:57,+006:39:33,  265
+ 2762,RHEINSTETTEN                                ,DE  ,+48:58:24,+008:19:51,  116
+ 2763,STUTTGART/ECHTERDINGEN                      ,DE  ,+48:41:21,+009:13:31,  371
+ 2764,MUENCHEN-FLUGHAFEN                          ,DE  ,+48:21:29,+011:48:33,  444
+ 2942,DANMARKSHAVN                                ,GL  ,+76:46:09,-018:40:05,   11
+ 2943,AKUREYRI                                    ,IS  ,+65:41:08,-018:06:00,   23
+ 2969,BARCELONA/AEROPUERTO                        ,ES  ,+41:17:34,+002:04:11,    4
+ 2970,LANZAROTE/AEROPUERTO                        ,ES  ,+28:57:06,-013:36:01,   14
+ 3167,D15-FA-1                                    ,NL  ,+54:19:32,+002:56:08,   42
+ 3168,K14-FA-1C                                   ,NL  ,+53:16:09,+003:37:40,   41
+ 3169,A12-CPP                                     ,NL  ,+55:23:57,+003:48:37,   48
+ 3170,F16-A                                       ,NL  ,+54:07:00,+004:00:43,   43
+ 3171,L9-FF-1                                     ,NL  ,+53:36:51,+004:57:37,    0
+ 3172,AWG-1                                       ,NL  ,+53:29:30,+005:56:30,   40
+ 3173,IJMOND                                      ,NL  ,+52:27:48,+004:31:03,    0
+ 3174,J6-A                                        ,NL  ,+53:49:27,+002:56:43,   45
+ 3175,HOORN-A                                     ,NL  ,+52:55:05,+004:09:01,   50
+ 3176,IJMUIDEN                                    ,NL  ,+52:27:43,+004:33:18,    4
+ 3177,TEXELHORS_MM                                ,NL  ,+52:59:42,+004:43:12,    1
+ 3178,WIJDENES                                    ,NL  ,+52:37:57,+005:10:24,    0
+ 3179,K13                                         ,NL  ,+53:13:04,+003:13:13,   37
+ 3180,HOUTRIBDIJK                                 ,NL  ,+52:38:53,+005:24:02,    7
+ 3181,HUIBERTGAT                                  ,NL  ,+53:34:26,+006:23:53,    0
+ 3182,CADZAND                                     ,NL  ,+51:22:50,+003:22:50,    0
+ 3183,HOOFDPLAAT                                  ,NL  ,+51:22:41,+003:40:19,    0
+ 3184,OOSTERSCHELDE                               ,NL  ,+51:46:00,+003:37:18,    0
+ 3185,VLAKTE_V.D._RAAN                            ,NL  ,+51:30:12,+003:14:30,    0
+ 3186,HANSWEERT                                   ,NL  ,+51:26:44,+003:59:51,    0
+ 3187,SCHAAR                                      ,NL  ,+51:39:21,+003:41:39,    0
+ 3188,LICHTEILAND_GOEREE                          ,NL  ,+51:55:32,+003:40:12,   23
+ 3189,EUROPLATFORM                                ,NL  ,+51:59:52,+003:16:30,   19
+ 3190,STAVENISSE-1                                ,NL  ,+51:35:47,+004:00:21,    0
+ 3191,THOLEN                                      ,NL  ,+51:30:24,+004:07:04,    0
+ 3192,ROTTERDAM-GEULHAVEN                         ,NL  ,+51:53:30,+004:18:45,    3
+ 3506,STUTTGART-SCHNARRENBERG                     ,DE  ,+48:49:45,+009:12:03,  314
+ 3546,NEWPORT FURNACE                             ,IE  ,+53:55:18,-009:34:18,   23
+ 3547,DUNSANY GRANGE                              ,IE  ,+53:30:00,-006:42:00,   84
+ 3548,GURTEEN                                     ,IE  ,+53:01:48,-008:00:36,   76
+ 3549,MT DILLON                                   ,IE  ,+54:43:36,-009:54:03,   40
+ 3550,MACE HEAD                                   ,IE  ,+53:19:33,-009:54:03,   23
+ 3551,OAK PARK                                    ,IE  ,+52:51:39,-006:54:54,   63
+ 3552,MOOREPARK                                   ,IE  ,+52:09:50,-008:15:50,   47
+ 3553,BALLYHAISE                                  ,IE  ,+54:03:03,-007:18:36,   79
+ 3554,SHERKIN ISLAND                              ,IE  ,+51:28:33,-009:25:41,   21
+ 3555,MULLINGAR                                   ,IE  ,+53:32:12,-007:21:42,  101
+ 3838,ROTA                                        ,ES  ,+36:38:20,-006:19:54,   21
+ 3839,MADRID/TORREJON                             ,ES  ,+40:28:59,-003:27:01,  611
+ 3903,A CORUNA/ALVEDRO                            ,ES  ,+43:18:24,-008:22:19,   98
+ 3904,VITORIA AERODROMO                           ,ES  ,+42:51:02,-002:39:16,  521
+ 3905,VITORIA/FORONDA                             ,ES  ,+42:52:18,-002:43:59,  513
+ 3906,ALBACETE OBS.                               ,ES  ,+39:00:24,-001:51:38,  674
+ 3907,ALMERIA                                     ,ES  ,+36:49:59,-002:27:16,    7
+ 3908,ALMERIA/AEROPUERTO                          ,ES  ,+36:50:47,-002:21:24,   21
+ 3909,ASTURIAS/AVILES                             ,ES  ,+43:34:00,-006:02:39,  127
+ 3910,GIJON                                       ,ES  ,+43:32:17,-005:38:30,    3
+ 3911,GIJON LA MERCED                             ,ES  ,+43:32:17,-005:38:30,   22
+ 3912,GIJON MUSEL                                 ,ES  ,+43:33:38,-005:41:54,    5
+ 3913,OVIEDO                                      ,ES  ,+43:21:15,-005:52:22,  336
+ 3914,AVILA                                       ,ES  ,+40:39:33,-004:40:48, 1130
+ 3915,AVILA-AYUNTAMIENTO                          ,ES  ,+40:39:20,-004:41:57, 1143
+ 3916,IBIZA/ESCODOLA                              ,ES  ,+38:52:35,+001:23:03,    6
+ 3917,MENORCA/MAO                                 ,ES  ,+39:51:16,+004:12:56,   91
+ 3918,PALMA DE MALLORCA CMT                       ,ES  ,+39:33:20,+002:37:35,    3
+ 3919,PALMA DE MALLORCA / SON SAN JUAN            ,ES  ,+39:33:38,+002:44:12,    8
+ 3920,GIRONA-NOU INSTITUT                         ,ES  ,+41:58:44,+002:49:36,   97
+ 3921,CACERES CIUDAD                              ,ES  ,+39:28:59,-006:22:00,  459
+ 3922,SANTANDER CMT                               ,ES  ,+43:29:30,-003:47:58,   52
+ 3923,SANTANDER/PARAYAS                           ,ES  ,+43:25:45,-003:49:53,    5
+ 3924,CASTELLON                                   ,ES  ,+39:57:00,-000:04:17,   35
+ 3926,CEUTA                                       ,ES  ,+35:53:24,-005:20:44,   87
+ 3927,CEUTA (MONTE HACHO)                         ,ES  ,+35:53:31,-005:17:21,  200
+ 3928,CIUDAD REAL (INSTITUTO)                     ,ES  ,+38:59:21,-003:55:42,  627
+ 3929,CUENCA                                      ,ES  ,+40:04:00,-002:08:17,  945
+ 3930,GIRONA (ANTIC INSTITUT)                     ,ES  ,+41:58:48,+002:49:31,   95
+ 3931,GIRONA/COSTA BRAVA                          ,ES  ,+41:54:42,+002:45:47,  143
+ 3932,GRANADA/AEROPUERTO                          ,ES  ,+37:11:22,-003:47:21,  567
+ 3933,GUADALAJARA                                 ,ES  ,+40:39:39,-003:10:27,  639
+ 3935,MOLINA DE ARAGON                            ,ES  ,+40:50:39,-001:53:07, 1056
+ 3937,HUELVA                                      ,ES  ,+37:15:34,-006:56:57,   17
+ 3938,JAEN                                        ,ES  ,+37:46:40,-003:48:27,  582
+ 3939,JAEN (INSTITUTO)                            ,ES  ,+37:46:40,-003:47:17,  510
+ 3940,FUERTEVENTURA/AEROPUERTO                    ,ES  ,+28:26:40,-013:51:47,   25
+ 3942,LLEIDA                                      ,ES  ,+41:37:32,+000:35:42,  192
+ 3943,LLEIDA (OBSERVATORIO)                       ,ES  ,+41:37:06,+000:37:18,  191
+ 3944,LUGO/ROZAS                                  ,ES  ,+43:06:55,-007:27:21,  445
+ 3945,COLMENAR VIEJO/FAMET                        ,ES  ,+40:41:54,-003:45:51, 1004
+ 3946,MADRID/BARAJAS                              ,ES  ,+40:28:00,-003:33:20,  609
+ 3947,MADRID/CUATROVIENTOS                        ,ES  ,+40:22:40,-003:47:21,  687
+ 3948,MADRID/GETAFE                               ,ES  ,+40:18:00,-003:43:21,  617
+ 3949,MURCIA/ALCANTARILLA                         ,ES  ,+37:57:28,-001:13:46,   85
+ 3951,OURENSE                                     ,ES  ,+42:19:40,-007:51:37,  143
+ 3953,PALENCIA (OBSERVATORIO)                     ,ES  ,+42:00:29,-004:32:07,  750
+ 3954,PONTEVEDRA                                  ,ES  ,+42:26:24,-008:36:59,  108
+ 3956,SALAMANCA OBS.                              ,ES  ,+40:57:23,-005:39:41,  775
+ 3957,HIERRO/AEROPUERTO                           ,ES  ,+27:49:08,-017:53:20,   32
+ 3958,LA PALMA/AEROPUERTO                         ,ES  ,+28:37:59,-017:45:18,   33
+ 3959,STA. CRUZ DE TENERIFE                       ,ES  ,+28:27:47,-016:15:19,   35
+ 3960,TENERIFE/SUR                                ,ES  ,+28:02:51,-016:33:38,   64
+ 3961,SEGOVIA                                     ,ES  ,+40:56:52,-004:07:37, 1005
+ 3962,SEGOVIA (MARIANO QUINTANILLA)               ,ES  ,+40:56:52,-004:06:55,  990
+ 3963,MORON DE LA FRONTERA                        ,ES  ,+37:09:29,-005:36:56,   87
+ 3964,CALAMOCHA                                   ,ES  ,+40:55:33,-001:17:35,  890
+ 3965,CALAMOCHA-VOR                               ,ES  ,+40:51:55,-001:18:16,  932
+ 3966,TERUEL                                      ,ES  ,+40:20:58,-001:07:00,  900
+ 3967,TOLEDO                                      ,ES  ,+39:53:04,-004:02:57,  515
+ 3968,TOLEDO LORENZANA                            ,ES  ,+39:51:39,-004:01:24,  540
+ 3969,VALENCIA/AEROPUERTO                         ,ES  ,+39:29:12,-000:28:23,   69
+ 3970,VALLADOLID (VILLANUBLA)                     ,ES  ,+41:42:00,-004:51:00,  846
+ 3971,DAROCA                                      ,ES  ,+41:06:52,-001:24:38,  779
+ 3986,LEUCHTTURM ALTE WESER                       ,DE  ,+53:51:47,+008:07:39,   32
+ 3987,FELDBERG/SCHWARZWALD                        ,DE  ,+47:52:32,+008:00:16, 1490
+ 3988,FREUDENSTADT                                ,DE  ,+48:27:16,+008:24:36,  797
+ 3989,AACHEN-ORSBACH                              ,DE  ,+50:47:57,+006:01:30,  231
+ 3990,GERA-LEUMNITZ                               ,DE  ,+50:52:55,+012:07:48,  311
+ 3991,GIESSEN/WETTENBERG                          ,DE  ,+50:36:03,+008:39:02,  203
+ 3992,ANGERMUNDE                                  ,DE  ,+53:01:59,+013:59:35,   54
+ 3993,GROSSER ARBER                               ,DE  ,+49:06:50,+013:08:07, 1436
+ 3994,ARKONA                                      ,DE  ,+54:40:54,+013:26:12,   42
+ 3995,KIEL-HOLTENAU                               ,DE  ,+54:22:32,+010:08:38,   27
+ 3996,KOLN-BONN                                   ,DE  ,+50:51:57,+007:09:30,   92
+ 3997,LAHR                                        ,DE  ,+48:21:56,+007:49:44,  155
+ 3998,LEUCHTTURM KIEL                             ,DE  ,+54:30:01,+010:16:28,    5
+ 3999,BAD LIPPSPRINGE                             ,DE  ,+51:47:12,+008:50:22,  157
+ 4000,MARNITZ                                     ,DE  ,+53:19:27,+011:56:00,   81
+ 4001,NORDERNEY                                   ,DE  ,+53:42:50,+007:09:09,   11
+ 4002,OBERSTDORF                                  ,DE  ,+47:23:56,+010:16:36,  806
+ 4003,OHRINGEN                                    ,DE  ,+49:12:29,+009:31:06,  276
+ 4004,REGENSBURG                                  ,DE  ,+49:02:36,+012:06:11,  365
+ 4005,BERLIN-TEGEL                                ,DE  ,+52:33:56,+013:18:38,   36
+ 4006,STOTTEN                                     ,DE  ,+48:40:00,+009:51:56,  734
+ 4007,WASSERKUPPE                                 ,DE  ,+50:29:52,+009:56:38,  921
+ 4008,WEIDEN                                      ,DE  ,+49:40:01,+012:11:08,  440
+ 4009,WENDELSTEIN                                 ,DE  ,+47:42:15,+012:00:47, 1832
+ 4010,FURSTENZELL                                 ,DE  ,+48:32:45,+013:21:16,  476
+ 4011,HAHN                                        ,DE  ,+49:56:51,+007:15:52,  497
+ 4012,MANNHEIM                                    ,DE  ,+49:30:36,+008:33:18,   96
+ 4013,OFFENBACH-WETTERPARK                        ,DE  ,+50:05:21,+008:47:11,  119
+ 4014,COTTBUS                                     ,DE  ,+51:46:39,+014:19:06,   69
+ 4015,CUXHAVEN                                    ,DE  ,+53:52:23,+008:42:24,    5
+ 4016,UFS DEUTSCHE BUCHT                          ,DE  ,+54:10:00,+007:27:00,    0
+ 4018,DOBERLUG-KIRCHHAIN                          ,DE  ,+51:38:48,+013:34:36,   97
+ 4038,EGGEBEK                                     ,DE  ,+54:37:46,+009:22:01,   18
+ 4048,ELPERSBUTTEL                                ,DE  ,+54:04:15,+009:00:41,    3
+ 4053,EMDEN-NESSERLAND                            ,DE  ,+53:20:47,+007:11:30,    5
+ 4054,EMDEN-WOLTHUSEN                             ,DE  ,+53:22:19,+007:13:27,    0
+ 4062,ALTENSTADT                                  ,DE  ,+47:50:11,+010:52:19,  756
+ 4070,ESCHWEGE                                    ,DE  ,+51:11:04,+010:03:54,  170
+ 4074,ESSEN-BREDENEY                              ,DE  ,+51:24:20,+006:58:06,  150
+ 4080,FASSBERG                                    ,DE  ,+52:55:09,+010:11:02,   73
+ 4083,FICHTELBERG/OBERFRANKEN-HUTTSTADL           ,DE  ,+49:58:54,+011:50:21,  657
+ 4085,WAIBSTADT                                   ,DE  ,+49:17:43,+008:54:23,  237
+ 4090,ROCKENDORF                                  ,DE  ,+50:40:57,+011:30:59,  280
+ 4096,FLENSBURG (SCHAFERHAUS)                     ,DE  ,+54:46:37,+009:22:36,   41
+ 4107,FRANKFURT/MAIN (FELDBERGSTR.)               ,DE  ,+50:07:21,+008:39:39,  109
+ 4108,FRANKFURT/ODER                              ,DE  ,+52:21:55,+014:32:16,   48
+ 4114,FREIBURG                                    ,DE  ,+48:01:27,+007:50:07,  236
+ 4119,FRIEDRICHSHAFEN                             ,DE  ,+47:38:45,+009:28:50,  394
+ 4121,FRIESOYTHE-EDEWECHTERDAM                    ,DE  ,+53:05:22,+007:56:33,    8
+ 4122,FRITZLAR-KASSELER WARTE                     ,DE  ,+51:07:59,+009:16:59,  222
+ 4125,FURSTENFELDBRUCK                            ,DE  ,+48:12:00,+011:16:00,  519
+ 4128,FULDA                                       ,DE  ,+50:32:04,+009:40:33,  255
+ 4129,GARDELEGEN                                  ,DE  ,+52:30:51,+011:23:52,   47
+ 4131,GARMISCH-PARTENKIRCHEN                      ,DE  ,+47:29:02,+011:03:48,  719
+ 4134,GEISENHEIM                                  ,DE  ,+49:59:06,+007:57:16,  110
+ 4137,GELBELSEE                                   ,DE  ,+48:56:56,+011:25:48,  536
+ 4141,GENTHIN                                     ,DE  ,+52:23:21,+012:09:48,   35
+ 4147,GLUCKSBURG-MEIERWIK                         ,DE  ,+54:50:56,+009:30:29,   27
+ 4151,GOTTINGEN                                   ,DE  ,+51:30:06,+009:57:10,  167
+ 4152,GOLDBERG                                    ,DE  ,+53:36:25,+012:06:15,   58
+ 4160,GREIFSWALDER OIE                            ,DE  ,+54:14:44,+013:54:45,   12
+ 4161,ANSBACH                                     ,DE  ,+49:17:51,+010:34:35,  413
+ 4164,GROSS LUSEWITZ                              ,DE  ,+54:04:23,+012:19:32,   34
+ 4171,GRUNOW                                      ,DE  ,+53:19:00,+013:56:09,   56
+ 4176,HAGEN-FLEY                                  ,DE  ,+51:24:51,+007:29:25,  100
+ 4177,AROLSEN-NEU BERICH                          ,DE  ,+51:23:08,+009:04:59,  232
+ 4184,HAMBURG-SANKT PAULI                         ,DE  ,+53:32:53,+009:58:13,   35
+ 4185,ARTERN                                      ,DE  ,+51:22:32,+011:17:35,  164
+ 4187,HAMELN                                      ,DE  ,+52:05:06,+009:23:21,   68
+ 4191,HARBURG                                     ,DE  ,+48:47:34,+010:42:27,  502
+ 4194,HARZGERODE                                  ,DE  ,+51:39:11,+011:08:15,  404
+ 4215,HERRNHUT                                    ,DE  ,+51:01:00,+014:45:00,  344
+ 4217,BAD HERSFELD                                ,DE  ,+50:51:11,+009:44:18,  272
+ 4229,AUE                                         ,DE  ,+50:35:30,+012:42:56,  387
+ 4231,BERTSDORF-HORNITZ                           ,DE  ,+50:54:02,+014:44:51,  270
+ 4236,HOHN                                        ,DE  ,+54:18:46,+009:32:21,   10
+ 4238,HOLZDORF (FLUGPLATZ)                        ,DE  ,+51:46:06,+013:10:05,   81
+ 4246,HOPSTEN (FLUGPLATZ)                         ,DE  ,+52:19:59,+007:33:00,   39
+ 4248,HORNISGRINDE                                ,DE  ,+48:36:51,+008:12:15, 1119
+ 4252,HUSUM                                       ,DE  ,+54:28:36,+009:03:26,    3
+ 4253,IDAR-OBERSTEIN                              ,DE  ,+49:42:00,+007:19:59,  376
+ 4258,INGOLSTADT (FLUGPLATZ)                      ,DE  ,+48:42:56,+011:32:00,  364
+ 4261,ITZEHOE                                     ,DE  ,+53:59:22,+009:34:10,   21
+ 4262,SCHLESWIG-JAGEL                             ,DE  ,+54:27:24,+009:31:14,   21
+ 4265,JEVER                                       ,DE  ,+53:31:55,+007:52:50,    7
+ 4270,KAISERSBACH-CRONHUTTE                       ,DE  ,+48:55:05,+009:41:17,  489
+ 4272,KALKAR                                      ,DE  ,+51:44:04,+006:15:56,   31
+ 4273,KALL-SISTIG                                 ,DE  ,+50:30:10,+006:31:36,  505
+ 4275,KALTENNORDHEIM                              ,DE  ,+50:37:40,+010:08:48,  487
+ 4281,KIEL-KRONSHAGEN                             ,DE  ,+54:20:21,+010:05:39,   17
+ 4285,BAD KISSINGEN                               ,DE  ,+50:13:32,+010:04:49,  282
+ 4288,KLEINER FELDBERG/TAUNUS                     ,DE  ,+50:13:21,+008:26:53,  826
+ 4294,KLIPPENECK                                  ,DE  ,+48:06:23,+008:45:20,  973
+ 4313,KUMMERSBRUCK                                ,DE  ,+49:25:44,+011:54:07,  417
+ 4318,KYRITZ                                      ,DE  ,+52:56:17,+012:24:38,   40
+ 4322,LANDSBERG (FLUGPLATZ)                       ,DE  ,+48:04:36,+010:54:52,  621
+ 4328,LANGENLIPSDORF                              ,DE  ,+51:55:06,+013:05:20,   91
+ 4332,BAD LAUCHSTADT                              ,DE  ,+51:23:33,+011:52:48,  119
+ 4334,LAUPHEIM                                    ,DE  ,+48:13:05,+009:54:34,  539
+ 4336,LECHFELD                                    ,DE  ,+48:11:11,+010:51:02,  550
+ 4338,LECK                                        ,DE  ,+54:47:33,+008:56:57,    7
+ 4343,LEINEFELDE                                  ,DE  ,+51:23:07,+010:18:06,  356
+ 4344,LEIPZIG-HOLZHAUSEN                          ,DE  ,+51:18:59,+012:26:51,  138
+ 4352,LICHTENHAIN-MITTELNDORF                     ,DE  ,+50:56:22,+014:12:39,  321
+ 4353,BARTH                                       ,DE  ,+54:20:26,+012:42:38,    3
+ 4360,LINGEN                                      ,DE  ,+52:31:09,+007:18:29,   22
+ 4363,BARUTH                                      ,DE  ,+52:03:43,+013:30:10,   55
+ 4371,LUBECK                                      ,DE  ,+53:52:44,+010:41:34,   15
+ 4372,LUBECK-BLANKENSEE                           ,DE  ,+53:48:38,+010:42:24,    5
+ 4374,LUCHOW                                      ,DE  ,+52:58:26,+011:08:21,   17
+ 4375,LUDENSCHEID (ZEPPELIN-GYMNASIUM)            ,DE  ,+51:12:51,+007:38:12,  444
+ 4376,LUDENSCHEID                                 ,DE  ,+51:14:48,+007:38:35,  387
+ 4378,LUNEBURG                                    ,DE  ,+53:16:01,+010:25:31,   11
+ 4386,MANSCHNOW                                   ,DE  ,+52:32:53,+014:32:51,   12
+ 4389,MARIENBERG                                  ,DE  ,+50:39:07,+013:08:54,  639
+ 4390,BAD MARIENBERG                              ,DE  ,+50:39:47,+007:57:34,  547
+ 4393,HEINERSREUTH-VOLLHOF                        ,DE  ,+49:58:04,+011:31:15,  350
+ 4399,MEINERZHAGEN (A)                            ,DE  ,+51:05:56,+007:40:04,  506
+ 4402,MEMMINGEN                                   ,DE  ,+47:58:59,+010:08:21,  615
+ 4403,MEMMINGEN (FLUGPLATZ)                       ,DE  ,+47:58:59,+010:13:59,  630
+ 4404,MENDIG                                      ,DE  ,+50:22:00,+007:19:00,  181
+ 4406,MEPPEN                                      ,DE  ,+52:43:59,+007:19:59,   19
+ 4408,MESSSTETTEN                                 ,DE  ,+48:11:04,+008:59:33,  920
+ 4414,MICHELSTADT-VIELBRUNN                       ,DE  ,+49:43:08,+009:06:02,  453
+ 4417,MITTEL-GRUNDAU                              ,DE  ,+50:13:46,+009:06:27,  155
+ 4419,BEERFELDEN                                  ,DE  ,+49:33:46,+008:58:08,  450
+ 4427,MUHLACKER                                   ,DE  ,+48:58:23,+008:52:27,  244
+ 4428,MUHLDORF                                    ,DE  ,+48:16:48,+012:30:14,  405
+ 4430,MUNCHEBERG                                  ,DE  ,+52:31:08,+014:07:30,   63
+ 4435,MUNCHEN-RIEM                                ,DE  ,+48:08:16,+011:42:38,  529
+ 4436,MUNSINGEN-APFELSTETTEN                      ,DE  ,+48:23:11,+009:29:03,  750
+ 4440,BELM                                        ,DE  ,+52:19:05,+008:10:14,  103
+ 4442,BAD NAUHEIM                                 ,DE  ,+50:22:10,+008:45:56,  142
+ 4443,NEUBRANDENBURG                              ,DE  ,+53:32:53,+013:11:35,   81
+ 4444,NEUBURG/DONAU (FLUGPLATZ)                   ,DE  ,+48:42:33,+011:12:36,  380
+ 4447,BENDORF                                     ,DE  ,+50:24:52,+007:35:21,  127
+ 4450,NEUHAUS AM RENNWEG                          ,DE  ,+50:30:05,+011:08:08,  845
+ 4451,NEUHAUSEN OB ECK                            ,DE  ,+47:58:36,+008:54:39,  793
+ 4462,NEUSTADT/WEINSTRASSE                        ,DE  ,+49:21:29,+008:08:29,  163
+ 4464,NEUSTRELITZ                                 ,DE  ,+53:21:36,+013:03:06,   64
+ 4473,NORVENICH (FLUGPLATZ)                       ,DE  ,+50:49:44,+006:39:33,  111
+ 4474,NORDHOLZ (FLUGPLATZ)                        ,DE  ,+53:45:52,+008:39:27,   25
+ 4476,NURBURG                                     ,DE  ,+50:20:25,+006:57:02,  627
+ 4483,BERGEN                                      ,DE  ,+52:49:00,+009:55:59,   70
+ 4485,OBERSCHLEISSHEIM                            ,DE  ,+48:14:40,+011:33:14,  484
+ 4497,OLDENBURG                                   ,DE  ,+53:10:41,+008:10:54,   11
+ 4498,OSCHATZ                                     ,DE  ,+51:17:49,+013:05:40,  150
+ 4499,OSNABRUCK                                   ,DE  ,+52:15:25,+008:03:15,   95
+ 4500,OSTERFELD                                   ,DE  ,+51:05:18,+011:55:53,  246
+ 4509,PASSAU-OBERHAUS                             ,DE  ,+48:34:44,+013:28:15,  409
+ 4511,PELZERHAKEN                                 ,DE  ,+54:05:26,+010:52:42,    1
+ 4518,PFORZHEIM-ISPRINGEN                         ,DE  ,+48:55:58,+008:41:48,  333
+ 4522,PLAUEN                                      ,DE  ,+50:28:59,+012:07:54,  386
+ 4529,BERLIN-BUCH                                 ,DE  ,+52:37:57,+013:30:14,   60
+ 4531,PUTBUS                                      ,DE  ,+54:21:56,+013:28:42,   40
+ 4534,QUEDLINBURG                                 ,DE  ,+51:47:48,+011:07:59,  142
+ 4535,QUERFURT-MUHLE LODERSLEBEN                  ,DE  ,+51:23:26,+011:32:34,  204
+ 4537,QUICKBORN                                   ,DE  ,+53:44:04,+009:52:42,   13
+ 4544,KR. RAVENSBURG WEINGARTEN                   ,DE  ,+47:48:25,+009:37:18,  440
+ 4557,RHEINE-BENTLAGE                             ,DE  ,+52:17:21,+007:23:11,   40
+ 4570,BERLIN-SCHONEFELD                           ,DE  ,+52:22:55,+013:31:57,   46
+ 4571,ROTH                                        ,DE  ,+49:12:57,+011:06:09,  385
+ 4591,BAD SALZUFLEN                               ,DE  ,+52:06:20,+008:45:11,  135
+ 4594,SANKT PETER-ORDING                          ,DE  ,+54:19:46,+008:36:10,    5
+ 4605,SCHIERKE                                    ,DE  ,+51:46:00,+010:39:18,  609
+ 4607,SCHLEIZ                                     ,DE  ,+50:34:14,+011:48:20,  501
+ 4616,GROSSENKNETEN                               ,DE  ,+52:56:06,+008:14:08,   44
+ 4617,SCHMUCKE                                    ,DE  ,+50:39:20,+010:46:15,  937
+ 4634,BERUS                                       ,DE  ,+49:15:55,+006:41:16,  363
+ 4636,SCHWESING                                   ,DE  ,+54:31:05,+009:08:35,   37
+ 4637,SEEHAUSEN                                   ,DE  ,+52:53:34,+011:43:50,   21
+ 4652,SOLTAU                                      ,DE  ,+52:57:42,+009:47:48,   76
+ 4655,SONNEBERG-NEUFANG                           ,DE  ,+50:22:32,+011:11:03,  626
+ 4670,STUTTGART-STADT                             ,DE  ,+48:46:13,+009:10:57,  286
+ 4676,TETEROW                                     ,DE  ,+53:45:45,+012:33:29,   38
+ 4680,THOLEY                                      ,DE  ,+49:28:28,+007:02:21,  386
+ 4692,TRAVEMUNDE                                  ,DE  ,+53:57:51,+010:53:29,    2
+ 4698,TROLLENHAGEN                                ,DE  ,+53:36:07,+013:18:21,   69
+ 4700,TUBINGEN                                    ,DE  ,+48:31:14,+009:03:09,  370
+ 4705,UECKERMUNDE                                 ,DE  ,+53:44:45,+014:04:10,    1
+ 4708,ULM                                         ,DE  ,+48:23:04,+009:57:14,  567
+ 4709,UMMENDORF                                   ,DE  ,+52:09:42,+011:10:36,  162
+ 4714,VOLKLINGEN-STADT                            ,DE  ,+49:15:33,+006:51:42,  220
+ 4726,AHRENSBURG-WULFSDORF                        ,DE  ,+53:39:50,+010:12:01,   46
+ 4728,WALDHAUSER (NATIONAL PARK)                  ,DE  ,+48:55:49,+013:27:56,  940
+ 4733,WARBURG                                     ,DE  ,+51:30:19,+009:06:46,  236
+ 4734,WAREN                                       ,DE  ,+53:31:17,+012:40:09,   70
+ 4741,WEIHENSTEPHAN-DURNAST                       ,DE  ,+48:24:11,+011:41:44,  477
+ 4743,WEIMAR                                      ,DE  ,+50:58:32,+011:18:33,  264
+ 4745,WEINBIET                                    ,DE  ,+49:22:36,+008:07:21,  553
+ 4750,WEISSENBURG                                 ,DE  ,+49:01:13,+010:57:42,  422
+ 4756,WERL                                        ,DE  ,+51:34:40,+007:53:20,   85
+ 4758,WERNIGERODE                                 ,DE  ,+51:50:52,+010:46:10,  234
+ 4762,WIELENBACH (DEMOLLSTR.)                     ,DE  ,+47:53:00,+011:09:32,  550
+ 4763,BOCHOLT (MARIENSCHULE)                      ,DE  ,+51:50:21,+006:36:41,   25
+ 4766,WIESENBURG                                  ,DE  ,+52:07:19,+012:27:36,  187
+ 4767,BOCHOLT                                     ,DE  ,+51:49:51,+006:32:09,   21
+ 4776,WITTENBERG                                  ,DE  ,+51:53:25,+012:38:47,  105
+ 4777,WITTMUNDHAFEN                               ,DE  ,+53:33:00,+007:40:00,    8
+ 4782,WOLDEGK                                     ,DE  ,+53:27:47,+013:36:42,  118
+ 4784,WOLFSBURG                                   ,DE  ,+52:26:33,+010:45:36,   56
+ 4790,WUNSTORF                                    ,DE  ,+52:27:29,+009:25:41,   57
+ 4795,WRIXUM/FOHR                                 ,DE  ,+54:41:39,+008:31:41,    8
+ 4796,ZEHDENICK                                   ,DE  ,+52:58:05,+013:19:41,   51
+ 4801,ZINNWALD-GEORGENFELD                        ,DE  ,+50:43:58,+013:45:11,  877
+ 4803,LICHTENTANNE                                ,DE  ,+50:41:21,+012:26:03,  353
+ 4804,ZWIESEL                                     ,DE  ,+49:01:45,+013:14:25,  615
+ 4808,BERGE                                       ,DE  ,+52:37:14,+012:47:20,   40
+ 4815,BOIZENBURG                                  ,DE  ,+53:23:35,+010:41:21,   45
+ 4818,SCHONHAGEN (OSTSEEBAD)                      ,DE  ,+54:38:27,+010:01:28,    2
+ 4820,BOLTENHAGEN                                 ,DE  ,+54:00:15,+011:11:31,   15
+ 4823,BONN-FRIESDORF                              ,DE  ,+50:42:24,+007:08:51,   62
+ 4825,BONN-ROLEBER                                ,DE  ,+50:44:11,+007:11:38,  159
+ 4838,DORPEN                                      ,DE  ,+52:57:19,+007:19:09,    8
+ 4839,DORNICK                                     ,DE  ,+54:10:00,+010:21:14,   26
+ 4843,WILHELMSHAVEN (FLUGPLATZ)                   ,DE  ,+53:31:59,+008:10:00,    6
+ 4845,SELB-SPIELBERG                              ,DE  ,+50:09:34,+012:02:25,  610
+ 4846,LUGDE-PAENBRUCH                             ,DE  ,+51:52:04,+009:16:19,  258
+ 4848,BORKUM-SUDERSTRASSE                         ,DE  ,+53:34:49,+006:40:22,   12
+ 4867,NOSSEN                                      ,DE  ,+51:03:06,+013:18:09,  308
+ 4870,RUNKEL-ENNERICH                             ,DE  ,+50:23:44,+008:08:39,  168
+ 4873,BRAKE                                       ,DE  ,+53:19:03,+008:28:48,    1
+ 4879,BRAUNLAGE                                   ,DE  ,+51:43:30,+010:36:14,  607
+ 4882,BRAUNSCHWEIG                                ,DE  ,+52:17:25,+010:26:54,   81
+ 4885,BREMERHAVEN                                 ,DE  ,+53:32:04,+008:34:37,    7
+ 4888,BREMERVORDE                                 ,DE  ,+53:29:56,+009:10:23,    3
+ 4890,ESCHBACH                                    ,DE  ,+47:53:12,+007:39:42,  234
+ 4903,ALBSTADT-ONSTMETTINGEN                      ,DE  ,+48:16:39,+009:00:03,  794
+ 4911,FELDBERG/MECKLENBURG                        ,DE  ,+53:19:03,+013:25:03,  115
+ 4913,ALFELD                                      ,DE  ,+51:58:01,+009:48:15,  144
+ 4914,EISENACH                                    ,DE  ,+51:00:09,+010:21:48,  312
+ 4915,FEUCHTWANGEN-HEILBRONN                      ,DE  ,+49:09:47,+010:22:01,  475
+ 4917,WALDMUNCHEN                                 ,DE  ,+49:23:31,+012:41:07,  499
+ 4919,AHAUS                                       ,DE  ,+52:04:58,+006:56:30,   46
+ 4920,HECKELBERG                                  ,DE  ,+52:44:45,+013:50:31,   82
+ 4922,HOYERSWERDA                                 ,DE  ,+51:27:02,+014:15:15,  116
+ 4923,WUNSIEDEL-SCHONBRUNN                        ,DE  ,+50:01:54,+011:58:27,  622
+ 4924,GOTTFRIEDING                                ,DE  ,+48:39:38,+012:32:25,  350
+ 4925,HOHERODSKOPF/VOGELSBERG                     ,DE  ,+50:30:30,+009:13:28,  743
+ 4927,LEUTKIRCH-HERLAZHOFEN                       ,DE  ,+47:47:47,+010:02:00,  672
+ 4928,NEU-ULRICHSTEIN                             ,DE  ,+50:45:11,+009:01:24,  350
+ 4929,NEUHUTTEN/SPESSART                          ,DE  ,+50:00:33,+009:25:30,  340
+ 4940,BUCHEL (FLUGPLATZ)                          ,DE  ,+50:10:26,+007:03:47,  477
+ 4941,BUCKEBURG                                   ,DE  ,+52:16:54,+009:05:16,   68
+ 4950,CARLSFELD                                   ,DE  ,+50:25:55,+012:36:46,  897
+ 4952,CELLE                                       ,DE  ,+52:35:43,+010:01:41,   39
+ 4954,CHEMNITZ                                    ,DE  ,+50:47:33,+012:52:24,  418
+ 4955,CHIEMING                                    ,DE  ,+47:53:07,+012:32:30,  551
+ 4958,LAUTERTAL-OBERLAUTER                        ,DE  ,+50:18:29,+010:58:09,  345
+ 4970,DEUSELBACH                                  ,DE  ,+49:45:47,+007:03:20,  481
+ 4971,DIEPHOLZ                                    ,DE  ,+52:35:25,+008:20:47,   39
+ 4992,NELAUG                                      ,NO  ,+58:39:29,+008:37:53,  142
+ 4993,LANDVIK                                     ,NO  ,+58:20:24,+008:31:21,    6
+ 5001,ALTA LUFTHAVN                               ,NO  ,+69:58:39,+023:21:29,    3
+ 5002,HAMMERFEST LUFTHAVN                         ,NO  ,+70:40:50,+023:40:37,   81
+ 5003,HONNINGSVAG LUFTHAVN                        ,NO  ,+71:00:38,+025:58:41,   14
+ 5004,MEHAMN LUFTHAVN                             ,NO  ,+71:01:59,+027:49:46,   13
+ 5005,BERLEVAG LUFTHAVN                           ,NO  ,+70:52:14,+029:02:04,   13
+ 5009,VADSO LUFTHAVN                              ,NO  ,+70:03:55,+029:50:07,   39
+ 5018,HAMAR - STAVSBERG                           ,NO  ,+60:49:05,+011:04:10,  221
+ 5031,MIDTLAEGER                                  ,NO  ,+59:50:02,+006:59:29, 1079
+ 5046,SVINOY FYR                                  ,NO  ,+62:19:45,+005:16:05,   38
+ 5047,MOLDE LUFTHAVN                              ,NO  ,+62:44:39,+007:15:42,    3
+ 5049,KRISTIANSUND LUFTHAVN                       ,NO  ,+63:06:33,+007:48:56,   62
+ 5051,SMOLA - MOLDSTAD                            ,NO  ,+63:25:10,+008:03:47,   30
+ 5052,ORSTA-VOLDA LUFTHAVN                        ,NO  ,+62:10:51,+006:04:50,   74
+ 5054,VIGRA                                       ,NO  ,+62:33:42,+006:06:54,   22
+ 5056,BRONNOYSUND LUFTHAVN                        ,NO  ,+65:27:24,+012:13:05,    9
+ 5060,EVENES LUFTHAVN                             ,NO  ,+68:29:27,+016:40:59,   26
+ 5065,LEKNES LUFTHAVN                             ,NO  ,+68:09:18,+013:36:54,   26
+ 5066,SANDNESSJOEN LH - STOKKA                    ,NO  ,+65:57:38,+012:28:17,   17
+ 5069,VALLJORD                                    ,NO  ,+67:21:38,+015:35:21,    3
+ 5070,NARVIK LUFTHAVN                             ,NO  ,+68:26:22,+017:23:18,   31
+ 5071,SVOLVAER LUFTHAVN                           ,NO  ,+68:14:43,+014:40:09,    9
+ 5073,STOKMARKNES LH - SKAGEN                     ,NO  ,+68:34:48,+015:01:45,    3
+ 5074,MO I RANA LUFTHAVN                          ,NO  ,+66:21:51,+014:18:05,   70
+ 5078,NAMSOS LUFTHAVN                             ,NO  ,+64:28:14,+011:34:14,    2
+ 5083,SKLINNA FYR                                 ,NO  ,+65:12:07,+010:59:47,   23
+ 5085,VENABU                                      ,NO  ,+61:39:05,+010:06:30,  930
+ 5089,SOGNEFJELLHYTTA                             ,NO  ,+61:33:52,+007:59:52, 1413
+ 5093,LOKEN I VOLBU                               ,NO  ,+61:07:18,+009:03:47,  521
+ 5094,FILEFJELL - KYRKJESTOLANE                   ,NO  ,+61:10:41,+008:06:45,  956
+ 5104,HAUGESUND LUFTHAVN                          ,NO  ,+59:20:58,+005:11:52,   24
+ 5113,FURENESET                                   ,NO  ,+61:17:34,+005:02:39,    7
+ 5114,FLORO LUFTHAVN                              ,NO  ,+61:34:59,+005:01:40,    9
+ 5118,SOGNDAL LUFTHAVN                            ,NO  ,+61:09:29,+007:08:29,  497
+ 5120,SANDANE                                     ,NO  ,+61:47:17,+006:11:00,   51
+ 5121,SANDANE LUFTHAVN                            ,NO  ,+61:49:45,+006:06:15,   60
+ 5132,BUHOLMRASA FYR                              ,NO  ,+64:24:05,+010:27:18,   18
+ 5137,SULA                                        ,NO  ,+63:50:48,+008:28:00,    5
+ 5140,NY-ALESUND                                  ,NO  ,+78:55:23,+011:55:59,    8
+ 5142,MOSSTRAND II                                ,NO  ,+59:50:22,+008:10:45,  977
+ 5146,SKIEN - GEITERYGGEN                         ,NO  ,+59:10:59,+009:34:00,  136
+ 5149,HEKKINGEN FYR                               ,NO  ,+69:36:02,+017:50:14,   14
+ 5150,TROMSO - LANGNES                            ,NO  ,+69:40:36,+018:54:47,    8
+ 5152,SORKJOSEN LUFTHAVN                          ,NO  ,+69:47:20,+020:57:19,    6
+ 5153,NORDSTRAUM I KVAENANGEN                     ,NO  ,+69:50:00,+021:53:03,    6
+ 5160,MELSOM                                      ,NO  ,+59:13:48,+010:20:53,   26
+ 5161,TORP                                        ,NO  ,+59:11:03,+010:15:19,   88
+ 6937,WAGENINGEN - HAARWEG                        ,NL  ,+51:58:00,+005:37:59,    7
+ 7965,KITSISSUT                                   ,GL  ,+76:37:59,-073:07:14,   11
+ 7968,KITSISSORSUIT                               ,GL  ,+74:03:38,-057:43:23,   40
+ 7975,NUUSSUAQ                                    ,GL  ,+70:39:21,-054:36:00,   27
+ 7979,AASIAAT                                     ,GL  ,+68:42:29,-052:51:06,   43
+ 7981,KITSISSUT/ATTU                              ,GL  ,+67:47:03,-053:57:54,   10
+ 7989,SIORALIK                                    ,GL  ,+65:00:47,-052:31:42,   12
+ 7993,NUUK                                        ,GL  ,+64:10:59,-051:43:50,   79
+ 7996,UKIIVIIT                                    ,GL  ,+62:34:44,-050:24:20,   20
+ 8003,NUNARSUIT                                   ,GL  ,+60:45:48,-048:27:16,   30
+ 8011,ANGISSOQ                                    ,GL  ,+59:59:27,-045:08:45,   14
+ 8013,KAP MORRIS JESUP                            ,GL  ,+83:39:21,-033:22:26,    3
+ 8016,STATION NORD AWS                            ,GL  ,+81:36:11,-016:39:47,   34
+ 8017,HENRIK KROEYER HOLME                        ,GL  ,+80:38:57,-013:42:42,    8
+ 8018,DANEBORG                                    ,GL  ,+74:18:27,-020:13:00,   13
+ 8020,ITTOQQORTOORMIIT                            ,GL  ,+70:29:03,-021:57:03,   70
+ 8024,APUTITEEQ                                   ,GL  ,+67:46:54,-032:17:03,   12
+ 8028,IKERMIT                                     ,GL  ,+64:46:54,-040:18:06,   78
+ 8030,IKERMIUARSUK                                ,GL  ,+61:56:11,-042:04:04,   40
+ 8032,IKERASASSUAQ                                ,GL  ,+60:03:19,-043:09:55,  139
+ 8555,WAGENINGEN - VEENKAMPEN                     ,NL  ,+51:58:53,+005:37:18,    5
+10961,VOORSCHOTEN                                 ,NL  ,+52:08:22,+004:26:11,   -1
+10981,P11-B                                       ,NL  ,+52:22:00,+003:21:00,   23
+10982,F3-FB-1                                     ,NL  ,+54:51:14,+004:43:39,    0
+11008,ATHENRY                                     ,IE  ,+53:16:48,-008:46:47,   40
+11009,HONDARRIBIA-MALKARROA                       ,ES  ,+43:21:24,-001:47:31,    4
+11010,ALGUAIRE                                    ,ES  ,+41:44:34,+000:32:08,  370
+11011,AMPOSTA                                     ,ES  ,+40:42:28,+000:37:55,    3
+11012,ANGLES                                      ,ES  ,+41:57:38,+002:37:51,  150
+11013,BANYOLES                                    ,ES  ,+42:06:59,+002:47:22,  176
+11014,BARCELONA-EL RAVAL                          ,ES  ,+41:23:02,+002:10:03,   33
+11015,BARCELONA-ZONA UNIVERSITARIA                ,ES  ,+41:22:45,+002:06:19,   79
+11016,BENISSANET                                  ,ES  ,+41:03:46,+000:38:06,   32
+11017,BOI                                         ,ES  ,+42:27:57,+000:53:03, 2535
+11018,BONAIGUA                                    ,ES  ,+42:38:48,+000:59:04, 2266
+11019,CABRILS                                     ,ES  ,+41:31:04,+002:22:36,   81
+11020,CADI NORD-PRAT DAGUILO                      ,ES  ,+42:17:33,+001:42:54, 2143
+11021,CALDES DE MONTBUI                           ,ES  ,+41:36:46,+002:10:05,  176
+11022,CASTELLBISBAL                               ,ES  ,+41:28:44,+001:58:32,  147
+11023,CASTELL DARO                                ,ES  ,+41:48:30,+003:01:57,   14
+11024,CASTELLNOU DE BAGES                         ,ES  ,+41:49:50,+001:50:48,  507
+11025,CASTELLNOU DE SEANA                         ,ES  ,+41:39:24,+000:57:06,  264
+11026,CERTASCAN                                   ,ES  ,+42:41:00,+001:16:18, 2400
+11027,CERVERA                                     ,ES  ,+41:40:32,+001:17:45,  554
+11028,CONSTANTI                                   ,ES  ,+41:10:17,+001:10:04,  112
+11029,CUNIT                                       ,ES  ,+41:12:06,+001:37:59,   17
+11030,DAS-AERODROM                                ,ES  ,+42:23:09,+001:51:59, 1097
+11031,EL PERELLO                                  ,ES  ,+40:52:22,+000:42:56,  179
+11032,EL PONT DE SUERT                            ,ES  ,+42:23:53,+000:44:36,  823
+11033,EL PORT DEL COMTE                           ,ES  ,+42:10:57,+001:31:27, 2316
+11034,EL PRAT DE LLOBREGAT                        ,ES  ,+41:20:25,+002:04:49,    8
+11035,ELS HOSTALETS DE PIEROLA                    ,ES  ,+41:31:51,+001:48:29,  316
+11036,EL VENDRELL                                 ,ES  ,+41:12:56,+001:31:15,   59
+11037,ESPOT                                       ,ES  ,+42:32:03,+001:03:16, 2519
+11038,FALSET                                      ,ES  ,+41:09:12,+000:49:09,  359
+11039,FONT-RUBI                                   ,ES  ,+41:25:58,+001:37:26,  415
+11040,GIRONA                                      ,ES  ,+41:58:55,+002:48:24,   72
+11041,GUARDIOLA DE BERGUEDA                       ,ES  ,+42:14:03,+001:52:28,  788
+11042,HORTA DE SANT JOAN                          ,ES  ,+40:57:05,+000:18:20,  515
+11043,ILLA DE BUDA                                ,ES  ,+40:42:25,+000:50:03,    1
+11044,LA BISBAL DEMPORDA                          ,ES  ,+41:58:39,+003:02:07,   28
+11045,LAC REDON                                   ,ES  ,+42:38:17,+000:46:44, 2247
+11046,LA PANADELLA                                ,ES  ,+41:36:09,+001:24:02,  785
+11047,LA POBLA DE SEGUR - BOMBERS                 ,ES  ,+42:14:21,+000:57:51,  513
+11048,LA QUAR                                     ,ES  ,+42:04:49,+001:57:45,  873
+11049,LA SEU DURGELL                              ,ES  ,+42:22:14,+001:25:58,  849
+11050,LESPLUGA DE FRANCOLI                        ,ES  ,+41:23:33,+001:05:56,  446
+11051,MALGRAT DE MAR                              ,ES  ,+41:38:48,+002:45:24,    2
+11052,MALNIU                                      ,ES  ,+42:27:57,+001:46:41, 2230
+11053,MAS DE BARBERANS-ABOCADOR                   ,ES  ,+40:43:05,+000:23:58,  240
+11054,MOLLO-FABERT                                ,ES  ,+42:22:37,+002:24:51, 1405
+11055,MONTSEC                                     ,ES  ,+42:03:05,+000:43:45, 1572
+11056,MONTSERRAT-SANT DIMES                       ,ES  ,+41:35:43,+001:50:15,  916
+11057,MUNTANYOLA                                  ,ES  ,+41:52:41,+002:10:42,  816
+11058,NURIA                                       ,ES  ,+42:22:54,+002:09:19, 1971
+11059,ODENA                                       ,ES  ,+41:35:11,+001:39:11,  333
+11060,OLOT - PLA DE BAIX                          ,ES  ,+42:11:29,+002:28:57,  421
+11061,ORGANYA                                     ,ES  ,+42:12:57,+001:19:53,  565
+11062,ORIS                                        ,ES  ,+42:04:26,+002:12:30,  626
+11063,PARETS DEL VALLES                           ,ES  ,+41:34:01,+002:13:33,  123
+11064,PN DELS PORTS                               ,ES  ,+40:47:48,+000:19:05, 1055
+11065,PORTBOU                                     ,ES  ,+42:26:07,+003:09:57,  196
+11066,PUIG SESOLLES                               ,ES  ,+41:46:24,+002:26:16, 1668
+11067,RAIMAT                                      ,ES  ,+41:40:59,+000:26:54,  286
+11068,ROSES                                       ,ES  ,+42:16:14,+003:10:54,   24
+11069,SABADELL-PARC AGRARI                        ,ES  ,+41:33:56,+002:04:09,  258
+11070,SALORIA                                     ,ES  ,+42:31:09,+001:21:56, 2451
+11071,SANT CUGAT DEL VALLES-CAR                   ,ES  ,+41:28:59,+002:04:45,  158
+11072,SANT PAU DE SEGURIES                        ,ES  ,+42:15:29,+002:21:51,  852
+11073,SANT PERE PESCADOR                          ,ES  ,+42:10:37,+003:05:48,    4
+11074,SANT ROMA DABELLA                           ,ES  ,+42:08:21,+001:02:20,  690
+11075,SANT SALVADOR DE GUARDIOLA                  ,ES  ,+41:40:26,+001:46:04,  349
+11076,SANTUARI DE QUERALT                         ,ES  ,+42:06:25,+001:49:36, 1167
+11077,SASSEUVA                                    ,ES  ,+42:46:12,+000:43:54, 2228
+11078,SOLSONA                                     ,ES  ,+41:59:16,+001:30:42,  691
+11079,TARRAGONA-COMPLEX EDUCATIU                  ,ES  ,+41:06:14,+001:12:03,    5
+11080,TARREGA                                     ,ES  ,+41:40:00,+001:09:55,  427
+11081,TORREDEMBARRA                               ,ES  ,+41:08:48,+001:25:05,    2
+11082,ULLDEMOLINS                                 ,ES  ,+41:19:12,+000:53:08,  687
+11083,VALLIRANA                                   ,ES  ,+41:22:54,+001:56:08,  252
+11084,VIELHA E MIJARAN                            ,ES  ,+42:41:54,+000:47:38, 1002
+11085,VILADRAU                                    ,ES  ,+41:50:24,+002:25:06,  953
+11086,VILANOVA DE MEIA                            ,ES  ,+41:59:44,+001:01:32,  594
+11087,VILA-RODONA                                 ,ES  ,+41:18:25,+001:21:45,  287
+11088,VINEBRE                                     ,ES  ,+41:11:06,+000:35:36,   53
+11095,NARVIK-FAGERNESFJELLET                      ,NO  ,+68:25:15,+017:28:49, 1000
+11099,NOTODDEN FLYPLASS                           ,NO  ,+59:34:00,+009:12:38,   20
+11206,NARSARSUAQ RADISONDE                        ,GL  ,+61:09:27,-045:26:24,    3
+11207,GRAN CANARIA AEROPUERTO                     ,ES  ,+27:55:54,-015:23:12,   27
+11346,PANTA DE DARNIUS - BOADELLA                 ,ES  ,+42:20:31,+002:50:03,  158
+11347,PUIGCERDA                                   ,ES  ,+42:26:25,+001:56:04, 1213
+11348,TIVISSA                                     ,ES  ,+41:02:35,+000:44:25,  316
+11349,HELTERMAA                                   ,EE  ,+58:51:51,+023:02:36,    4
+11350,JOHVI                                       ,EE  ,+59:19:44,+027:23:53,   73
+11351,JOGEVA                                      ,EE  ,+58:44:58,+026:24:54,   70
+11352,KARDLA                                      ,EE  ,+58:59:35,+024:49:18,    3
+11353,KURESSAARE                                  ,EE  ,+58:13:05,+022:30:23,    1
+11354,KUNDA                                       ,EE  ,+59:31:17,+026:32:29,    3
+11355,KIHNU                                       ,EE  ,+58:05:54,+023:58:13,    3
+11356,KUUSIKU                                     ,EE  ,+58:58:23,+024:44:02,   53
+11357,NARVA                                       ,EE  ,+59:23:21,+028:06:46,   28
+11358,LAANE-NIGULA                                ,EE  ,+58:57:03,+023:48:56,   24
+11359,PARNU                                       ,EE  ,+58:23:03,+024:29:07,   12
+11360,PAKRI                                       ,EE  ,+59:23:21,+024:02:24,   23
+11361,RUHNU                                       ,EE  ,+57:46:59,+023:15:32,    2
+11362,RISTNA                                      ,EE  ,+58:55:14,+022:03:59,    7
+11363,TALLINN                                     ,EE  ,+59:23:53,+024:36:10,   33
+11364,SORVE                                       ,EE  ,+57:54:48,+022:03:28,    3
+11365,TIIRIKOJA                                   ,EE  ,+58:51:55,+026:57:07,   32
+11366,TARTU                                       ,EE  ,+58:18:00,+026:43:59,   58
+11367,TARTU-TORAVERE                              ,EE  ,+58:15:50,+026:27:41,   70
+11368,TOOMA                                       ,EE  ,+58:52:27,+026:16:19,   89
+11369,VAIKE-MAARJA                                ,EE  ,+59:08:29,+026:13:50,  121
+11370,TURI                                        ,EE  ,+58:48:30,+025:24:33,   60
+11371,VILJANDI                                    ,EE  ,+58:22:40,+025:36:01,   86
+11372,VALGA                                       ,EE  ,+57:47:24,+026:02:16,   65
+11373,VIRTSU                                      ,EE  ,+58:34:22,+023:30:48,    2
+11382,OLOT                                        ,ES  ,+42:11:17,+002:28:49,  433
+11383,LA POBLA DE SEGUR                           ,ES  ,+42:14:38,+000:58:05,  508
+11385,LES BORGES BLANQUES                         ,ES  ,+41:30:38,+000:51:23,  283
+11386,MASSOTERES                                  ,ES  ,+41:47:35,+001:18:20,  513
+11387,STORHOFDI                                   ,IS  ,+63:23:58,-020:17:17,  118
+11388,STORHOFDI (AWS)                             ,IS  ,+63:23:57,-020:17:17,  118
+11389,TEIGARHORN (AWS)                            ,IS  ,+64:40:32,-014:20:38,   20
+11733,ANDERNACH                                   ,DE  ,+50:25:24,+007:25:12,   75
+11740,BERLIN-OSTKREUZ                             ,DE  ,+52:30:00,+013:28:00,   36
+11742,COLLMBERG                                   ,DE  ,+51:18:14,+013:00:33,  314
+11748,GREIFSWALD-WIECK                            ,DE  ,+54:06:00,+013:27:00,    2
+11752,GUENZBURG                                   ,DE  ,+48:29:16,+010:15:38,  444
+11776,NEUGLOBSOW (HM)                             ,DE  ,+53:08:31,+013:01:54,   62
+11778,BALINGEN-BRONNHAUPTEN                       ,DE  ,+48:15:50,+008:48:47,  619
+11779,SCHAUENBURG-ELGERSHAUSEN                    ,DE  ,+51:16:59,+009:21:32,  317
+11780,ULM-MAEHRINGEN                              ,DE  ,+48:26:30,+009:55:17,  593
+11864,ALT RUPPIN                                  ,DE  ,+52:56:52,+012:51:42,   40
+12332,BUESUM                                      ,DE  ,+54:07:09,+008:51:29,    3
+13411,HOERNUM/SYLT                                ,DE  ,+54:46:00,+008:16:59,   10
+13572,JORK-MOORENDE                               ,DE  ,+53:30:29,+009:44:15,    1
+13709,KOBLENZ                                     ,DE  ,+50:21:06,+007:35:26,   96
+14182,MOENCHENGLADBACH-HILDERATH                  ,DE  ,+51:07:51,+006:21:38,   77
+14224,MUEHLENRADE                                 ,DE  ,+53:36:00,+010:28:59,   42
+14655,PLOEN (MAX-PLANCK-INSTITUT)                 ,DE  ,+54:09:37,+010:26:03,   26
+16319,MONT-ROIG DEL CAMP                          ,ES  ,+41:01:08,+000:56:00,   42
+16320,TIRVIA                                      ,ES  ,+42:31:04,+001:14:27,  954
+16321,PUJALT                                      ,ES  ,+41:42:57,+001:25:22,  747
+16324,OBERSIEBENBRUNN                             ,AT  ,+48:15:59,+016:42:00,  150
+16617,LLEIDA - LA FEMOSA                          ,ES  ,+41:35:04,+000:19:14,  170
+18004,RIUDECANYES                                 ,ES  ,+41:07:22,+000:58:09,  170
+18005,SANDE-GALLEBERG                             ,NO  ,+59:37:09,+010:12:54,   60
+18011,NORDNESFJELLET                              ,NO  ,+69:34:26,+020:25:31,  697
+18017,KVITHAMAR                                   ,NO  ,+63:29:17,+010:52:45,   27
+18018,TJOTTA                                      ,NO  ,+65:49:45,+012:25:32,   21
+18019,SAERHEIM                                    ,NO  ,+58:45:38,+005:39:02,   87
+18020,TROMSO - HOLT                               ,NO  ,+69:39:14,+018:54:33,   20
+18022,PASVIK - SVANVIK                            ,NO  ,+69:27:19,+030:02:27,   27
+18023,HOVRINGEN II                                ,NO  ,+61:53:17,+009:28:46,  940
+18024,GAMANJUNNI                                  ,NO  ,+69:27:29,+020:37:08, 1237
+18025,BEITOSTOLEN II                              ,NO  ,+61:15:02,+008:55:22,  965
+18026,LEBERGSFJELLET                              ,NO  ,+62:30:56,+006:52:18,  625
+18028,KVAMSKOGEN - JONSHOGDI                      ,NO  ,+60:23:18,+005:57:50,  455
+18034,TORVHAUGDALEN                               ,NO  ,+70:18:21,+029:06:01,  268
+18035,OTTA - SKANSEN                              ,NO  ,+61:46:41,+009:32:29,  309
+18040,SNOHEIM                                     ,NO  ,+62:17:44,+009:21:06, 1475
+18041,PLATABERGET III                             ,NO  ,+78:13:40,+015:22:41,  450
+18042,MIDTSTOVA                                   ,NO  ,+60:39:23,+007:16:32, 1162
+18046,MYKEN                                       ,NO  ,+66:45:46,+012:29:09,   17
+18047,LIARVATN                                    ,NO  ,+59:03:03,+006:07:15,  300
+18048,REINHAUGEN                                  ,NO  ,+70:20:08,+028:57:52,  470
+18052,TRYSIL - NORDRE KANKEN                      ,NO  ,+61:19:08,+012:11:18, 1020
+18058,ISKORAS II                                  ,NO  ,+69:18:01,+025:20:45,  591
+18060,SJUFJELLET                                  ,NO  ,+69:06:09,+019:32:39, 1020
+18062,ANSTADBLAHEIA                               ,NO  ,+68:43:05,+015:18:39,  500
+18063,LOSISTUA                                    ,NO  ,+68:11:26,+017:47:26,  740
+18064,RENA - ORNHAUGEN                            ,NO  ,+61:22:35,+011:29:57,  872
+18065,HEMSEDAL SKISENTER                          ,NO  ,+60:50:22,+008:29:48, 1344
+18070,BERGEBYDALEN                                ,NO  ,+70:13:36,+028:57:23,  150
+18072,VALNESFJORD                                 ,NO  ,+67:16:35,+015:06:06,   20
+18073,DOVRE-LANNEM                                ,NO  ,+62:01:01,+009:12:51,  560
+18074,JUVVASSHOE                                  ,NO  ,+61:40:39,+008:22:08, 1894
+18077,MYKLEBUSTFJELLET                            ,NO  ,+61:40:44,+005:12:02,  715
+18078,VALLE                                       ,NO  ,+59:11:49,+007:31:37,  308
+18079,REIPA                                       ,NO  ,+66:54:12,+013:38:45,    9
+18081,DRAMMEN - BERSKOG                           ,NO  ,+59:45:12,+010:07:24,    8
+18082,BJORLI                                      ,NO  ,+62:15:29,+008:11:59,  579
+18083,BIRTAVARRE - HOLMEN                         ,NO  ,+69:28:49,+020:52:09,   20
+18084,ROELDALSFJELLET - ELVERSHEI                 ,NO  ,+59:50:08,+006:42:38, 1370
+18085,EVENSTAD                                    ,NO  ,+61:25:32,+011:04:49,  257
+18088,ROEST LUFTHAVN                              ,NO  ,+67:31:36,+012:06:14,    4
+18090,FAGERNES LUFTHAMN                           ,NO  ,+61:00:46,+009:17:34,  822
+18091,SORTLAND                                    ,NO  ,+68:42:11,+015:24:56,    3
+18092,LILLEHAMMER - SAETHERENGEN                  ,NO  ,+61:05:30,+010:28:33,  240
+18093,FOSSMARK                                    ,NO  ,+60:31:14,+005:43:27,   10
+18095,OERSTA - EITREFJELL                         ,NO  ,+62:09:36,+006:17:16,  690
+18097,AFJORD II                                   ,NO  ,+63:58:04,+010:13:24,   30
+18098,DAGALI LUFTHAVN                             ,NO  ,+60:25:08,+008:31:35,  798
+18099,PYRAMIDEN                                   ,NO  ,+78:39:20,+016:21:37,   20
+18100,SELBU II                                    ,NO  ,+63:13:28,+011:00:27,  160
+18102,HONNEGRASNUTEN                              ,NO  ,+59:46:03,+007:49:01, 1340
+18103,HORNSUND                                    ,NO  ,+77:00:06,+015:32:08,   10
+18104,LAKSFORS                                    ,NO  ,+65:37:17,+013:17:21,   50
+18105,NORNE                                       ,NO  ,+66:01:32,+008:05:06,   33
+18106,GARTLAND                                    ,NO  ,+64:31:51,+012:23:00,   95
+18108,TANA BRU                                    ,NO  ,+70:12:43,+028:09:32,   32
+18109,SANDHAUG                                    ,NO  ,+60:10:59,+007:28:50, 1250
+18110,SANDHORNOEYA - VATVIKFJELLET                ,NO  ,+67:05:35,+014:09:59,  600
+18111,EIK - HOVE                                  ,NO  ,+58:30:24,+006:30:15,   65
+18115,HASVIK LUFTHAVN                             ,NO  ,+70:29:11,+022:08:44,    6
+18116,KLEVAVATNET                                 ,NO  ,+60:43:09,+007:12:30,  960
+18117,HOEYDALSMO II                               ,NO  ,+59:29:48,+008:11:57,  560
+18120,SVENNER FYR                                 ,NO  ,+58:58:08,+010:08:53,   15
+18121,KOTSOEY                                     ,NO  ,+62:58:35,+010:33:38,  127
+18122,LIFJELL - OEYSTEINNATTEN                    ,NO  ,+59:30:07,+008:59:00, 1102
+18125,FOLGEFONNA SKISENTER TOPP                   ,NO  ,+60:13:04,+006:25:46, 1390
+18126,TJOEME                                      ,NO  ,+59:07:14,+010:23:53,   32
+18127,FOERDE LH - BRINGELAND                      ,NO  ,+61:23:27,+005:45:36,  321
+18129,BATSFJORD - STRAUMSNESAKSLA                 ,NO  ,+70:36:10,+029:42:00,  152
+18130,PORSGRUNN - AS                              ,NO  ,+59:05:27,+009:39:36,  100
+18131,SKIBOTN II                                  ,NO  ,+69:23:15,+020:16:55,   20
+18132,KVITSOEY - NORDBOE                          ,NO  ,+59:04:14,+005:24:43,   21
+18133,TROLLHEIMEN - STORHORNET                    ,NO  ,+62:38:07,+009:23:30, 1550
+18134,BLASJOE                                     ,NO  ,+59:20:00,+006:52:54, 1105
+18135,LYNGEN - GJERDELVDALEN                      ,NO  ,+69:33:34,+020:09:06,  670
+18136,SKREDDERDALEN                               ,NO  ,+60:24:14,+005:20:08,  175
+18137,KONNERUD                                    ,NO  ,+59:42:47,+010:08:45,  193
+18139,VOSSEVANGEN                                 ,NO  ,+60:37:30,+006:25:35,   54
+18140,ROTVAER                                     ,NO  ,+68:22:05,+015:56:35,    8
+18142,TROLLEDALSEGGA                              ,NO  ,+61:53:25,+006:06:23, 1020
+18144,FEDJE                                       ,NO  ,+60:46:48,+004:43:12,   19
+18145,ADVENTDALEN                                 ,NO  ,+78:12:07,+015:49:51,   15
+18146,BYGLANDSFJORD - NESET                       ,NO  ,+58:41:11,+007:48:11,  207
+18147,OPPDAL - SAETER                             ,NO  ,+62:36:15,+009:40:00,  604
+18149,GJERSTAD JERNBANESTASJON                    ,NO  ,+58:52:12,+009:01:35,   32
+18151,MANNDALEN - VADDJA                          ,NO  ,+69:28:19,+020:31:36,   72
+18154,HYNNEKLEIV                                  ,NO  ,+58:36:02,+008:25:00,  162
+18157,KVITFJELL                                   ,NO  ,+61:27:52,+010:07:40, 1030
+18160,VERLEGENHUKEN                               ,NO  ,+80:03:33,+016:15:00,    8
+18161,SKAMDAL                                     ,NO  ,+66:14:04,+013:54:14,    5
+18165,ROGNSUNDET                                  ,NO  ,+70:24:38,+022:49:04,   18
+18166,MARSTEIN                                    ,NO  ,+62:26:44,+007:50:08,   67
+18167,STROEMTANGEN FYR                            ,NO  ,+59:09:05,+010:49:44,   10
+18170,SOLVAER III                                 ,NO  ,+66:22:14,+012:36:38,   10
+18171,KJELLER                                     ,NO  ,+59:58:14,+011:02:17,  108
+18172,JOMFRULAND                                  ,NO  ,+58:51:23,+009:34:27,    3
+18174,HITRA - SANDSTAD II                         ,NO  ,+63:31:06,+009:06:45,   13
+18175,OEKSFJORD - DEALLJA                         ,NO  ,+70:10:22,+022:20:29,  560
+18176,STORD LUFTHAVN                              ,NO  ,+59:47:35,+005:20:26,   49
+18177,HJARTASEN                                   ,NO  ,+66:29:57,+014:57:14,  251
+18181,SVEAGRUVA II                                ,NO  ,+77:54:06,+016:42:43,   50
+18182,EDGEOEYA - KAPP HEUGLIN                     ,NO  ,+78:15:02,+022:49:21,   14
+18183,VEIHOLMEN                                   ,NO  ,+63:31:06,+007:57:11,    5
+18185,HOVDEN - LUNDANE                            ,NO  ,+59:34:36,+007:23:22,  841
+18186,VEST-TORPA II                               ,NO  ,+60:56:03,+010:02:08,  542
+18189,HEMSEDAL II                                 ,NO  ,+60:51:16,+008:35:35,  604
+18190,HASVIK - SLUSKFJELLET                       ,NO  ,+70:36:24,+022:26:34,  438
+18192,MANNEN                                      ,NO  ,+62:27:20,+007:46:13, 1294
+18194,DOMBAS - NORDIGARD                          ,NO  ,+62:04:18,+009:06:52,  638
+18195,HORTEN - NYKIRKE                            ,NO  ,+59:25:41,+010:23:04,   70
+18196,KVAMSOEY                                    ,NO  ,+60:21:47,+006:16:50,   49
+18197,EIGEROEYA                                   ,NO  ,+58:26:07,+005:52:18,   49
+18198,RIHPOJAVRI                                  ,NO  ,+69:13:24,+020:34:45,  502
+18199,TYNSET - HANSMOEN                           ,NO  ,+62:16:09,+010:43:54,  482
+18200,ROALDSHORNET                                ,NO  ,+62:18:23,+006:50:56, 1050
+18201,KIRKENES LUFTHAVN                           ,NO  ,+69:43:32,+029:53:52,   89
+18202,AKSELOEYA                                   ,NO  ,+77:41:25,+014:45:47,   20
+18203,NARVIK SENTRUM                              ,NO  ,+68:26:13,+017:25:15,   31
+18204,MAJAVATN V                                  ,NO  ,+65:09:57,+013:22:00,  319
+18206,JUVFLYE - MIMISBRUNNR KLIMAPARK             ,NO  ,+61:40:26,+008:22:06, 1844
+18207,MERAKER - VARDETUN                          ,NO  ,+63:24:41,+011:43:40,  169
+18208,GROTLI III                                  ,NO  ,+62:00:57,+007:39:48,  872
+18209,HAKADAL JERNBANESTASJON                     ,NO  ,+60:07:01,+010:49:44,  170
+18210,ORKDAL - THAMSHAMN                          ,NO  ,+63:18:55,+009:50:57,    4
+18211,TRYSIL VEGSTASJON                           ,NO  ,+61:17:39,+012:16:18,  360
+18212,KVITOEYA                                    ,NO  ,+80:06:20,+031:27:51,   10
+18214,FAKKEN                                      ,NO  ,+70:06:15,+020:06:51,   57
+18216,VEGA - VALLSJOE                             ,NO  ,+65:42:06,+011:51:21,    4
+18220,SIRDAL - SINNES                             ,NO  ,+58:55:23,+006:54:34,  560
+18221,RENA FLYPLASS                               ,NO  ,+61:11:04,+011:22:28,  255
+18222,JOELSTER - KVAMSFJELLET                     ,NO  ,+61:27:25,+006:05:45,  980
+18223,ARNOEYA - TROLLTINDEN                       ,NO  ,+70:04:30,+020:25:51,  850
+18226,GULLFJELLET                                 ,NO  ,+60:22:58,+005:32:30,  345
+18227,TRONDHEIM - HOEVRINGEN                      ,NO  ,+63:26:47,+010:20:11,   44
+18228,HELLIGVAER II                               ,NO  ,+67:24:16,+013:53:44,   24
+18230,VAGSLI                                      ,NO  ,+59:45:57,+007:21:55,  821
+18232,KRAKENES                                    ,NO  ,+62:02:02,+004:59:09,   75
+18233,HALTEN FYR                                  ,NO  ,+64:10:22,+009:24:19,   16
+18234,FAGERNES                                    ,NO  ,+60:58:42,+009:13:26,  358
+18235,ANDOEYA - TROLLTINDEN                       ,NO  ,+69:14:29,+016:00:11,  436
+18236,VARDOE LUFTHAVN                             ,NO  ,+70:21:15,+031:02:38,   12
+18239,VAEROEY HELIPORT                            ,NO  ,+67:39:10,+012:43:22,    4
+18240,REKDAL                                      ,NO  ,+62:39:03,+006:45:19,   43
+18241,HOENEFOSS - HOEYBY                          ,NO  ,+60:09:59,+010:14:52,  140
+18242,BANAK                                       ,NO  ,+70:03:36,+024:59:24,    5
+18245,FJAERLAND - BREMUSEET                       ,NO  ,+61:25:23,+006:45:51,    3
+18246,SOEMNA - KVALOEYFJELLET                     ,NO  ,+65:13:12,+011:59:34,  302
+18249,GEILO - OLDEBRATEN                          ,NO  ,+60:31:48,+008:11:40,  772
+18251,DIVIDALEN II                                ,NO  ,+68:46:54,+019:42:06,  204
+18252,GJEMNES - REINSFJELLET                      ,NO  ,+62:55:48,+007:55:30,  990
+18254,KATTERAT                                    ,NO  ,+68:23:57,+017:57:57,  365
+18255,HJERKINN II                                 ,NO  ,+62:13:14,+009:32:31, 1012
+18258,KARL XII-OEYA                               ,NO  ,+80:39:11,+025:00:29,    5
+18260,KONGSOEYA                                   ,NO  ,+78:54:38,+028:53:30,   20
+18261,KAPPFJELLET                                 ,NO  ,+65:18:51,+013:26:53,  940
+18262,BOE I VESTERALEN III                        ,NO  ,+68:36:24,+014:25:59,    8
+18263,YTTEROEYANE FYR                             ,NO  ,+61:34:18,+004:40:54,   26
+18264,DRAUGEN                                     ,NO  ,+64:21:06,+007:46:45,   55
+18266,VARNTRESK                                   ,NO  ,+65:49:32,+014:11:39,  406
+18267,GULLHOLMEN                                  ,NO  ,+59:26:07,+010:34:41,   14
+18268,FOLGEFONNA SKISENTER                        ,NO  ,+60:13:35,+006:26:04, 1212
+18269,LOEKVOLLEN                                  ,NO  ,+69:32:30,+020:33:02,   14
+18271,KONGSVINGER                                 ,NO  ,+60:11:25,+012:00:24,  148
+18273,ROERVIK LUFTHAVN                            ,NO  ,+64:50:05,+011:08:26,    4
+18274,SAETERTINDEN VED TJELDSUNDET                ,NO  ,+68:35:11,+016:21:38, 1095
+18275,SOKNEDAL                                    ,NO  ,+62:57:12,+010:10:44,  299
+18279,MOSJOEEN LUFTHAVN                           ,NO  ,+65:47:03,+013:13:05,   72
+18280,KISTEFJELL                                  ,NO  ,+69:17:22,+018:07:44,  982
+18281,FINSEVATN                                   ,NO  ,+60:35:38,+007:31:36, 1210
+18282,STORFORSHEI                                 ,NO  ,+66:23:45,+014:31:48,  110
+18283,DRIVDALEN                                   ,NO  ,+62:26:49,+009:34:58,  680
+18288,HORTEN - SKOPPUM                            ,NO  ,+59:23:03,+010:23:54,   40
+18290,STRAUMSNES                                  ,NO  ,+68:25:54,+017:39:42,  200
+18292,AURSKOG II                                  ,NO  ,+59:54:42,+011:34:48,  128
+18293,ARENDAL LUFTHAVN                            ,NO  ,+58:30:56,+008:42:10,  134
+18294,SOERKAPPOEYA                                ,NO  ,+76:28:40,+016:32:56,   10
+18295,HARSTAD STADION                             ,NO  ,+68:48:10,+016:32:13,   45
+18296,GLOMFJORD - SKIHYTTA                        ,NO  ,+66:49:39,+013:56:53,  520
+18297,MORTENHALSSKOLTEN                           ,NO  ,+69:25:22,+018:37:14,  740
+18298,VEGGLI II                                   ,NO  ,+60:02:36,+009:08:48,  275
+18299,FISTER - SIGMUNDSTAD                        ,NO  ,+59:09:36,+006:02:11,   30
+18301,ROEVAER                                     ,NO  ,+59:26:17,+005:04:41,   25
+18302,OSLO - HOVIN                                ,NO  ,+59:55:23,+010:48:14,  100
+18304,LOENSDAL STASJON                            ,NO  ,+66:44:36,+015:27:46,  520
+18306,GULLINGEN SKISENTER                         ,NO  ,+59:24:46,+006:28:10,  639
+18311,VANGSNES                                    ,NO  ,+61:10:21,+006:38:43,   49
+18312,MASVIK                                      ,NO  ,+69:59:25,+018:41:38,   26
+18314,SELJELIA                                    ,NO  ,+66:07:54,+013:35:12,  126
+18316,FLISA II                                    ,NO  ,+60:36:51,+012:00:45,  185
+18317,BJOERNFJELL                                 ,NO  ,+68:25:55,+018:04:36,  512
+18321,STRYN - KROKEN                              ,NO  ,+61:54:56,+006:33:30,  208
+18322,HEMSEDAL - HOLLEKOLTEN                      ,NO  ,+60:52:14,+008:31:03,  807
+18323,SISOVATNET                                  ,NO  ,+67:20:00,+015:49:41,  665
+18324,SKABU                                       ,NO  ,+61:31:50,+009:24:07,  928
+18364,GLOMFJORD - TVERRFJELLET                    ,NO  ,+66:49:49,+013:54:24,  930
+18471,FLAM - JOASETBERGI                          ,NO  ,+60:51:45,+007:09:37,  860
+18499,EVANGER                                     ,NO  ,+60:38:48,+006:06:38,   17
+18649,GAUSTATOPPEN                                ,NO  ,+59:50:58,+008:39:21, 1804
+18685,SPOERTEGGBU                                 ,NO  ,+61:35:47,+007:23:20, 1585
+18692,STEINKJER - SOENDRE EGGE                    ,NO  ,+64:01:18,+011:26:57,    6
+18731,BINGSA                                      ,NO  ,+62:28:58,+006:23:17,   18
+18739,DRAG - AJLUOKTA                             ,NO  ,+68:02:49,+016:05:02,   19
+18756,MOSJOEEN - MOSAL                            ,NO  ,+65:51:05,+013:11:42,    4
+18777,BARENTSBURG                                 ,SJ  ,+78:03:16,+014:13:30,   40
+18785,LINDESNES FYR                               ,NO  ,+57:58:58,+007:02:52,   13
+18799,ALNA                                        ,NO  ,+59:55:37,+010:50:07,   90
+18836,LANGOEYTANGEN FYR                           ,NO  ,+58:59:30,+009:45:24,    6
+18840,ROEST II                                    ,NO  ,+67:30:23,+012:04:33,   10
+18883,HAUKELISETER BROEYTESTASJON                 ,NO  ,+59:49:08,+007:12:33, 1019
+18894,EIDFJORD - BU                               ,NO  ,+60:28:01,+006:51:38,  117
+18896,SLAGENTANGEN II                             ,NO  ,+59:19:00,+010:31:00,    3
+18903,BODOE LUFTHAVN TEST                         ,NO  ,+67:16:01,+014:21:32,   11
+18917,BJOERNEVATN                                 ,NO  ,+69:37:14,+030:00:25,  180
+18918,ALTA LUFTHAVN - TEST                        ,NO  ,+69:58:59,+023:22:00,    3
+18932,REBBENESOEY - GRAHAUGEN                     ,NO  ,+69:59:58,+018:42:19,  174
+18939,SENJA - LAUKHELLA                           ,NO  ,+69:14:03,+017:54:02,    9
+18953,SKODJE                                      ,NO  ,+62:30:00,+006:40:59,   26
+18971,FLATNESET                                   ,NO  ,+69:25:27,+017:18:47,   60
+18989,ROEST III                                   ,NO  ,+67:31:30,+012:06:14,    4
+18991,BERGEN - FREDRIKSBERG                       ,NO  ,+60:23:48,+005:18:30,   41
+19001,ANDOEYA LH - TEST                           ,NO  ,+69:15:47,+016:10:48,   13
+19011,FUGLOEYKALVEN FYR                           ,NO  ,+70:19:00,+020:09:18,   37
+19034,LYNGDAL I NUMEDAL                           ,NO  ,+59:54:30,+009:31:24,  288
+19046,BARDUFOSS - TEST                            ,NO  ,+69:03:32,+018:32:25,   76
+19054,FOERDE - TEFRE                              ,NO  ,+61:27:52,+005:55:15,   64
+19056,FORNEBU                                     ,NO  ,+59:53:34,+010:36:56,   10
+19077,SKALMEN FYR                                 ,NO  ,+63:28:01,+007:45:29,   13
+19115,HELLISOEY FYR                               ,NO  ,+60:45:10,+004:42:38,   20
+19143,STEINKJER - FINNMARKA                       ,NO  ,+64:01:28,+011:29:13,    6
+19295,BASURA                                      ,NO  ,+59:38:08,+006:05:13,  568
+19952,LEBESBY - KARLMYHR                          ,NO  ,+70:34:53,+026:59:38,   18
+20049,MYRKDALEN-ONDRAHAUGEN                       ,NO  ,+60:51:37,+006:28:03,  853
+20056,REINDALSPASSET                              ,NO  ,+78:03:52,+017:02:39,  181
+20059,JANSSONHAUGEN VEST                          ,NO  ,+78:10:48,+016:24:36,  250
+20062,NORDLI - SANDVIKA                           ,NO  ,+64:27:33,+013:35:52,  420
+20063,SKARDSBOEFJELLET                            ,NO  ,+61:13:00,+007:01:05,  713
+20066,HAUKELISETER TESTFELT                       ,NO  ,+59:48:42,+007:12:51,  990
+20656,ITASMOBAWS1                                 ,NO  ,+59:56:57,+010:42:54,  121
+20660,GAMANJUNNI - 1100MOH                        ,NO  ,+69:28:50,+020:34:12, 1100
+21764,BRUSDALEN                                   ,NO  ,+62:29:04,+006:28:46,   69
+21771,ISTJOERNDALEN                               ,SJ  ,+78:00:33,+015:12:38,  188
+21950,TROMSOE LH - STORKJOELEN                    ,NO  ,+69:43:59,+018:47:15,  790
+21951,NEDRE SASSENDALEN                           ,SJ  ,+78:19:53,+016:40:54,   13
+21952,KLAUVA                                      ,SJ  ,+78:18:01,+018:13:28,  480
+21956,DAUGAVPILS                                  ,LV  ,+55:52:10,+026:37:03,   97
+21960,RIGA LU                                     ,LV  ,+56:57:16,+024:06:16,    2
+21962,SALDUS                                      ,LV  ,+56:42:37,+022:25:36,  121
+22073,ALSFELD                                     ,DE  ,+50:45:20,+009:15:29,  305
+22074,BAD AROLSEN-VOLKHARDINGHAUSEN               ,DE  ,+51:19:18,+009:03:20,  365
+22075,DOERRMOSCHEL-FELSBERGERHOF                  ,DE  ,+49:36:06,+007:44:29,  442
+22076,DOGERN                                      ,DE  ,+47:36:09,+008:10:10,  309
+22078,HALLIG HOOGE                                ,DE  ,+54:34:27,+008:30:47,    4
+22079,KANDERN-GUPF                                ,DE  ,+47:42:00,+007:35:21,  362
+22080,WAGING AM SEE-SCHNOEBLING                   ,DE  ,+47:57:32,+012:46:18,  470
+22081,LAUTERTAL-HOERGENAU                         ,DE  ,+50:34:50,+009:17:08,  522
+22082,NEUMARKT-HOEHENBERG                         ,DE  ,+49:16:17,+011:29:17,  584
+22083,NORTHEIM-STOECKHEIM                         ,DE  ,+51:45:07,+009:56:42,  109
+22084,PERL-SINZ-RENGLISCHBERG                     ,DE  ,+49:31:17,+006:26:51,  407
+22085,ROTH BEI PRUEM                              ,DE  ,+50:18:16,+006:23:09,  593
+22086,STIMPFACH-WEIPERTSHOFEN                     ,DE  ,+49:05:16,+010:07:26,  450
+22087,STRUCKLAHNUNGSHOERN                         ,DE  ,+54:29:47,+008:48:24,    7
+22088,SUEPPLINGEN                                 ,DE  ,+52:13:54,+010:55:12,  129
+22089,BAD-REUTE WALDSEE                           ,DE  ,+47:55:00,+009:42:27,  576
+22090,WALLDUERN                                   ,DE  ,+49:34:44,+009:23:51,  404
+22091,WEILHEIM-BIERBRONNEN                        ,DE  ,+47:40:49,+008:11:47,  771
+22092,FRANKENBERG-GEISMAR                         ,DE  ,+51:04:50,+008:52:36,  392
+22093,PUTLOS                                      ,DE  ,+54:18:57,+010:48:01,    5
+22094,SPIEKEROOG (SWN)                            ,DE  ,+53:46:03,+007:40:19,   14
+22095,ALTMUEHLSEE                                 ,DE  ,+49:08:31,+010:43:48,  416
+22096,DARSSER ORT (SWN)                           ,DE  ,+54:28:26,+012:30:05,    4
+22097,GAILINGEN                                   ,DE  ,+47:42:06,+008:43:54,  450
+22098,BASTORF-KAEGSDORF (SWN)                     ,DE  ,+54:07:55,+011:40:18,   51
+22099,LINDAU (SWN)                                ,DE  ,+47:32:22,+009:41:03,  397
+22100,MITTENWALD/OBB.                             ,DE  ,+47:25:42,+011:15:42,  923
+22101,RECHLIN                                     ,DE  ,+53:19:51,+012:42:54,   62
+22102,SIPPLINGEN (SWN)                            ,DE  ,+47:48:27,+009:06:12,  703
+22103,RUTHENSTROM                                 ,DE  ,+53:43:10,+009:25:09,    7
+22104,VOGTAREUTH (KLAERANLAGE)                    ,DE  ,+47:57:18,+012:10:24,  464
+22110,BRANDENBURG/HAVEL                           ,DE  ,+52:25:22,+012:34:00,   31
+22111,OBERZENT-BEERFELDEN-VOGELHERD               ,DE  ,+49:33:21,+008:58:00,  443
+22112,AUBSTADT                                    ,DE  ,+50:19:59,+010:26:54,  304
+22113,BIRKELBACH                                  ,DE  ,+51:00:39,+008:16:23,  541
+22114,WINTERBACH/REMSTAL                          ,DE  ,+48:48:20,+009:30:16,  244
+22115,LANGQUAID-OBERSCHNEIDHART                   ,DE  ,+48:51:38,+012:01:55,  378
+22116,GUETERSLOH/EMS                              ,DE  ,+51:55:32,+008:18:39,   70
+22117,ESCHWEGE-ELTMANNSHAUSEN                     ,DE  ,+51:11:39,+009:59:18,  250
+22118,BAD-SALMUENSTER SODEN (KLAERANLAGE)         ,DE  ,+50:16:08,+009:21:29,  145
+22119,HALTERN (WASSERWERK)                        ,DE  ,+51:44:03,+007:11:58,   41
+22120,ROTTHALMUENSTER (LANDWIRTSCHAFTSAMT)        ,DE  ,+48:21:42,+013:11:38,  388
+22121,ARNSBERG-MUESCHEDE                          ,DE  ,+51:24:32,+008:00:33,  278
+22122,NEUWIED-FELDKIRCHEN-HUELLENBERG             ,DE  ,+50:27:06,+007:24:20,  199
+22123,HAAREN                                      ,DE  ,+51:33:25,+008:42:06,  379
+22124,ERGERSHEIM-NEUHERBERG                       ,DE  ,+49:31:12,+010:17:07,  380
+22125,SUKOW-LEVITZOW                              ,DE  ,+53:49:41,+012:35:36,   12
+22126,XANTEN (WASSERWERK)                         ,DE  ,+51:40:49,+006:26:06,   18
+22127,WUPPERTAL                                   ,DE  ,+51:15:11,+007:12:56,  327
+22128,HALBLECH-BAYERNIEDERHOFEN                   ,DE  ,+47:37:28,+010:48:27,  808
+22129,FRASDORF-GREIMELBERG                        ,DE  ,+47:49:08,+012:17:44,  656
+22130,HEILBRONN/NECKAR                            ,DE  ,+49:07:32,+009:08:34,  215
+22131,HINTERSCHMIDING-SONNDORF                    ,DE  ,+48:49:32,+013:35:31,  717
+22132,GROSSPOSTWITZ-DENKWITZ                      ,DE  ,+51:08:04,+014:26:03,  278
+22133,OBER-OLM/BELLEM                             ,DE  ,+49:57:10,+008:12:38,  216
+22134,SEMBACH                                     ,DE  ,+49:30:15,+007:51:42,  316
+22135,HASENKRUG-HARDEBEK                          ,DE  ,+54:00:14,+009:51:19,   13
+22426,DONAUESCHINGEN (LANDEPLATZ)                 ,DE  ,+47:58:24,+008:31:14,  680
+22427,HELGOLAND-DUENE                             ,DE  ,+54:11:09,+007:54:42,    4
+22428,RODING-WETTERFELD                           ,DE  ,+49:13:09,+012:32:09,  373
+22430,WIELENBACH                                  ,DE  ,+47:53:04,+011:09:14,  541
+22435,KVADEHUKEN II                               ,SJ  ,+78:57:47,+011:20:51,    5
+22436,KAFFIOEYRA                                  ,SJ  ,+78:39:24,+011:55:35,   15
+22439,VIELHA-ELIPORT                              ,ES  ,+42:41:48,+000:48:06, 1027
+22469,ECHTERNACH                                  ,LU  ,+49:48:10,+006:26:35,  243
+22471,ESCHDORF                                    ,LU  ,+49:52:45,+005:56:12,  524
+22475,GREVENMACHER                                ,LU  ,+49:40:50,+006:26:06,  190
+22478,MERL                                        ,LU  ,+49:36:46,+006:05:30,  307
+22479,OBERCORN                                    ,LU  ,+49:30:42,+005:54:02,  378
+22482,REMICH                                      ,LU  ,+49:32:42,+006:21:19,  207
+22483,REULER                                      ,LU  ,+50:03:42,+006:02:17,  492
+22490,USELDANGE                                   ,LU  ,+49:46:00,+005:58:03,  280
+22491,WALDBILLIG                                  ,LU  ,+49:47:53,+006:16:37,  315
+22622,SIRDAL Âˆ’ SMOELEHEIKNUDEN                  ,NO  ,+58:54:39,+006:48:39,  920
+22730,SILSTRUP                                    ,DK  ,+56:55:48,+008:38:27,   42
+22733,TYLSTRUP                                    ,DK  ,+57:11:07,+009:57:10,   13
+22734,STENHOEJ                                    ,DK  ,+57:22:58,+010:20:06,   54
+22745,HVIDE SANDE                                 ,DK  ,+56:00:25,+008:08:29,    2
+22748,ARS SYD                                     ,DK  ,+56:45:20,+009:30:24,   31
+22752,SLETTERHAGE FYR                             ,DK  ,+56:05:44,+010:30:48,    4
+22753,ARHUS SYD                                   ,DK  ,+56:04:49,+010:08:07,   53
+22757,ROEMOE - JUVRE                              ,DK  ,+55:11:25,+008:33:36,    6
+22768,ASSENS - TOROE                              ,DK  ,+55:14:39,+009:53:17,    1
+22770,TYSTOFTE                                    ,DK  ,+55:14:47,+011:19:42,   12
+22771,LANGOE                                      ,DK  ,+54:49:14,+010:59:38,    2
+22772,ABED                                        ,DK  ,+54:49:39,+011:19:45,    7
+22774,VINDEBAEK KYST                              ,DK  ,+54:52:44,+012:11:03,    3
+22775,GEDSER                                      ,DK  ,+54:34:06,+011:56:36,    3
+22779,HOLBAEK FLYVEPLADS                          ,DK  ,+55:44:08,+011:36:12,   11
+22785,GNIBEN                                      ,DK  ,+56:00:29,+011:16:42,   14
+22786,ROSKILDE LUFTHAVN                           ,DK  ,+55:35:12,+012:08:12,   42
+22787,TESSEBOELLE                                 ,DK  ,+55:23:44,+012:08:56,   20
+22791,NEXOE VEST                                  ,DK  ,+55:03:20,+015:05:43,   23
+23863,JAEGERSBORG                                 ,DK  ,+55:45:59,+012:31:35,   40
+23887,GUMPOLDSKIRCHEN                             ,AT  ,+48:02:08,+016:16:50,  212
+23888,KAPFENBERG-FLUGFELD                         ,AT  ,+47:27:29,+015:20:08,  515
+23889,HORN -  WASSERWERK                          ,AT  ,+48:40:28,+015:38:36,  308
+23890,ACHENKIRCH                                  ,AT  ,+47:30:27,+011:42:02,  937
+23891,GASCHURN                                    ,AT  ,+46:58:49,+010:01:54,  985
+23892,KLAGENFURT/HTL1-LASTENSTRASSE               ,AT  ,+46:37:09,+014:19:00,  441
+23893,ROHRBACH                                    ,AT  ,+48:34:01,+014:00:15,  613
+23894,ANDAU                                       ,AT  ,+47:46:12,+017:02:07,  117
+23895,LITSCHAU                                    ,AT  ,+48:57:16,+015:02:17,  558
+23896,LITSCHAU                                    ,AT  ,+48:58:00,+015:01:59,  570
+23898,PFAFFENSCHLAG                               ,AT  ,+48:54:00,+015:16:59,  573
+23900,JAPONS                                      ,AT  ,+48:47:30,+015:34:17,  520
+23901,SCHOENFELD                                  ,AT  ,+48:46:59,+015:25:00,  585
+23902,RAABS/THAYA                                 ,AT  ,+48:50:53,+015:30:06,  458
+23903,RETZ                                        ,AT  ,+48:45:59,+015:57:00,  242
+23904,RETZ                                        ,AT  ,+48:45:12,+015:57:00,  256
+23905,RETZ/WINDMUEHLE                             ,AT  ,+48:45:39,+015:56:30,  320
+23906,UNTERRETZBACH                               ,AT  ,+48:46:05,+015:59:53,  243
+23908,KOLLERSCHLAG                                ,AT  ,+48:36:21,+013:50:24,  725
+23909,ROHRBACH                                    ,AT  ,+48:33:59,+014:00:00,  602
+23910,ROHRBACH                                    ,AT  ,+48:34:09,+013:59:38,  597
+23911,FREISTADT                                   ,AT  ,+48:30:59,+014:30:00,  548
+23912,FREISTADT                                   ,AT  ,+48:30:20,+014:30:20,  549
+23913,FREISTADT                                   ,AT  ,+48:29:39,+014:30:23,  539
+23914,KARLSTIFT                                   ,AT  ,+48:35:58,+014:45:00,  934
+23917,WEITRA                                      ,AT  ,+48:41:52,+014:53:56,  580
+23918,WEITRA                                      ,AT  ,+48:42:06,+014:53:53,  572
+23919,SCHWARZENAU                                 ,AT  ,+48:44:47,+015:15:59,  500
+23922,STIFT ZWETTL                                ,AT  ,+48:36:59,+015:12:00,  506
+23923,STIFT ZWETTL                                ,AT  ,+48:37:04,+015:12:11,  502
+23925,HORN                                        ,AT  ,+48:40:00,+015:39:00,  315
+23928,HORN                                        ,AT  ,+48:40:13,+015:39:11,  318
+23929,GARS/KAMP                                   ,AT  ,+48:35:43,+015:40:04,  267
+23930,HOLLABRUNN/SCHOENGRABERN NORD               ,AT  ,+48:36:15,+016:03:42,  253
+23932,SCHOENGRABERN                               ,AT  ,+48:36:11,+016:03:41,  253
+23937,LAA/THAYA                                   ,AT  ,+48:43:33,+016:23:07,  187
+23938,LAA/TH.KLAERANLAGE                          ,AT  ,+48:43:51,+016:23:22,  184
+23939,OBERLEIS                                    ,AT  ,+48:33:33,+016:22:12,  420
+23940,MISTELBACH AN DER ZAYA                      ,AT  ,+48:34:59,+016:34:59,  230
+23941,MISTELBACH                                  ,AT  ,+48:34:14,+016:36:33,  191
+23942,POYSDORF                                    ,AT  ,+48:40:00,+016:37:59,  208
+23944,POYSDORF-OST                                ,AT  ,+48:40:09,+016:38:15,  198
+23945,WILFERSDORF                                 ,AT  ,+48:34:59,+016:38:58,  192
+23946,HOHENAU/MARCH                               ,AT  ,+48:37:00,+016:54:15,  155
+23947,HOHENAU                                     ,AT  ,+48:36:59,+016:54:15,  154
+23948,REICHERSBERG                                ,AT  ,+48:19:51,+013:22:32,  351
+23949,SCHAERDING                                  ,AT  ,+48:27:51,+013:26:03,  307
+23950,WAIZENKIRCHEN                               ,AT  ,+48:19:36,+013:51:51,  400
+23951,WAIZENKIRCHEN                               ,AT  ,+48:19:36,+013:51:51,  400
+23952,ASCHACH                                     ,AT  ,+48:22:59,+014:00:59,  282
+23953,LINZ/STADT                                  ,AT  ,+48:17:58,+014:16:59,  263
+23954,LINZ-STADT                                  ,AT  ,+48:17:47,+014:17:06,  262
+23955,REICHENAU-OOE.                              ,AT  ,+48:27:24,+014:20:51,  685
+23956,OBERNEUKIRCHEN                              ,AT  ,+48:28:00,+014:15:00,  800
+23957,LINZ-MUSEUMSTR.                             ,AT  ,+48:18:59,+014:19:00,  260
+23959,LINZ/PETRIUM                                ,AT  ,+48:17:58,+014:15:59,  304
+23962,ALLERHEILIGEN                               ,AT  ,+48:18:15,+014:38:21,  542
+23963,PABNEUKIRCHEN                               ,AT  ,+48:19:08,+014:49:09,  595
+23964,BAD ZELL                                    ,AT  ,+48:21:18,+014:39:47,  554
+23965,KOENIGSWIESEN                               ,AT  ,+48:24:29,+014:50:17,  608
+23967,ZILLECK                                     ,AT  ,+48:24:00,+014:58:59,  880
+23968,BAERNKOPF                                   ,AT  ,+48:23:26,+015:00:10,  969
+23969,GUTENBRUNN-MARTINSBERG                      ,AT  ,+48:22:59,+015:09:00,  810
+23972,JAUERLING                                   ,AT  ,+48:20:13,+015:20:53,  860
+23973,KREMS                                       ,AT  ,+48:25:05,+015:37:18,  207
+23974,LANGENLEBARN                                ,AT  ,+48:19:26,+016:07:04,  175
+23975,WIEN-STREBERSDORF                           ,AT  ,+48:17:58,+016:22:59,  169
+23976,BRAUNAU/RANSHOFEN                           ,AT  ,+48:13:27,+013:01:41,  382
+23977,OSTERMIETHING                               ,AT  ,+48:03:10,+012:49:54,  412
+23978,MATTIGHOFEN                                 ,AT  ,+48:06:59,+013:09:00,  451
+23979,MATTIGHOFEN                                 ,AT  ,+48:05:48,+013:09:02,  460
+23980,RIED IM INNKREIS                            ,AT  ,+48:13:01,+013:28:30,  427
+23981,GALLSPACH                                   ,AT  ,+48:12:00,+013:49:00,  400
+23982,WOLFSEGG                                    ,AT  ,+48:06:20,+013:40:32,  634
+23983,WOLFSEGG                                    ,AT  ,+48:06:20,+013:40:14,  635
+23984,VOECKLABRUCK                                ,AT  ,+48:00:24,+013:38:43,  432
+23985,LAMBACH                                     ,AT  ,+48:05:47,+013:52:00,  360
+23986,WELS-SCHLEISSHEIM                           ,AT  ,+48:09:45,+014:04:17,  309
+23987,HOERSCHING                                  ,AT  ,+48:14:07,+014:11:17,  298
+23988,KREMSMUENSTER                               ,AT  ,+48:03:19,+014:07:54,  383
+23990,ENNS                                        ,AT  ,+48:13:00,+014:28:59,  317
+23991,STEYR                                       ,AT  ,+48:01:59,+014:25:59,  336
+23992,STEYR-STADTGUT                              ,AT  ,+48:03:59,+014:25:59,  309
+23993,WACHTBERG/STEYR                             ,AT  ,+48:02:52,+014:27:42,  392
+23994,WACHTBERG BEI STEYR                         ,AT  ,+48:02:51,+014:27:38,  384
+23995,ENNS                                        ,AT  ,+48:11:44,+014:27:00,  317
+23997,AMSTETTEN-GIESSHUEBL                        ,AT  ,+48:05:58,+014:54:00,  318
+23998,AMSTETTEN                                   ,AT  ,+48:06:59,+014:52:00,  328
+24003,AMSTETTEN                                   ,AT  ,+48:06:32,+014:53:42,  266
+24004,YBBS/PERSENBEUG                             ,AT  ,+48:10:59,+015:04:00,  231
+24005,MELK                                        ,AT  ,+48:12:33,+015:21:15,  240
+24006,OBERNDORF/MELK                              ,AT  ,+48:03:50,+015:12:55,  297
+24007,OBERNDORF/MELK                              ,AT  ,+48:03:45,+015:12:50,  295
+24008,MELK                                        ,AT  ,+48:12:33,+015:19:51,  307
+24009,WIESELBURG                                  ,AT  ,+48:07:37,+015:08:48,  259
+24010,PETZENKIRCHEN                               ,AT  ,+48:09:00,+015:09:00,  252
+24011,ST.POELTEN/HESSERKASERNE                    ,AT  ,+48:12:00,+015:37:00,  272
+24014,ST.POELTEN/WALLSEERER STRASSE               ,AT  ,+48:11:39,+015:37:18,  277
+24015,ST.POELTEN/LANDHAUS                         ,AT  ,+48:11:57,+015:37:50,  273
+24016,TRAISEN                                     ,AT  ,+48:01:59,+015:37:00,  340
+24017,ESCHENAU/TRAISEN                            ,AT  ,+48:02:58,+015:34:59,  520
+24018,LILIENFELD                                  ,AT  ,+48:00:59,+015:34:59,  582
+24019,LILIENFELD-TARSCHBERG                       ,AT  ,+48:01:41,+015:35:15,  696
+24020,HAINFELD/KASBERG                            ,AT  ,+48:04:03,+015:48:20,  600
+24021,ALTENMARKT/TRIESTING                        ,AT  ,+48:00:59,+016:00:00,  397
+24022,KLAUSEN-LEOPOLDSDORF                        ,AT  ,+48:05:18,+016:00:06,  389
+24024,KOHLREIT                                    ,AT  ,+48:10:13,+015:55:59,  501
+24025,KOHLREITHBERG                               ,AT  ,+48:10:32,+015:56:07,  490
+24026,BUCHBERG                                    ,AT  ,+48:12:48,+015:56:42,  460
+24028,WIEN-JUBILAEUMSWARTE                        ,AT  ,+48:13:14,+016:15:55,  450
+24029,WIEN-MARIABRUNN                             ,AT  ,+48:12:00,+016:13:59,  226
+24030,WIEN-MARIABRUNN                             ,AT  ,+48:12:24,+016:13:45,  225
+24031,WIEN/SCHOENBRUNN                            ,AT  ,+48:10:00,+016:19:00,  232
+24034,WIEN ALTE UNIV.(STERNW)                     ,AT  ,+48:13:00,+016:22:00,  175
+24035,WIEN/UNTERLAA                               ,AT  ,+48:07:30,+016:25:09,  200
+24037,GROSS-ENZERSDORF                            ,AT  ,+48:12:00,+016:34:00,  153
+24038,MUENCHENDORF                                ,AT  ,+48:01:59,+016:23:58,  184
+24039,SCHWECHAT                                   ,AT  ,+48:07:03,+016:34:51,  183
+24040,FUCHSENBIGL                                 ,AT  ,+48:11:30,+016:44:53,  149
+24041,BRUCKNEUDORF                                ,AT  ,+48:00:46,+016:50:40,  165
+24043,SALZBURG-FREISAAL                           ,AT  ,+47:47:26,+013:03:15,  419
+24044,IRRSDORF                                    ,AT  ,+47:58:24,+013:16:23,  570
+24048,MONDSEE                                     ,AT  ,+47:51:59,+013:21:00,  488
+24049,THALHAM                                     ,AT  ,+47:55:59,+013:28:59,  539
+24050,EBENSEE                                     ,AT  ,+47:48:36,+013:47:26,  424
+24051,FEUERKOGEL                                  ,AT  ,+47:48:59,+013:43:04, 1618
+24052,GMUNDEN                                     ,AT  ,+47:55:00,+013:46:59,  424
+24053,ALTMUENSTER                                 ,AT  ,+47:52:44,+013:46:23,  438
+24054,MICHELDORF                                  ,AT  ,+47:52:59,+014:08:03,  459
+24055,WEYER                                       ,AT  ,+47:51:59,+014:40:00,  410
+24056,WAIDHOFEN/YBBS                              ,AT  ,+47:58:00,+014:45:59,  365
+24057,WAIDHOFEN/YBBS                              ,AT  ,+47:57:14,+014:45:18,  421
+24058,LUNZ                                        ,AT  ,+47:50:58,+015:00:00,  612
+24059,GOESTLING/YBBS                              ,AT  ,+47:48:37,+014:55:53,  527
+24060,LUNZ AM SEE                                 ,AT  ,+47:51:15,+015:04:03,  612
+24062,MARIAZELL                                   ,AT  ,+47:45:59,+015:19:00,  875
+24063,MARIAZELL                                   ,AT  ,+47:45:59,+015:19:00,  865
+24064,ST.SEBASTIAN/MARIAZELL                      ,AT  ,+47:47:35,+015:18:11,  872
+24065,MARIAZELL/ST.SEBASTIAN-FLUGFELD             ,AT  ,+47:47:20,+015:18:06,  864
+24067,SCHWARZAU/GEBIRGE                           ,AT  ,+47:48:11,+015:42:10,  612
+24068,PUCHBERG/SCHNEEBERG                         ,AT  ,+47:47:25,+015:54:33,  580
+24069,PUCHBERG                                    ,AT  ,+47:46:59,+015:55:00,  590
+24071,HOHE WAND/HOCHKOGELHAUS                     ,AT  ,+47:49:19,+016:02:06,  936
+24072,WR.NEUSTADT - FOHLENHOF                     ,AT  ,+47:47:58,+016:15:59,  270
+24073,WR.NEUSTADT-FLUGPL.                         ,AT  ,+47:50:25,+016:13:17,  285
+24074,WR.NEUSTADT/FLUGPLATZ                       ,AT  ,+47:49:54,+016:13:51,  275
+24075,WR.NEUSTADT - REBANLAGE                     ,AT  ,+47:47:47,+016:15:59,  272
+24077,GUTENSTEIN/MARIAHILFBERG                    ,AT  ,+47:52:15,+015:52:32,  708
+24078,BERNDORF                                    ,AT  ,+47:56:21,+016:06:02,  337
+24079,EISENSTADT                                  ,AT  ,+47:50:58,+016:30:59,  210
+24080,EISENSTADT                                  ,AT  ,+47:50:58,+016:30:59,  195
+24081,EISENSTADT-NORDOST                          ,AT  ,+47:51:15,+016:32:17,  184
+24082,SEIBERSDORF                                 ,AT  ,+47:58:59,+016:30:59,  183
+24083,ILLMITZ                                     ,AT  ,+47:46:14,+016:46:06,  117
+24084,NEUSIEDL AM SEE                             ,AT  ,+47:57:00,+016:52:00,  133
+24085,NEUSIEDL AM SEE                             ,AT  ,+47:57:00,+016:51:00,  140
+24086,NEUSIEDL AM SEE                             ,AT  ,+47:57:02,+016:50:30,  148
+24087,PODERSDORF                                  ,AT  ,+47:51:57,+016:50:03,  116
+24088,ANDAU  ALT                                  ,AT  ,+47:46:19,+017:01:59,  118
+24089,SULZBERG                                    ,AT  ,+47:31:18,+009:54:51, 1015
+24090,VILS                                        ,AT  ,+47:33:59,+010:36:00,  835
+24093,OBERNDORF/EBBS                              ,AT  ,+47:36:59,+012:12:00,  474
+24094,KOESSEN                                     ,AT  ,+47:39:45,+012:23:36,  588
+24096,LOFERER ALM                                 ,AT  ,+47:35:52,+012:38:44, 1619
+24097,HALLEIN                                     ,AT  ,+47:40:59,+013:06:00,  450
+24098,ABTENAU                                     ,AT  ,+47:33:59,+013:20:35,  709
+24099,BAD ISCHL                                   ,AT  ,+47:43:00,+013:37:54,  469
+24100,KRIPPENSTEIN                                ,AT  ,+47:30:59,+013:42:00, 2050
+24101,AIGEN/ENNSTAL                               ,AT  ,+47:31:57,+014:08:17,  641
+24103,ADMONT-KAISERAU                             ,AT  ,+47:32:58,+014:27:59, 1120
+24104,ADMONT/STIFT                                ,AT  ,+47:34:59,+014:27:00,  648
+24105,HIEFLAU                                     ,AT  ,+47:35:58,+014:45:00,  492
+24106,HIEFLAU                                     ,AT  ,+47:35:39,+014:44:16,  779
+24107,MOOSLANDL                                   ,AT  ,+47:38:49,+014:45:41,  530
+24111,PRAEBICHL                                   ,AT  ,+47:31:18,+014:57:14, 1215
+24112,KINDBERG                                    ,AT  ,+47:30:14,+015:26:52,  567
+24113,MUERZZUSCHLAG                               ,AT  ,+47:36:10,+015:41:08,  700
+24114,RAX/SEILBAHNBERGSTATION                     ,AT  ,+47:43:01,+015:46:41, 1547
+24115,SEMMERING                                   ,AT  ,+47:37:59,+015:49:41,  988
+24116,SEMMERING/SUEDBAHN-HOTEL                    ,AT  ,+47:37:59,+015:49:59, 1000
+24118,MOENICHKIRCHEN                              ,AT  ,+47:30:39,+016:01:59,  991
+24119,MOENICHKIRCHEN                              ,AT  ,+47:30:00,+016:02:58,  980
+24121,BREITENSTEIN                                ,AT  ,+47:39:48,+015:50:08,  825
+24122,REICHENAU/RAX                               ,AT  ,+47:41:57,+015:50:12,  488
+24123,POTTSCHACH                                  ,AT  ,+47:42:05,+016:00:29,  415
+24124,POTTSCHACH                                  ,AT  ,+47:42:02,+016:00:28,  416
+24125,HIRSCHENKOGEL                               ,AT  ,+47:37:23,+015:49:59, 1318
+24126,ASPANG                                      ,AT  ,+47:33:06,+016:05:33,  498
+24127,WIESMATH                                    ,AT  ,+47:35:53,+016:17:12,  700
+24128,ASPANG                                      ,AT  ,+47:32:58,+016:06:00,  498
+24129,ASPANG                                      ,AT  ,+47:34:30,+016:06:05,  454
+24130,OBERPULLENDORF                              ,AT  ,+47:30:00,+016:30:00,  240
+24131,MATTERSBURG                                 ,AT  ,+47:44:40,+016:23:20,  283
+24132,DEUTSCHKREUTZ                               ,AT  ,+47:36:37,+016:37:58,  192
+24133,BREGENZ                                     ,AT  ,+47:30:00,+009:45:00,  436
+24134,BREGENZ                                     ,AT  ,+47:29:57,+009:44:44,  424
+24135,BREGENZ                                     ,AT  ,+47:29:57,+009:44:44,  424
+24136,FRAXERN                                     ,AT  ,+47:18:54,+009:40:23,  809
+24137,FRAXERN                                     ,AT  ,+47:18:51,+009:40:27,  807
+24138,FUSSACH                                     ,AT  ,+47:28:59,+009:40:00,  400
+24139,FELDKIRCH                                   ,AT  ,+47:15:59,+009:36:00,  439
+24140,DORNBIRN                                    ,AT  ,+47:25:55,+009:43:31,  407
+24141,FELDKIRCH                                   ,AT  ,+47:16:14,+009:36:33,  438
+24144,ALBERSCHWENDE                               ,AT  ,+47:27:27,+009:50:53,  715
+24145,ROHRSPITZ                                   ,AT  ,+47:29:49,+009:37:48,  395
+24146,SCHOPPERNAU                                 ,AT  ,+47:18:38,+010:01:05,  835
+24147,HITTISAU                                    ,AT  ,+47:27:00,+009:57:00,  790
+24148,SCHOPPERNAU                                 ,AT  ,+47:18:41,+010:01:03,  839
+24149,HITTISAU                                    ,AT  ,+47:27:46,+009:57:11,  792
+24150,SCHROECKEN                                  ,AT  ,+47:15:46,+010:05:07, 1263
+24151,SCHROECKEN                                  ,AT  ,+47:15:41,+010:05:08, 1244
+24152,WARTH                                       ,AT  ,+47:15:20,+010:11:08, 1478
+24153,WARTH                                       ,AT  ,+47:15:24,+010:11:07, 1475
+24155,MITTELBERG                                  ,AT  ,+47:19:23,+010:09:09, 1204
+24156,HOLZGAU                                     ,AT  ,+47:15:45,+010:20:57, 1100
+24157,HOLZGAU                                     ,AT  ,+47:15:45,+010:20:30, 1080
+24158,HOLZGAU                                     ,AT  ,+47:15:27,+010:20:17, 1092
+24159,TANNHEIM                                    ,AT  ,+47:30:01,+010:30:20, 1100
+24160,REUTTE                                      ,AT  ,+47:30:00,+010:45:00,  870
+24161,REUTTE                                      ,AT  ,+47:29:39,+010:42:55,  841
+24162,REUTTE                                      ,AT  ,+47:29:40,+010:42:55,  850
+24163,EHRWALD                                     ,AT  ,+47:24:00,+010:55:00,  998
+24164,EHRWALD                                     ,AT  ,+47:24:24,+010:55:41, 1030
+24165,EHRWALD                                     ,AT  ,+47:24:16,+010:55:13,  960
+24166,EHRWALD                                     ,AT  ,+47:24:15,+010:55:12,  982
+24167,SEEFELD                                     ,AT  ,+47:19:59,+011:10:00, 1200
+24169,SEEFELD                                     ,AT  ,+47:19:27,+011:10:31, 1181
+24170,INNSBRUCK-FLUGPLATZ                         ,AT  ,+47:15:30,+011:21:19,  579
+24171,INNSBRUCK-UNIV.                             ,AT  ,+47:15:37,+011:23:06,  577
+24173,INNSBRUCK-FLUGPLATZ                         ,AT  ,+47:15:34,+011:21:24,  578
+24174,HAFELEKAR                                   ,AT  ,+47:18:59,+011:22:59, 2261
+24175,JENBACH                                     ,AT  ,+47:22:59,+011:45:00,  530
+24176,JENBACH                                     ,AT  ,+47:23:20,+011:45:29,  530
+24177,ROTHOLZ                                     ,AT  ,+47:23:17,+011:48:00,  543
+24178,JENBACH                                     ,AT  ,+47:23:22,+011:45:19,  530
+24179,PERTISAU                                    ,AT  ,+47:26:35,+011:42:02,  936
+24182,ALPBACH                                     ,AT  ,+47:23:48,+011:56:25,  929
+24183,ALPBACH                                     ,AT  ,+47:23:47,+011:56:26,  930
+24188,KITZBUEHEL                                  ,AT  ,+47:26:38,+012:23:21,  772
+24194,HAHNENKAMM-EHRENBACHHOEHE                   ,AT  ,+47:25:05,+012:21:33, 1793
+24198,SAALBACH                                    ,AT  ,+47:23:16,+012:38:53,  975
+24199,SCHMITTENHOEHE                              ,AT  ,+47:19:41,+012:44:16, 1956
+24208,PUSTERWALD                                  ,AT  ,+47:18:29,+014:22:31, 1070
+24209,SECKAU                                      ,AT  ,+47:16:59,+014:46:59,  874
+24210,ST.MICHAEL B. LEOBEN                        ,AT  ,+47:20:08,+015:00:18,  570
+24211,BRUCK/MUR                                   ,AT  ,+47:25:00,+015:15:59,  489
+24212,KAPFENBERG                                  ,AT  ,+47:26:44,+015:17:53,  504
+24213,FROHNLEITEN                                 ,AT  ,+47:15:19,+015:18:54,  421
+24214,BERNSTEIN                                   ,AT  ,+47:24:18,+016:15:37,  600
+24219,LAZ                                         ,AT  ,+47:10:59,+009:49:00,  900
+24221,MUTTERSBERG                                 ,AT  ,+47:10:50,+009:49:30, 1384
+24222,VANDANS                                     ,AT  ,+47:05:21,+009:51:51,  670
+24223,ST.ANTON AM ARLBERG                         ,AT  ,+47:08:09,+010:16:13, 1298
+24225,LANGEN AM ARLBERG                           ,AT  ,+47:08:04,+010:07:27, 1270
+24226,LANDECK                                     ,AT  ,+47:07:59,+010:34:00,  818
+24227,HOCHSERFAUS                                 ,AT  ,+47:01:59,+010:36:00, 1815
+24228,IMST                                        ,AT  ,+47:14:56,+010:44:26,  860
+24229,RIED IN TIROL                               ,AT  ,+47:02:58,+010:39:00,  826
+24230,HAIMING                                     ,AT  ,+47:15:29,+010:52:45,  663
+24231,KUEHTAI                                     ,AT  ,+47:12:29,+011:00:47, 1970
+24232,ST.LEONHARD-NEURUR                          ,AT  ,+47:01:18,+010:51:51, 1462
+24233,UMHAUSEN                                    ,AT  ,+47:08:21,+010:55:44, 1035
+24234,BRENNER                                     ,AT  ,+47:00:19,+011:30:47, 1445
+24236,PATSCHERKOFEL                               ,AT  ,+47:12:32,+011:27:42, 2251
+24237,RINN                                        ,AT  ,+47:14:57,+011:30:14,  924
+24238,SCHMIRN                                     ,AT  ,+47:05:13,+011:34:48, 1464
+24239,MAYRHOFEN                                   ,AT  ,+47:09:00,+011:51:00,  643
+24240,MAYRHOFEN                                   ,AT  ,+47:09:33,+011:51:01,  643
+24241,KRIMML                                      ,AT  ,+47:13:59,+012:10:59, 1062
+24242,RUDOLFSHUETTE                               ,AT  ,+47:07:59,+012:37:00, 2304
+24243,SCHNEIDERAU                                 ,AT  ,+47:12:00,+012:36:00, 1041
+24244,KALS                                        ,AT  ,+47:00:00,+012:39:00, 1347
+24245,KALS                                        ,AT  ,+47:00:11,+012:38:44, 1338
+24247,SONNBLICK                                   ,AT  ,+47:03:14,+012:57:27, 3109
+24248,KOLM SAIGURN                                ,AT  ,+47:04:09,+012:59:03, 1626
+24249,BAD GASTEIN                                 ,AT  ,+47:06:59,+013:07:59, 1100
+24250,BAD HOFGASTEIN                              ,AT  ,+47:10:18,+013:06:20,  850
+24251,OBERTAUERN                                  ,AT  ,+47:14:56,+013:33:33, 1772
+24252,ST.MICHAEL/LUNGAU                           ,AT  ,+47:05:42,+013:37:54, 1049
+24253,TAMSWEG                                     ,AT  ,+47:06:59,+013:48:00, 1019
+24254,TAMSWEG                                     ,AT  ,+47:07:27,+013:48:36, 1012
+24255,KATSCHBERG                                  ,AT  ,+47:03:37,+013:36:51, 1635
+24256,OBERWOELZ                                   ,AT  ,+47:12:02,+014:16:58,  810
+24259,NEUMARKT                                    ,AT  ,+47:04:59,+014:25:00,  881
+24261,NEUMARKT                                    ,AT  ,+47:04:09,+014:25:28,  869
+24262,LOBMING                                     ,AT  ,+47:02:35,+015:10:41,  414
+24263,GRAZ-FLUGHAFEN                              ,AT  ,+46:58:50,+015:26:24,  340
+24264,GRAZ-MESSENDORFBERG                         ,AT  ,+47:02:48,+015:29:21,  435
+24265,GRAZ-UNIVERSITAET                           ,AT  ,+47:04:46,+015:26:52,  366
+24267,GRAZ/STRASSGANG                             ,AT  ,+47:02:45,+015:24:36,  357
+24268,SCHOECKL                                    ,AT  ,+47:11:54,+015:28:05, 1436
+24269,SCHOECKL                                    ,AT  ,+47:11:54,+015:27:59, 1443
+24271,GLEISDORF                                   ,AT  ,+47:06:47,+015:42:38,  375
+24272,GLEISDORF                                   ,AT  ,+47:06:55,+015:42:28,  377
+24273,WEIZ                                        ,AT  ,+47:13:06,+015:38:07,  465
+24275,FUERSTENFELD                                ,AT  ,+47:01:51,+016:04:54,  271
+24276,FUERSTENFELD                                ,AT  ,+47:01:50,+016:04:50,  271
+24277,GUESSING                                    ,AT  ,+47:03:59,+016:19:59,  240
+24278,GERERSDORF B.GUESSING                       ,AT  ,+47:04:18,+016:14:13,  280
+24279,GUESSING                                    ,AT  ,+47:03:45,+016:19:18,  215
+24280,WOERTERBERG                                 ,AT  ,+47:13:36,+016:05:53,  400
+24281,WOERTERBERG                                 ,AT  ,+47:13:33,+016:05:47,  404
+24282,KLEINZICKEN                                 ,AT  ,+47:12:27,+016:20:08,  265
+24283,KLEINZICKEN                                 ,AT  ,+47:13:00,+016:19:59,  267
+24284,OBERVERMUNT                                 ,AT  ,+46:55:00,+010:04:59, 2040
+24285,PARTENEN                                    ,AT  ,+46:58:00,+010:03:00, 1028
+24286,GARGELLEN                                   ,AT  ,+46:58:00,+009:55:00, 1474
+24288,GALTUER                                     ,AT  ,+46:58:05,+010:11:07, 1587
+24289,GALTUER                                     ,AT  ,+46:57:51,+010:11:21, 1615
+24290,ISCHGL-IDALPE                               ,AT  ,+46:58:54,+010:19:01, 2323
+24291,NAUDERS                                     ,AT  ,+46:54:00,+010:30:00, 1360
+24293,NAUDERS                                     ,AT  ,+46:53:26,+010:29:48, 1330
+24294,OBERGURGL                                   ,AT  ,+46:52:03,+011:01:37, 1938
+24295,OBERGURGL                                   ,AT  ,+46:52:00,+011:01:27, 1941
+24296,VENT                                        ,AT  ,+46:51:59,+010:55:59, 1908
+24298,PITZTALER GLETSCHER                         ,AT  ,+46:55:36,+010:52:45, 2863
+24299,BRUNNENKOGEL                                ,AT  ,+46:54:45,+010:51:42, 3437
+24300,ST.JAKOB/DEF.                               ,AT  ,+46:55:00,+012:21:15, 1385
+24301,ST.JAKOB/DEF.                               ,AT  ,+46:55:00,+012:21:14, 1383
+24303,LIENZ                                       ,AT  ,+46:49:31,+012:48:23,  661
+24304,DOELLACH-SAGRITZ                            ,AT  ,+46:57:29,+012:54:11, 1071
+24305,DOELLACH                                    ,AT  ,+46:57:29,+012:54:09, 1071
+24306,DOELLACH/MOELLTAL                           ,AT  ,+46:58:00,+012:54:00, 1024
+24307,ISELSBERG                                   ,AT  ,+46:51:20,+012:51:28, 1190
+24308,KOLBNITZ                                    ,AT  ,+46:52:22,+013:18:42,  603
+24309,OBERVELLACH                                 ,AT  ,+46:55:59,+013:13:59,  778
+24310,OBERVELLACH                                 ,AT  ,+46:56:06,+013:11:39,  688
+24311,LITZLHOF                                    ,AT  ,+46:49:59,+013:25:59,  580
+24312,RADENTHEIN                                  ,AT  ,+46:46:59,+013:42:00,  685
+24313,FLATTNITZ                                   ,AT  ,+46:56:26,+014:02:08, 1437
+24315,FRIESACH                                    ,AT  ,+46:57:18,+014:25:12,  634
+24316,SILBEREGG                                   ,AT  ,+46:50:58,+014:30:00,  598
+24317,ST.VEIT/GLAN                                ,AT  ,+46:45:34,+014:20:44,  475
+24318,PREITENEGG                                  ,AT  ,+46:55:59,+014:55:00, 1055
+24321,BAD GLEICHENBERG                            ,AT  ,+46:52:19,+015:54:11,  269
+24322,FELDBACH                                    ,AT  ,+46:56:56,+015:52:46,  323
+24323,SILLIAN                                     ,AT  ,+46:45:00,+012:25:00, 1080
+24324,VORHEGG                                     ,AT  ,+46:40:39,+012:58:18, 1020
+24325,LAAS                                        ,AT  ,+46:40:59,+012:58:59,  800
+24326,LAAS                                        ,AT  ,+46:40:59,+012:58:59,  891
+24327,REISACH                                     ,AT  ,+46:38:53,+013:09:14,  646
+24329,HERMAGOR                                    ,AT  ,+46:36:33,+013:29:30,  562
+24330,BAD BLEIBERG                                ,AT  ,+46:36:59,+013:40:59,  904
+24331,BAD BLEIBERG                                ,AT  ,+46:37:30,+013:41:20,  907
+24332,BAD BLEIBERG                                ,AT  ,+46:37:31,+013:41:03,  908
+24334,VILLACHER ALPE                              ,AT  ,+46:36:11,+013:40:23, 2140
+24335,VILLACHER ALPE                              ,AT  ,+46:36:11,+013:40:22, 2117
+24336,KANZELHOEHE                                 ,AT  ,+46:40:40,+013:54:24, 1526
+24337,KANZELHOEHE                                 ,AT  ,+46:40:37,+013:54:06, 1520
+24338,KANZELHOEHE                                 ,AT  ,+46:40:00,+013:54:00, 1477
+24339,ARRIACH                                     ,AT  ,+46:43:40,+013:51:09,  890
+24340,VELDEN                                      ,AT  ,+46:36:59,+014:01:59,  535
+24342,VILLACH/SEEBACH                             ,AT  ,+46:37:00,+013:52:39,  492
+24343,VILLACH/MARIA GAIL                          ,AT  ,+46:35:58,+013:52:59,  504
+24345,VILLACH                                     ,AT  ,+46:36:59,+013:52:00,  495
+24346,FERLACH                                     ,AT  ,+46:31:57,+014:18:11,  474
+24348,FERLACH                                     ,AT  ,+46:31:51,+014:18:51,  459
+24351,KLAGENFURT-FLUGPLATZ                        ,AT  ,+46:39:00,+014:19:59,  447
+24353,KLAGENFURT-FLUGHAFEN                        ,AT  ,+46:38:53,+014:19:05,  450
+24354,RUPERTIBERG                                 ,AT  ,+46:33:59,+014:06:00,  715
+24355,FEISTRITZ/ROSENTAL                          ,AT  ,+46:31:59,+014:09:00,  466
+24356,FELDKIRCHEN                                 ,AT  ,+46:43:18,+014:05:48,  546
+24357,HOEHENBERGEN-TAINACH                        ,AT  ,+46:38:16,+014:33:00,  437
+24359,HOCHOBIR                                    ,AT  ,+46:30:00,+014:28:59, 2041
+24360,ST.MICHAEL/BLEIBURG                         ,AT  ,+46:34:59,+014:45:00,  500
+24364,VOELKERMARKT                                ,AT  ,+46:40:00,+014:37:59,  465
+24367,FEISTRITZ OB BLEIBURG                       ,AT  ,+46:33:30,+014:45:59,  532
+24368,ST.PAUL/LAVANTTAL                           ,AT  ,+46:42:00,+014:52:00,  384
+24369,WIEL                                        ,AT  ,+46:44:45,+015:07:45,  928
+24370,BAD RADKERSBURG                             ,AT  ,+46:42:00,+015:58:59,  208
+24372,BAD RADKERSBURG                             ,AT  ,+46:41:08,+015:58:45,  209
+24373,LOIBL-TUNNEL                                ,AT  ,+46:26:39,+014:15:00, 1098
+24374,BAD EISENKAPPEL                             ,AT  ,+46:29:25,+014:35:35,  623
+24375,BAD EISENKAPPEL                             ,AT  ,+46:28:59,+014:36:00,  605
+24376,SEEFELD                                     ,AT  ,+47:19:40,+011:10:41, 1198
+24377,VOELKERMARKT-GOLDBRUNNHOF                   ,AT  ,+46:40:14,+014:38:21,  466
+24378,REICHERSBERG/STIFT                          ,AT  ,+48:19:59,+013:22:00,  335
+24379,JAUERLING/ORF                               ,AT  ,+48:20:03,+015:20:21,  955
+24380,JOCHING                                     ,AT  ,+48:23:09,+015:27:33,  212
+24383,KREMS                                       ,AT  ,+48:25:05,+015:37:18,  202
+24384,KREMS                                       ,AT  ,+48:25:00,+015:36:00,  223
+24385,LANGENLOIS                                  ,AT  ,+48:28:21,+015:41:48,  207
+24386,ZWERNDORF                                   ,AT  ,+48:20:16,+016:49:51,  144
+24387,GAENSERNDORF-STADT                          ,AT  ,+48:20:15,+016:42:48,  163
+24388,STOCKERAU                                   ,AT  ,+48:23:48,+016:11:31,  203
+24392,LANGENLEBARN                                ,AT  ,+48:19:27,+016:07:09,  175
+24393,WIEN/STAMMERSDORF                           ,AT  ,+48:18:20,+016:24:20,  191
+24394,WOLKERSDORF                                 ,AT  ,+48:22:49,+016:30:27,  185
+24395,SCHLEINBACH                                 ,AT  ,+48:34:59,+016:25:59,  199
+24399,RANSHOFEN                                   ,AT  ,+48:13:00,+013:01:59,  382
+24400,FELDKIRCHEN/MATTIGHOFEN                     ,AT  ,+48:04:59,+013:03:00,  528
+24401,BRUNN AM GEBIRGE                            ,AT  ,+48:06:24,+016:16:12,  290
+24402,BADEN                                       ,AT  ,+48:00:41,+016:14:08,  244
+24403,GUMPOLDSKIRCHEN                             ,AT  ,+48:01:59,+016:16:59,  222
+24405,WIEN-HOHE WARTE                             ,AT  ,+48:14:53,+016:21:21,  198
+24406,WIEN FAVORITEN                              ,AT  ,+48:11:35,+016:22:14,  177
+24407,WIEN-UNTERLAA                               ,AT  ,+48:07:37,+016:25:21,  200
+24408,WIEN-INNERE STADT                           ,AT  ,+48:11:53,+016:22:00,  177
+24409,WIEN-HOHE WARTE HANNHUETTE                  ,AT  ,+48:14:53,+016:21:20,  198
+24410,WIEN HOHE WARTE (MIT 21 UHR TERMINEN)       ,AT  ,+48:14:08,+016:21:06,  202
+24411,GROSS-ENZERSDORF                            ,AT  ,+48:11:57,+016:33:32,  154
+24412,GARS/KAMP                                   ,AT  ,+48:35:30,+015:42:00,  273
+24414,FISCHAMEND                                  ,AT  ,+48:05:53,+016:36:47,  159
+24416,SALZBURG-FREISAAL                           ,AT  ,+47:47:26,+013:03:09,  420
+24417,SALZBURG                                    ,AT  ,+47:47:53,+013:02:48,  424
+24418,SALZBURG/LEHRERSEMINAR                      ,AT  ,+47:46:59,+013:01:59,  419
+24419,MATTSEE                                     ,AT  ,+47:58:00,+013:06:00,  525
+24420,MATTSEE                                     ,AT  ,+47:58:36,+013:06:20,  502
+24424,WEYREGG                                     ,AT  ,+47:54:21,+013:34:03,  469
+24425,WEISSENKIRCHEN                              ,AT  ,+47:57:00,+013:25:00,  650
+24426,KOETSCHACH-MAUTHEN                          ,AT  ,+46:40:33,+012:59:53,  705
+24427,FEUERKOGEL                                  ,AT  ,+47:49:04,+013:43:05, 1618
+24428,KORNAT                                      ,AT  ,+46:41:17,+012:53:21, 1047
+24429,GMUNDEN                                     ,AT  ,+47:54:51,+013:48:27,  424
+24430,LENZING                                     ,AT  ,+47:58:59,+013:37:00,  466
+24431,SILLIAN                                     ,AT  ,+46:44:45,+012:25:23, 1081
+24432,SILLIAN                                     ,AT  ,+46:45:00,+012:25:00, 1100
+24433,GRUENAU                                     ,AT  ,+47:51:50,+013:57:02,  540
+24435,TERNBERG                                    ,AT  ,+47:57:15,+014:21:14,  350
+24436,REICHRAMING                                 ,AT  ,+47:52:59,+014:28:59,  380
+24437,GROSSRAMING/KRAFTWERK                       ,AT  ,+47:53:35,+014:31:03,  379
+24438,BAD GLEICHENBERG                            ,AT  ,+46:51:59,+015:54:06,  303
+24439,DEUTSCHLANDSBERG                            ,AT  ,+46:49:18,+015:13:36,  354
+24440,DEUTSCHLANDSBERG                            ,AT  ,+46:48:59,+015:12:59,  380
+24441,WOLFSBERG-REDING                            ,AT  ,+46:49:59,+014:51:00,  440
+24442,PREITENEGG                                  ,AT  ,+46:56:17,+014:54:54, 1034
+24443,ST.ANDRAE/LAVANTTAL                         ,AT  ,+46:45:51,+014:49:40,  403
+24444,ST.ANDRAE-WINKLING                          ,AT  ,+46:46:59,+014:48:00,  468
+24445,ST.VEIT/GLAN                                ,AT  ,+46:44:20,+014:23:07,  463
+24446,ST.VEIT/GLAN                                ,AT  ,+46:45:51,+014:21:38,  475
+24447,WEITENSFELD                                 ,AT  ,+46:50:57,+014:11:26,  704
+24448,WEITENSFELD                                 ,AT  ,+46:50:39,+014:11:47,  705
+24451,REISSECK                                    ,AT  ,+46:55:59,+013:22:00, 2252
+24452,GMUEND                                      ,AT  ,+46:54:10,+013:32:02,  738
+24453,SPITTAL/DRAU                                ,AT  ,+46:47:25,+013:29:13,  542
+24454,SPITTAL/DRAU                                ,AT  ,+46:46:28,+013:32:08,  524
+24455,MILLSTATT-KLEINDOMBRA                       ,AT  ,+46:47:58,+013:34:59,  754
+24456,OBERVELLACH                                 ,AT  ,+46:55:44,+013:13:23,  809
+24457,PITTEN                                      ,AT  ,+47:42:00,+016:07:59,  338
+24458,NEUDORF/LANDSEE                             ,AT  ,+47:33:46,+016:22:53,  429
+24460,NEUSIEDL AM SEE                             ,AT  ,+47:56:33,+016:51:28,  135
+24461,HALLSTATT                                   ,AT  ,+47:32:58,+013:39:00,  525
+24462,AIGEN/ENNSTAL                               ,AT  ,+47:31:59,+014:07:59,  640
+24463,ADMONT                                      ,AT  ,+47:34:22,+014:27:24,  648
+24464,ADMONT-MOORWIRTSCHAFT                       ,AT  ,+47:34:59,+014:27:00,  620
+24468,HALL/ADMONT                                 ,AT  ,+47:35:39,+014:29:26,  637
+24469,ROTTENMANN                                  ,AT  ,+47:30:28,+014:25:49,  707
+24470,KIRCHDORF/TIROL                             ,AT  ,+47:33:57,+012:27:47,  636
+24471,KOESSEN                                     ,AT  ,+47:39:46,+012:23:36,  589
+24472,UNKEN                                       ,AT  ,+47:39:46,+012:44:34,  545
+24473,LOFER                                       ,AT  ,+47:34:51,+012:41:30,  629
+24474,LOFER/ORT                                   ,AT  ,+47:35:03,+012:41:43,  622
+24475,DUERRNBERG                                  ,AT  ,+47:40:00,+013:04:59,  801
+24476,GOLLING                                     ,AT  ,+47:35:26,+013:10:53,  490
+24477,JAPONS                                      ,AT  ,+48:47:30,+015:34:17,  520
+24478,KOLLERSCHLAG                                ,AT  ,+48:36:10,+013:50:21,  714
+24479,ALLENTSTEIG-KAUFHOLZ                        ,AT  ,+48:40:59,+015:22:00,  596
+24480,ALLENTSTEIG                                 ,AT  ,+48:41:26,+015:22:00,  599
+24481,HOLLABRUNN/SCHOENGRABERN                    ,AT  ,+48:36:59,+016:02:58,  245
+24483,LEISER BERGE                                ,AT  ,+48:33:30,+016:22:17,  457
+24484,REICHERSBERG                                ,AT  ,+48:20:09,+013:22:12,  350
+24486,REICHENAU/MUEHLKREIS                        ,AT  ,+48:27:33,+014:20:43,  689
+24487,LANGENLOIS                                  ,AT  ,+48:28:00,+015:42:00,  210
+24488,GAENSERNDORF                                ,AT  ,+48:18:41,+016:41:12,  163
+24489,RIED IM INNKREIS                            ,AT  ,+48:13:00,+013:28:59,  435
+24490,GALLSPACH                                   ,AT  ,+48:12:34,+013:48:41,  368
+24493,RANDEGG                                     ,AT  ,+48:00:30,+014:58:59,  363
+24494,ST.POELTEN/KOPALKASERNE                     ,AT  ,+48:10:49,+015:36:38,  285
+24495,BADEN                                       ,AT  ,+48:00:59,+016:13:59,  260
+24496,GUMPOLDSKIRCHEN                             ,AT  ,+48:02:25,+016:16:55,  219
+24497,BRUCKNEUDORF/HEIDEHOF                       ,AT  ,+48:00:51,+016:50:47,  167
+24498,MATTSEE                                     ,AT  ,+47:58:00,+013:06:00,  508
+24499,MONDSEE                                     ,AT  ,+47:50:52,+013:22:08,  491
+24500,KIRCHDORF/KREMS                             ,AT  ,+47:53:57,+014:07:50,  445
+24501,WEYER                                       ,AT  ,+47:51:27,+014:40:00,  428
+24502,WAIDHOFEN/YBBS-ZENTRUM                      ,AT  ,+47:57:28,+014:47:03,  365
+24503,PUCHBERG/SCHNEEBERG                         ,AT  ,+47:47:25,+015:54:24,  583
+24504,BERNDORF                                    ,AT  ,+47:56:27,+016:06:19,  339
+24505,SEIBERSDORF                                 ,AT  ,+47:58:33,+016:30:16,  185
+24507,FRIESACH                                    ,AT  ,+46:57:29,+014:24:20,  640
+24508,ST.ANDRAE/LAVANTTAL                         ,AT  ,+46:45:59,+014:49:00,  430
+24510,BAD GLEICHENBERG                            ,AT  ,+46:51:59,+015:54:00,  303
+24511,VILLACH/VASSACH                             ,AT  ,+46:37:59,+013:51:00,  533
+24512,VILLACH-STADT                               ,AT  ,+46:37:05,+013:52:26,  493
+24516,BAD RADKERSBURG                             ,AT  ,+46:41:31,+015:59:35,  207
+24517,LOIBL/TUNNEL                                ,AT  ,+46:26:38,+014:14:56, 1097
+24518,ANDAU                                       ,AT  ,+47:46:59,+017:01:59,  118
+24520,SULZBERG                                    ,AT  ,+47:31:18,+009:54:51, 1016
+24521,ACHENKIRCH                                  ,AT  ,+47:31:59,+011:42:00,  905
+24522,ACHENKIRCH                                  ,AT  ,+47:31:55,+011:42:18,  904
+24523,KIRCHBICHL                                  ,AT  ,+47:30:56,+012:05:12,  498
+24524,KUFSTEIN                                    ,AT  ,+47:34:26,+012:09:50,  492
+24525,KUFSTEIN                                    ,AT  ,+47:34:31,+012:09:46,  490
+24526,ST.KOLOMAN                                  ,AT  ,+47:39:06,+013:13:57, 1000
+24527,ABTENAU                                     ,AT  ,+47:33:51,+013:20:53,  714
+24529,ST.WOLFGANG                                 ,AT  ,+47:43:59,+013:27:00,  575
+24531,BAD ISCHL                                   ,AT  ,+47:42:54,+013:36:56,  480
+24534,BAD ISCHL                                   ,AT  ,+47:42:21,+013:38:49,  507
+24535,SCHOENBERGALM                               ,AT  ,+47:31:59,+013:42:59, 1350
+24536,BAD AUSSEE                                  ,AT  ,+47:36:37,+013:45:29,  743
+24537,PRAEBICHL                                   ,AT  ,+47:30:59,+014:57:00, 1215
+24538,MUERZZUSCHLAG                               ,AT  ,+47:36:06,+015:40:22,  705
+24539,REICHENAU/RAX                               ,AT  ,+47:42:00,+015:51:00,  485
+24541,HOCHFILZEN                                  ,AT  ,+47:28:12,+012:37:14,  960
+24542,HOCHFILZEN                                  ,AT  ,+47:28:12,+012:37:14,  962
+24545,BISCHOFSHOFEN                               ,AT  ,+47:24:23,+013:13:14,  550
+24546,NEUMARKTER SATTEL                           ,AT  ,+47:04:14,+014:25:31, 1125
+24547,NEUMARKT                                    ,AT  ,+47:04:59,+014:25:59,  842
+24548,MURAU                                       ,AT  ,+47:06:38,+014:10:36,  816
+24549,STOLZALPE                                   ,AT  ,+47:07:22,+014:11:17, 1291
+24550,STOLZALPE                                   ,AT  ,+47:06:59,+014:12:00, 1305
+24551,KRAKAUEBENE                                 ,AT  ,+47:11:17,+013:57:10, 1312
+24552,OBERWOELZ                                   ,AT  ,+47:12:06,+014:17:12,  842
+24553,FLATTNITZ                                   ,AT  ,+46:56:39,+014:02:06, 1438
+24554,TAMSWEG                                     ,AT  ,+47:07:59,+013:48:29, 1025
+24555,TAMSWEG                                     ,AT  ,+47:07:27,+013:48:36, 1025
+24556,TAMSWEG                                     ,AT  ,+47:06:59,+013:48:00, 1012
+24558,TAMSWEG                                     ,AT  ,+47:06:59,+013:49:59, 1024
+24559,ST.MICHAEL/LUNGAU                           ,AT  ,+47:05:39,+013:37:22, 1052
+24560,ST.MICHAEL IM LUNGAU                        ,AT  ,+47:05:58,+013:39:00, 1094
+24561,BISCHOFSHOFEN-BUCHBERG                      ,AT  ,+47:24:00,+013:12:59,  733
+24569,RADSTADT-TANDALIER                          ,AT  ,+47:22:48,+013:26:26,  835
+24572,BAD GASTEIN/BOECKSTEIN                      ,AT  ,+47:05:33,+013:07:14, 1100
+24573,BAD HOFGASTEIN                              ,AT  ,+47:09:42,+013:06:28,  842
+24574,BAD GASTEIN                                 ,AT  ,+47:06:59,+013:07:59, 1082
+24575,BAD GASTEIN                                 ,AT  ,+47:06:37,+013:07:59, 1092
+24577,HEILIGENBLUT                                ,AT  ,+47:01:59,+012:50:48, 1242
+24580,RAURIS                                      ,AT  ,+47:13:59,+013:00:00,  943
+24581,RAURIS                                      ,AT  ,+47:13:23,+012:59:33,  933
+24582,RAURIS                                      ,AT  ,+47:13:00,+013:00:00,  945
+24583,KALS                                        ,AT  ,+47:00:16,+012:38:47, 1352
+24585,RUDOLFSHUETTE/WEISSSEE                      ,AT  ,+47:07:59,+012:37:59, 2315
+24586,MOOSERBODEN                                 ,AT  ,+47:09:00,+012:42:59, 2036
+24587,ENZINGERBODEN                               ,AT  ,+47:10:00,+012:37:59, 1480
+24589,KRIMML                                      ,AT  ,+47:13:45,+012:10:54, 1009
+24590,KRIMML                                      ,AT  ,+47:13:48,+012:10:59, 1000
+24592,ZELL AM ZILLER                              ,AT  ,+47:13:59,+011:53:52,  585
+24593,MAYRHOFEN                                   ,AT  ,+47:09:43,+011:51:05,  640
+24594,STEINACH/TIROL                              ,AT  ,+47:04:59,+011:27:59, 1025
+24595,RINN                                        ,AT  ,+47:15:00,+011:30:06,  895
+24596,RINN                                        ,AT  ,+47:14:56,+011:29:03,  900
+24597,PATSCHERKOFEL                               ,AT  ,+47:12:33,+011:27:42, 2247
+24601,BRENNER                                     ,AT  ,+47:00:24,+011:30:38, 1412
+24602,BRENNER                                     ,AT  ,+47:00:00,+011:30:59, 1450
+24603,NEUSTIFT/MILDERS                            ,AT  ,+47:06:10,+011:17:30, 1007
+24604,UMHAUSEN                                    ,AT  ,+47:08:15,+010:56:00, 1041
+24605,ST.LEONHARD/PITZTAL                         ,AT  ,+47:01:36,+010:51:56, 1454
+24606,PIOESMES                                    ,AT  ,+47:02:58,+010:52:00, 1410
+24607,HAIMING                                     ,AT  ,+47:15:59,+010:52:00,  660
+24608,HAIMING                                     ,AT  ,+47:15:34,+010:53:21,  659
+24609,OBERZEIRING                                 ,AT  ,+47:15:16,+014:29:44,  933
+24610,HAIMING                                     ,AT  ,+47:15:00,+010:51:00,  695
+24611,PRUTZ                                       ,AT  ,+47:03:59,+010:40:00,  870
+24612,IMST                                        ,AT  ,+47:14:12,+010:44:30,  773
+24613,TRIEBEN                                     ,AT  ,+47:28:59,+014:30:00,  708
+24615,IMST                                        ,AT  ,+47:14:08,+010:44:30,  785
+24616,LANDECK                                     ,AT  ,+47:08:25,+010:33:47,  796
+24618,LANGEN AM ARLBERG                           ,AT  ,+47:07:54,+010:07:23, 1221
+24619,VALLUGA                                     ,AT  ,+47:09:27,+010:12:46, 2805
+24620,GALZIG                                      ,AT  ,+47:07:46,+010:13:49, 2079
+24622,ST.ANTON AM ARLBERG                         ,AT  ,+47:07:53,+010:15:59, 1304
+24623,ST.ANTON AM ARLBERG                         ,AT  ,+47:07:54,+010:16:12, 1289
+24625,SCHLINS                                     ,AT  ,+47:12:00,+009:42:00,  519
+24626,BRAND                                       ,AT  ,+47:06:10,+009:44:17, 1029
+24627,BLUDENZ                                     ,AT  ,+47:10:00,+009:49:00,  567
+24630,BLUDENZ                                     ,AT  ,+47:08:31,+009:50:08,  575
+24631,BLUDENZ                                     ,AT  ,+47:08:52,+009:49:45,  571
+24632,BUERS                                       ,AT  ,+47:08:44,+009:49:59,  567
+24633,LUTZMANNSBURG                               ,AT  ,+47:27:55,+016:38:43,  201
+24635,GLASHUETTEN                                 ,AT  ,+47:22:54,+016:23:00,  421
+24636,BERNSTEIN                                   ,AT  ,+47:24:29,+016:15:41,  631
+24637,BERNSTEIN                                   ,AT  ,+47:24:00,+016:15:00,  615
+24638,KROISEGG                                    ,AT  ,+47:22:42,+016:02:31,  444
+24639,HARTBERG                                    ,AT  ,+47:16:50,+015:58:41,  330
+24640,ALTENBERG/HARTBERG                          ,AT  ,+47:15:24,+016:01:53,  429
+24641,BIRKFELD                                    ,AT  ,+47:21:59,+015:40:59,  623
+24642,RECHBERG                                    ,AT  ,+47:15:46,+015:24:59,  926
+24643,LEOBEN                                      ,AT  ,+47:22:41,+015:05:12,  544
+24644,KALWANG                                     ,AT  ,+47:25:00,+014:43:59,  753
+24645,KALWANG                                     ,AT  ,+47:25:17,+014:45:33,  744
+24647,SECKAU                                      ,AT  ,+47:16:14,+014:46:41,  872
+24648,BRUCK/MUR                                   ,AT  ,+47:24:20,+015:14:57,  482
+24649,BRUCK/MUR                                   ,AT  ,+47:24:20,+015:15:02,  480
+24650,WAIDHOFEN/YBBS                              ,AT  ,+47:56:44,+014:48:33,  384
+24651,NEUSIEDL AM SEE                             ,AT  ,+47:56:56,+016:49:42,  117
+24652,ACHENKIRCH CAMPINGPLATZ                     ,AT  ,+47:29:57,+011:42:24,  931
+24653,KORNAT                                      ,AT  ,+46:41:06,+012:53:20,  990
+24654,DORNBIRN                                    ,AT  ,+47:25:55,+009:43:31,  407
+24655,SEMMERING                                   ,AT  ,+47:37:50,+015:49:40, 1000
+24657,DACHSTEIN-HUNERKOGEL                        ,AT  ,+47:28:03,+013:37:35, 2700
+24658,DACHSTEIN-SCHLADMING GLETSCHER              ,AT  ,+47:28:27,+013:37:57, 2520
+24659,MITTERSILL                                  ,AT  ,+47:16:45,+012:29:44,  783
+24660,POERTSCHACH                                 ,AT  ,+46:37:50,+014:09:54,  450
+24661,WIEN-DONAUFELD                              ,AT  ,+48:15:24,+016:25:53,  160
+24662,MONDSEE                                     ,AT  ,+47:51:02,+013:20:48,  481
+24663,RUDOLFSHUETTE                               ,AT  ,+47:08:04,+012:37:32, 2317
+24664,AIGEN/ENNSTAL                               ,AT  ,+47:31:57,+014:08:17,  641
+24665,ALLENTSTEIG                                 ,AT  ,+48:41:26,+015:22:00,  599
+24666,AMSTETTEN                                   ,AT  ,+48:06:32,+014:53:42,  266
+24668,BAD BLEIBERG                                ,AT  ,+46:37:31,+013:41:03,  908
+24669,BAD GASTEIN                                 ,AT  ,+47:06:37,+013:07:59, 1092
+24670,BAD GLEICHENBERG                            ,AT  ,+46:52:19,+015:54:11,  269
+24671,BAD RADKERSBURG                             ,AT  ,+46:41:31,+015:59:35,  207
+24673,BERNSTEIN                                   ,AT  ,+47:24:29,+016:15:41,  631
+24674,BISCHOFSHOFEN                               ,AT  ,+47:24:23,+013:13:14,  550
+24675,BREGENZ                                     ,AT  ,+47:29:57,+009:44:44,  424
+24676,BRENNER                                     ,AT  ,+47:00:24,+011:30:38, 1412
+24677,BRUCK/MUR                                   ,AT  ,+47:24:20,+015:14:57,  482
+24678,BRUCKNEUDORF                                ,AT  ,+48:00:46,+016:50:40,  165
+24679,EHRWALD                                     ,AT  ,+47:24:16,+010:55:13,  960
+24680,BAD EISENKAPPEL                             ,AT  ,+46:29:25,+014:35:35,  623
+24681,EISENSTADT-NORDOST                          ,AT  ,+47:51:15,+016:32:17,  184
+24682,ENNS                                        ,AT  ,+48:11:44,+014:27:00,  317
+24683,FELDKIRCH                                   ,AT  ,+47:16:14,+009:36:33,  438
+24684,FREISTADT                                   ,AT  ,+48:29:39,+014:30:23,  539
+24685,GALLSPACH                                   ,AT  ,+48:12:34,+013:48:41,  368
+24686,GALTUER                                     ,AT  ,+46:58:05,+010:11:07, 1587
+24687,GMUNDEN                                     ,AT  ,+47:54:51,+013:48:27,  424
+24688,GRAZ-UNIVERSITAET                           ,AT  ,+47:04:40,+015:26:56,  367
+24689,GROSS-ENZERSDORF                            ,AT  ,+48:11:57,+016:33:32,  154
+24690,GUMPOLDSKIRCHEN                             ,AT  ,+48:02:08,+016:16:50,  212
+24691,MARTINSBERG                                 ,AT  ,+48:22:32,+015:09:20,  810
+24692,HEILIGENBLUT                                ,AT  ,+47:02:09,+012:51:09, 1315
+24693,HIEFLAU                                     ,AT  ,+47:35:39,+014:44:16,  779
+24694,HOHE WAND/HOCHKOGELHAUS                     ,AT  ,+47:49:19,+016:02:06,  936
+24695,SCHOENGRABERN                               ,AT  ,+48:36:11,+016:03:41,  253
+24696,IMST                                        ,AT  ,+47:14:12,+010:44:30,  773
+24697,INNSBRUCK-UNIV.                             ,AT  ,+47:15:34,+011:23:03,  578
+24698,JENBACH                                     ,AT  ,+47:23:22,+011:45:19,  530
+24699,KALS                                        ,AT  ,+47:00:16,+012:38:47, 1352
+24700,KALWANG                                     ,AT  ,+47:25:17,+014:45:33,  744
+24701,KOENIGSWIESEN                               ,AT  ,+48:24:43,+014:50:24,  600
+24702,KREMS                                       ,AT  ,+48:25:05,+015:37:18,  202
+24703,KRIMML                                      ,AT  ,+47:13:45,+012:10:54, 1009
+24704,KLAGENFURT-FLUGHAFEN                        ,AT  ,+46:38:53,+014:19:05,  450
+24705,KLEINZICKEN                                 ,AT  ,+47:12:27,+016:20:08,  265
+24706,LANDECK                                     ,AT  ,+47:08:25,+010:33:47,  796
+24707,LANGENLEBARN                                ,AT  ,+48:19:26,+016:07:04,  175
+24708,LANGENLOIS                                  ,AT  ,+48:28:21,+015:41:48,  207
+24709,LIENZ                                       ,AT  ,+46:49:31,+012:48:23,  661
+24710,LINZ-STADT                                  ,AT  ,+48:17:47,+014:17:06,  262
+24711,LITSCHAU                                    ,AT  ,+48:57:16,+015:02:17,  558
+24712,LUTZMANNSBURG                               ,AT  ,+47:27:55,+016:38:43,  201
+24713,MARIAZELL/ST.SEBASTIAN-FLUGFELD             ,AT  ,+47:47:20,+015:18:06,  864
+24714,MATTSEE                                     ,AT  ,+47:58:36,+013:06:20,  502
+24715,MAYRHOFEN                                   ,AT  ,+47:09:33,+011:51:01,  643
+24717,MOENICHKIRCHEN                              ,AT  ,+47:30:39,+016:01:59,  991
+24718,NEUMARKT                                    ,AT  ,+47:04:09,+014:25:28,  869
+24719,NEUSIEDL AM SEE                             ,AT  ,+47:56:56,+016:49:42,  117
+24720,OBERGURGL                                   ,AT  ,+46:52:00,+011:01:27, 1941
+24721,LEISER BERGE                                ,AT  ,+48:33:30,+016:22:17,  457
+24722,OBERTAUERN                                  ,AT  ,+47:14:56,+013:33:33, 1772
+24723,OBERVELLACH                                 ,AT  ,+46:56:06,+013:11:39,  688
+24724,POYSDORF-OST                                ,AT  ,+48:40:09,+016:38:15,  198
+24725,PREITENEGG                                  ,AT  ,+46:56:17,+014:54:54, 1034
+24726,PUCHBERG/SCHNEEBERG                         ,AT  ,+47:47:25,+015:54:24,  583
+24727,RADSTADT-TANDALIER                          ,AT  ,+47:22:48,+013:26:26,  835
+24729,BRAUNAU/RANSHOFEN                           ,AT  ,+48:13:27,+013:01:41,  382
+24730,REUTTE                                      ,AT  ,+47:29:39,+010:42:55,  841
+24731,ROHRBACH                                    ,AT  ,+48:34:01,+014:00:15,  613
+24732,RAURIS                                      ,AT  ,+47:13:23,+012:59:33,  933
+24734,REICHENAU/RAX                               ,AT  ,+47:41:57,+015:50:12,  488
+24735,RETZ/WINDMUEHLE                             ,AT  ,+48:45:39,+015:56:30,  320
+24736,RUDOLFSHUETTE                               ,AT  ,+47:08:04,+012:37:32, 2317
+24737,SAALBACH                                    ,AT  ,+47:23:16,+012:38:53,  975
+24738,SAALFELDEN                                  ,AT  ,+47:25:00,+012:49:59,  735
+24739,SCHMITTENHOEHE                              ,AT  ,+47:19:41,+012:44:16, 1956
+24740,SCHOECKL                                    ,AT  ,+47:11:54,+015:27:59, 1443
+24741,SEEFELD                                     ,AT  ,+47:19:27,+011:10:31, 1181
+24742,SEMMERING                                   ,AT  ,+47:37:59,+015:49:41,  988
+24743,STIFT ZWETTL                                ,AT  ,+48:37:04,+015:12:11,  502
+24744,ST.ANDRAE/LAVANTTAL                         ,AT  ,+46:45:51,+014:49:40,  403
+24745,FEISTRITZ OB BLEIBURG                       ,AT  ,+46:33:30,+014:45:59,  532
+24746,ST.MICHAEL/LUNGAU                           ,AT  ,+47:05:39,+013:37:22, 1052
+24747,ST.POELTEN/LANDHAUS                         ,AT  ,+48:11:57,+015:37:50,  273
+24748,ST.VEIT/GLAN                                ,AT  ,+46:44:20,+014:23:07,  463
+24749,STOLZALPE                                   ,AT  ,+47:07:22,+014:11:17, 1291
+24750,TAMSWEG                                     ,AT  ,+47:07:59,+013:48:29, 1025
+24752,VILLACH-STADT                               ,AT  ,+46:37:05,+013:52:26,  493
+24753,WAIDHOFEN/YBBS                              ,AT  ,+47:56:44,+014:48:33,  384
+24754,WEITENSFELD                                 ,AT  ,+46:50:57,+014:11:26,  704
+24755,WEYER                                       ,AT  ,+47:51:27,+014:40:00,  428
+24756,WIEN-HOHE WARTE                             ,AT  ,+48:14:53,+016:21:21,  198
+24757,WIEN-MARIABRUNN                             ,AT  ,+48:12:24,+016:13:45,  225
+24758,WIEN/UNTERLAA                               ,AT  ,+48:07:30,+016:25:09,  200
+24759,ST.WOLFGANG                                 ,AT  ,+47:43:59,+013:27:00,  575
+24760,WOLFSBERG                                   ,AT  ,+46:49:59,+014:51:00,  442
+24761,WOLFSEGG                                    ,AT  ,+48:06:20,+013:40:14,  635
+24762,WR.NEUSTADT/FLUGPLATZ                       ,AT  ,+47:49:54,+016:13:51,  275
+24763,ZELL AM ZILLER - ROHRBERG                   ,AT  ,+47:15:18,+011:54:15,  595
+24764,DEUTSCHLANDSBERG                            ,AT  ,+46:49:18,+015:13:36,  354
+24766,KITZBUEHEL                                  ,AT  ,+47:26:38,+012:23:21,  772
+24767,ST.ANTON AM ARLBERG                         ,AT  ,+47:07:53,+010:15:59, 1304
+24768,FERLACH                                     ,AT  ,+46:31:51,+014:18:51,  459
+24769,NAUDERS                                     ,AT  ,+46:53:26,+010:29:48, 1330
+24770,KANZELHOEHE                                 ,AT  ,+46:40:37,+013:54:06, 1520
+24772,SECKAU                                      ,AT  ,+47:16:14,+014:46:41,  872
+24774,HAIMING                                     ,AT  ,+47:15:34,+010:53:21,  659
+24775,RINN                                        ,AT  ,+47:14:57,+011:30:14,  924
+24777,LOFER/ORT                                   ,AT  ,+47:35:03,+012:41:43,  622
+24778,SILLIAN                                     ,AT  ,+46:44:45,+012:25:23, 1081
+24779,SALZBURG-FLUGHAFEN                          ,AT  ,+47:47:21,+013:00:29,  430
+24780,BAD ISCHL                                   ,AT  ,+47:42:21,+013:38:49,  507
+24781,FRAXERN                                     ,AT  ,+47:18:51,+009:40:27,  807
+24782,GAENSERNDORF-STADT                          ,AT  ,+48:20:15,+016:42:48,  163
+24783,UMHAUSEN                                    ,AT  ,+47:08:21,+010:55:44, 1035
+24784,DOELLACH                                    ,AT  ,+46:57:29,+012:54:09, 1071
+24786,RIED IM INNKREIS                            ,AT  ,+48:13:01,+013:28:30,  427
+24787,KUFSTEIN                                    ,AT  ,+47:34:31,+012:09:46,  490
+24788,MICHELDORF                                  ,AT  ,+47:52:59,+014:08:03,  459
+24789,SALZBURG-FREISAAL                           ,AT  ,+47:47:26,+013:03:15,  419
+24790,HOLZGAU                                     ,AT  ,+47:15:27,+010:20:17, 1092
+24791,WEITRA                                      ,AT  ,+48:42:06,+014:53:53,  572
+24792,SPITTAL/DRAU                                ,AT  ,+46:47:25,+013:29:13,  542
+24793,ACHENKIRCH CAMPINGPLATZ                     ,AT  ,+47:29:57,+011:42:24,  931
+24794,LAA/TH.KLAERANLAGE                          ,AT  ,+48:43:51,+016:23:22,  184
+24795,PRAEBICHL                                   ,AT  ,+47:31:18,+014:57:14, 1215
+24796,FUERSTENFELD                                ,AT  ,+47:01:50,+016:04:50,  271
+24797,OBERNDORF/MELK                              ,AT  ,+48:03:45,+015:12:50,  295
+24798,KOLLERSCHLAG                                ,AT  ,+48:36:10,+013:50:21,  714
+24799,HOHENAU                                     ,AT  ,+48:36:59,+016:54:15,  154
+24800,REICHERSBERG                                ,AT  ,+48:19:51,+013:22:32,  351
+24801,WAIZENKIRCHEN                               ,AT  ,+48:19:36,+013:51:51,  400
+24802,REICHENAU/MUEHLKREIS                        ,AT  ,+48:27:33,+014:20:43,  689
+24803,MONDSEE                                     ,AT  ,+47:51:02,+013:20:48,  481
+24804,BERNDORF                                    ,AT  ,+47:56:21,+016:06:02,  337
+24805,ABTENAU                                     ,AT  ,+47:33:59,+013:20:35,  709
+24806,HALL/ADMONT                                 ,AT  ,+47:35:39,+014:29:26,  637
+24807,MUERZZUSCHLAG                               ,AT  ,+47:36:06,+015:40:22,  705
+24808,POTTSCHACH                                  ,AT  ,+47:42:02,+016:00:28,  416
+24809,ASPANG                                      ,AT  ,+47:34:30,+016:06:05,  454
+24811,SCHOPPERNAU                                 ,AT  ,+47:18:41,+010:01:03,  839
+24812,SCHROECKEN                                  ,AT  ,+47:15:41,+010:05:08, 1244
+24813,MITTELBERG                                  ,AT  ,+47:19:23,+010:09:09, 1204
+24814,INNSBRUCK-FLUGPLATZ                         ,AT  ,+47:15:34,+011:21:24,  578
+24815,HAHNENKAMM-EHRENBACHHOEHE                   ,AT  ,+47:25:05,+012:21:33, 1793
+24817,HOCHFILZEN                                  ,AT  ,+47:28:12,+012:37:14,  962
+24818,BLUDENZ                                     ,AT  ,+47:08:52,+009:49:45,  571
+24819,OBERWOELZ                                   ,AT  ,+47:12:06,+014:17:12,  842
+24820,GUESSING                                    ,AT  ,+47:03:45,+016:19:18,  215
+24821,PITZTALER GLETSCHER                         ,AT  ,+46:55:36,+010:52:45, 2863
+24822,ST.JAKOB/DEF.                               ,AT  ,+46:55:00,+012:21:14, 1383
+24823,FLATTNITZ                                   ,AT  ,+46:56:26,+014:02:08, 1437
+24824,FRIESACH                                    ,AT  ,+46:57:29,+014:24:20,  640
+24825,VOELKERMARKT-GOLDBRUNNHOF                   ,AT  ,+46:40:14,+014:38:21,  466
+24826,MELK                                        ,AT  ,+48:12:33,+015:19:51,  307
+24828,WACHTBERG BEI STEYR                         ,AT  ,+48:02:51,+014:27:38,  384
+24831,PATSCHERKOFEL                               ,AT  ,+47:12:32,+011:27:42, 2251
+24832,SEIBERSDORF                                 ,AT  ,+47:58:33,+016:30:16,  185
+24833,POERTSCHACH                                 ,AT  ,+46:37:50,+014:09:54,  450
+24834,HORN -  WASSERWERK                          ,AT  ,+48:40:28,+015:38:36,  308
+24835,GLEISDORF                                   ,AT  ,+47:06:55,+015:42:28,  377
+24836,WEIZ                                        ,AT  ,+47:13:05,+015:38:03,  465
+24837,WOERTERBERG                                 ,AT  ,+47:13:33,+016:05:47,  404
+24838,KREMSMUENSTER (TAWES)                       ,AT  ,+48:03:18,+014:07:50,  382
+24839,FEUERKOGEL                                  ,AT  ,+47:48:59,+013:43:04, 1618
+24840,LOIBL/TUNNEL                                ,AT  ,+46:26:38,+014:14:56, 1097
+24841,REISSECK                                    ,AT  ,+46:55:59,+013:22:00, 2252
+24842,LAAS                                        ,AT  ,+46:40:59,+012:58:59,  800
+24843,ST.PAUL/LAVANTTAL                           ,AT  ,+46:42:00,+014:52:00,  384
+24844,ST.LEONHARD/PITZTAL                         ,AT  ,+47:01:36,+010:51:56, 1454
+24847,SONNBLICK (TAWES)                           ,AT  ,+47:03:14,+012:57:27, 3109
+24848,GARS/KAMP                                   ,AT  ,+48:35:30,+015:42:00,  273
+24850,KAPFENBERG-FLUGFELD                         ,AT  ,+47:27:29,+015:20:08,  515
+24851,ANDAU                                       ,AT  ,+47:46:12,+017:02:07,  117
+24852,KARLSTIFT/STADLBERG                         ,AT  ,+48:35:53,+014:43:13,  946
+25159,FARKOLLEN                                   ,NO  ,+69:48:15,+028:59:36,  321
+25163,KORGASEN                                    ,NO  ,+69:56:11,+028:22:37,  418
+25164,PORT DE BARCELONA - ZAL PRAT                ,ES  ,+41:19:09,+002:08:12,    7
+25165,PALAFRUGELL                                 ,ES  ,+41:54:24,+003:09:37,   36
+25232,SKAGEN FYR                                  ,DK  ,+57:44:11,+010:37:54,    3
+25233,HALD VEST                                   ,DK  ,+56:33:37,+010:05:34,   87
+25234,MEJRUP                                      ,DK  ,+56:22:59,+008:40:14,   53
+25235,ISENVAD                                     ,DK  ,+56:05:38,+009:10:51,   60
+25236,ARHUS LUFTHAVN                              ,DK  ,+56:18:29,+010:37:31,   20
+25237,OEDUM                                       ,DK  ,+56:18:10,+010:07:37,   60
+25238,ANHOLT HAVN                                 ,DK  ,+56:43:00,+011:30:34,    2
+25239,BLAVANDSHUK FYR                             ,DK  ,+55:33:27,+008:04:58,   13
+25240,BORRIS                                      ,DK  ,+55:57:33,+008:37:27,   25
+25241,VESTER VEDSTED                              ,DK  ,+55:17:26,+008:39:17,    3
+25242,HORSENS - BYGHOLM                           ,DK  ,+55:52:05,+009:47:13,   22
+25243,BILLUND LUFTHAVN                            ,DK  ,+55:44:16,+009:10:03,   75
+25244,KOLDING LUFTHAVN                            ,DK  ,+55:26:15,+009:20:02,   44
+25245,STORE JYNDEVAD-1                            ,DK  ,+54:53:54,+009:07:22,   15
+25246,SOENDERBORG LUFTHAVN                        ,DK  ,+54:57:42,+009:47:35,    7
+25247,KEGNAES FYR                                 ,DK  ,+54:51:10,+009:59:17,   17
+25248,SYDFYNS FLYVEPLADS                          ,DK  ,+55:00:51,+010:34:09,    6
+25249,ARSLEV                                      ,DK  ,+55:18:32,+010:26:22,   49
+25250,FLAKKEBJERG                                 ,DK  ,+55:19:21,+011:23:16,   32
+25251,OMOE FYR                                    ,DK  ,+55:09:33,+011:08:04,    1
+25252,BRANDELEV                                   ,DK  ,+55:12:27,+011:51:38,   44
+25253,NAKKEHOVED FYR                              ,DK  ,+56:07:09,+012:20:33,   37
+25254,KOEBENHAVNS LUFTHAVN                        ,DK  ,+55:36:50,+012:38:44,    5
+25256,SJAELSMARK                                  ,DK  ,+55:52:35,+012:24:43,   39
+25826,FINNESVATNET                                ,NO  ,+70:14:48,+030:22:05,   72
+25828,HUBEHYTTA                                   ,NO  ,+70:19:19,+030:03:52,  175
+25848,SENJA - MEDBY                               ,NO  ,+69:16:50,+017:04:17,    5
+25849,NORDNESFJELLET - JETTANII                   ,NO  ,+69:33:27,+020:24:47,  650
+25852,APICE                                       ,IT  ,+41:07:39,+014:58:18,  597
+25853,ACERRA                                      ,IT  ,+40:57:57,+014:25:42,   26
+25855,ALIFE                                       ,IT  ,+41:20:30,+014:19:05,  163
+25857,BATTIPAGLIA                                 ,IT  ,+40:35:04,+014:58:53,   46
+25858,BOSCOTRECASE                                ,IT  ,+40:47:16,+014:27:50,  169
+25859,GROMOLA                                     ,IT  ,+40:28:30,+014:59:24,   11
+25860,CARINOLA                                    ,IT  ,+41:08:42,+014:00:01,   13
+25861,CASALDUNI                                   ,IT  ,+41:15:55,+014:39:51,  482
+25862,CASAREA                                     ,IT  ,+40:53:25,+014:21:28,   25
+25863,CASTEL_VETERE                               ,IT  ,+41:25:28,+014:54:54,  769
+25864,CONCA_DELLA_CAMPANIA                        ,IT  ,+41:22:00,+014:00:28,  233
+25865,CONTRONE                                    ,IT  ,+40:30:42,+015:11:47,  116
+25866,EBOLI-IMPROSTA                              ,IT  ,+40:33:12,+014:58:49,   17
+25867,FIACCHIO                                    ,IT  ,+41:17:02,+014:28:31,  304
+25869,FALCIANO_DEL_MASSICO                        ,IT  ,+41:08:25,+013:57:42,   89
+25870,FLUMERI                                     ,IT  ,+41:04:58,+015:10:18,  538
+25871,GRECI                                       ,IT  ,+41:14:03,+015:08:16,  641
+25872,FIAIANO                                     ,IT  ,+40:43:22,+013:55:08,   14
+25873,FONTENOVELLA                                ,IT  ,+40:53:12,+014:37:23,  168
+25875,MASSA_DI_FAICCHIO                           ,IT  ,+41:15:27,+014:31:41,  201
+25876,MONTEFREDANE                                ,IT  ,+41:15:15,+014:30:28,  490
+25877,MONTELLA                                    ,IT  ,+40:50:35,+015:03:37,  528
+25878,MONTEMARANO                                 ,IT  ,+40:56:02,+015:01:30,  527
+25879,PIETRADEFUCI                                ,IT  ,+41:03:19,+014:52:48,  341
+25880,PIGNATORE_MAGGGIORE                         ,IT  ,+41:10:24,+014:11:31,   65
+25881,SAN_LORENZO_MAGGGIORE                       ,IT  ,+41:13:06,+014:38:08,   72
+25882,SAN_MARCO_DEI_CAVOTTI                       ,IT  ,+41:20:13,+014:52:09,  724
+25883,SAN_PAOLO_BEN_SITO                          ,IT  ,+40:54:10,+014:32:48,   50
+25884,SANTA_PAOLINA                               ,IT  ,+41:15:02,+014:39:12,  355
+25885,SERRE                                       ,IT  ,+40:35:48,+015:08:08,   82
+25886,TORRECUSO                                   ,IT  ,+41:11:51,+014:42:18,  172
+25887,VITULAZIO                                   ,IT  ,+41:07:26,+014:11:53,   23
+26082,SENJA - BOTNHAMN                            ,NO  ,+69:30:05,+017:52:14,   20
+26318,MIDTBOTN                                    ,NO  ,+59:54:55,+006:10:57,  827
+26323,SAVIANO                                     ,IT  ,+40:53:17,+014:30:02,   45
+26324,CASAMARCIANO-04                             ,IT  ,+40:55:32,+014:33:23,   98
+26331,LONGYEARDALEN - CENTRAL                     ,SJ  ,+78:12:46,+015:36:38,   52
+26373,RASSEGALVARRI                               ,NO  ,+69:13:06,+023:26:25,  588
+26455,EL PORT DEL COMTE-1                         ,ES  ,+42:11:26,+001:31:54, 2290
+26516,VILANOVA I LA GELTRU                        ,ES  ,+41:14:08,+001:43:53,   31
