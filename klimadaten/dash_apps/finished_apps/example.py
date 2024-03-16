@@ -22,24 +22,19 @@ app.layout = html.Div(
     [
         dcc.Dropdown(
             id="year-picker",
-            options=[
-                {"label": year, "value": year} for year in range(2000, 2023)
-            ],  # Example year range
-            value=2022,  # Default value
+            options=[{"label": year, "value": year} for year in range(2000, 2023)],
+            value=2022,
         ),
         dcc.Dropdown(
             id="month-picker",
-            options=[
-                {"label": month, "value": month} for month in range(1, 13)
-            ],  # Months 1-12
-            value=1,  # Default value
+            options=[{"label": month, "value": month} for month in range(1, 13)],
+            value=1,
         ),
         dcc.Graph(id="wind-map"),
     ]
 )
 
 
-# Callback to update the map based on year and month pickers
 @app.callback(
     Output("wind-map", "figure"),
     [Input("year-picker", "value"), Input("month-picker", "value")],

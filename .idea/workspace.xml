@@ -4,12 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd0fa105-535c-41f9-88ec-c56e8f965de0" name="Changes" comment="add data">
+    <list default="true" id="dd0fa105-535c-41f9-88ec-c56e8f965de0" name="Changes" comment="blackd">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cdk1_2Da/asgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/cdk1_2Da/asgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cdk1_2Da/routing.py" beforeDir="false" afterPath="$PROJECT_DIR$/cdk1_2Da/routing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cdk1_2Da/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/cdk1_2Da/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cdk1_2Da/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/cdk1_2Da/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/klimadaten/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/klimadaten/apps.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/klimadaten/dash_apps/finished_apps/example.py" beforeDir="false" afterPath="$PROJECT_DIR$/klimadaten/dash_apps/finished_apps/example.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/klimadaten/dash_apps/finished_apps/stations_map.py" beforeDir="false" afterPath="$PROJECT_DIR$/klimadaten/dash_apps/finished_apps/stations_map.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/klimadaten/management/commands/load_stations.py" beforeDir="false" afterPath="$PROJECT_DIR$/klimadaten/management/commands/load_stations.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/klimadaten/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/klimadaten/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,13 +71,13 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "django.template.preview.state": "SHOW_EDITOR",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "//wsl$/Debian/home/delfin/projects/cdk1_2Da_django/klimadaten/management/commands",
+    "last_opened_file_path": "//wsl$/Debian/home/delfin/miniconda3/bin/blackd",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "preferences.externalTools",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -139,7 +143,7 @@
       <workItem from="1710363361142" duration="193000" />
       <workItem from="1710363580012" duration="8724000" />
       <workItem from="1710420183822" duration="5051000" />
-      <workItem from="1710488061375" duration="1735000" />
+      <workItem from="1710488061375" duration="9618000" />
     </task>
     <task id="LOCAL-00001" summary="use postgres">
       <option name="closed" value="true" />
@@ -165,18 +169,56 @@
       <option name="project" value="LOCAL" />
       <updated>1710369457882</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="blackd">
+      <option name="closed" value="true" />
+      <created>1710490682889</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1710490682889</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="aec903b3-e01d-4cc7-a2c7-1e3b52e737d1" value="TOOL_WINDOW" />
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
             <State />
+          </value>
+        </entry>
+        <entry key="aec903b3-e01d-4cc7-a2c7-1e3b52e737d1">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+            </State>
           </value>
         </entry>
       </map>
@@ -186,7 +228,8 @@
     <MESSAGE value="use postgres" />
     <MESSAGE value="update examples" />
     <MESSAGE value="add data" />
-    <option name="LAST_COMMIT_MESSAGE" value="add data" />
+    <MESSAGE value="blackd" />
+    <option name="LAST_COMMIT_MESSAGE" value="blackd" />
   </component>
   <component name="WfRunsListSearchHistory"><![CDATA[{
   "history": [
