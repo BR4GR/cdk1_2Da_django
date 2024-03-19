@@ -28,7 +28,7 @@ def stations(request):
 
 def country_count_bar():
     stations_per_country = (
-        City.objects.values("country")
+        Station.objects.values("country")
         .annotate(total=Count("country"))
         .order_by("-total")
     )
@@ -55,8 +55,8 @@ def get_map():
         lat="lat",
         lon="lon",
         hover_name="name",
-        # hover_data=["elevation"],
-        # color_continuous_scale=px.colors.sequential.Turbo,
+        hover_data=["elevation"],
+        color_continuous_scale=px.colors.sequential.Turbo,
         zoom=7,
         # height=300,
     )
@@ -74,13 +74,13 @@ def get_map():
 
 
 def fetch_station_data(country=None):
-    station_data = City.objects.all()
+    station_data = Station.objects.all()
     if country and country != "ALL":
         station_data = station_data.filter(country=country)
 
     # Create a DataFrame directly from the queryset
     df = pd.DataFrame.from_records(
-        # station_data.values('name', 'lat', 'lon', 'elevation')
-        station_data.values("name", "lat", "lon")
+        station_data.values('name', 'lat', 'lon', 'elevation')
+        # station_data.values("name", "lat", "lon")
     )
     return df

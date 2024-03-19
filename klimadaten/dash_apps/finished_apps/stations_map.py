@@ -25,10 +25,9 @@ sapp.layout = html.Div(
         dcc.Graph(id="station-map"),
         html.Div(
             [
-                dcc.Graph(id="wind-speed-lineplot"),
-                dcc.Graph(id="wind-speed-barplot"),
+                dcc.Graph(id="wind-speed-lineplot", style={"width": "50%", "display": "inline-block"}),
+                dcc.Graph(id="wind-speed-barplot", style={"width": "50%", "display": "inline-block"}),
             ],
-            style={"display": "flex"},
         ),
     ]
 )
