@@ -6,11 +6,13 @@ from django_plotly_dash import DjangoDash
 from klimadaten.models import City
 import plotly.express as px
 import pandas as pd
-import numpy as np
 import openmeteo_requests
 import requests_cache
 from retry_requests import retry
 
+STATION_COLOR = "orange"
+CITY_COLOR = "red"
+SECONDARY_COLOR = "rgba(135, 206, 250, 0.7)"
 EUROPE_NORTH = 71.5  # North Cape in Norway
 EUROPE_SOUTH = 36  # Punta de Tarifa in Spain
 EUROPE_WEST = -25  # Iceland
@@ -25,9 +27,42 @@ sapp.layout = html.Div(
         dcc.Graph(id="station-map"),
         html.Div(
             [
+                html.H2("Klimadaten Challenge", style={'textAlign': 'center', 'margin-top': '70px'}),
+                html.P(
+                    "Willkommen zur Klimadaten Challenge! Auf der interaktiven Karte können Sie Wetterstationen "
+                    "europaweit erkunden und die Windgeschwindigkeiten an verschiedenen Orten visualisieren. "
+                    "Klicken Sie auf einen Punkt der Karte, um die höchsten täglichen Windgeschwindigkeiten "
+                    "des letzten Jahres am gewählten Standort zu betrachten. Unterhalb der Karte finden Sie zwei "
+                    "detaillierte Analysen: Eine Liniendiagramm-Darstellung der täglichen Windgeschwindigkeiten und "
+                    "ein Balkendiagramm, das die Anzahl der Tage pro Monat mit Windgeschwindigkeiten über 25 km/h "
+                    "zeigt. Diese Einblicke ermöglichen es Ihnen, Windmuster zu vergleichen und die Variabilität der "
+                    "Windverhältnisse über einen Zeitraum von einem Jahr zu untersuchen.",
+                    style={'margin': '20px'}
+                )
+            ]
+        ),
+        html.Div(
+            [
                 dcc.Graph(id="wind-speed-lineplot", style={"width": "50%", "display": "inline-block"}),
                 dcc.Graph(id="wind-speed-barplot", style={"width": "50%", "display": "inline-block"}),
             ],
+        ),
+        html.Div(
+            [
+                html.H3("Langzeitvergleich und Jahresanalyse", style={'textAlign': 'center'}),
+                html.P(
+                    "Der untere Abschnitt der Anwendung ermöglicht es den Benutzern, historische Winddaten "
+                    "tiefergehend zu analysieren. Im linken Diagramm wird der Vergleich der Windgeschwindigkeiten "
+                    "zwischen zwei Standorten über das ausgewählte Jahr dargestellt. Dies erlaubt eine direkte "
+                    "Gegenüberstellung der Windbedingungen und zeigt auf, wie unterschiedlich das Wetter in "
+                    "verschiedenen Regionen sein kann. Das rechte Balkendiagramm erweitert diese Analyse auf mehrere "
+                    "Jahrzehnte und zeigt die Anzahl der Tage im Januar, an denen die Windgeschwindigkeit 25 km/h "
+                    "überschritten hat. Durch diese Langzeitdarstellung können Nutzerinnen und Nutzer Veränderungen "
+                    "und Muster im Windverhalten über die Jahre erkennen, was für Klimaforschung und langfristige "
+                    "Wettervorhersagen von Bedeutung sein kann.",
+                    style={'margin': '20px'}
+                )
+            ]
         ),
         html.Div(
             [
@@ -89,22 +124,32 @@ def update_map(clickData):
         hover_data=["country", "iso2"],
         zoom=5,
         mapbox_style="open-street-map",
+        color_discrete_sequence=[STATION_COLOR],
     )
-    fig_map.update_layout(coloraxis_colorbar_title_text="Max Wind Speed (km/h)")
     fig_map.update_layout(margin={"r": 0, "t": 0, "l": 0, "b": 0})
     selected_station = {
         "name": "Sumba",
         "lat": 61.405500,
         "lon": -6.709000,
         "country": "Faroe Islands",
-        "iso2": "FR",
+        "iso2": "FO",
     }
+
     if clickData:
         selected_station["name"] = clickData["points"][0]["hovertext"]
         selected_station["lat"] = clickData["points"][0]["lat"]
         selected_station["lon"] = clickData["points"][0]["lon"]
         selected_station["country"] = clickData["points"][0]["customdata"][0]
         selected_station["iso2"] = clickData["points"][0]["customdata"][1]
+
+    # fig_map.add_scattermapbox(
+    #     lat=[selected_station["lat"]],
+    #     lon=[selected_station["lon"]],
+    #     mode='markers',
+    #     marker=dict(size=10, color=STATION_COLOR),
+    #     name="Selected Station"
+    # )
+
     fig_map.update_layout(
         mapbox=dict(
             center=dict(
@@ -145,6 +190,7 @@ def update_plots(selected_station):
             "date": "Datum",
         },
     )
+    fig_lineplot.update_traces(line=dict(color=STATION_COLOR))
 
     # daily_dataframe['date'] = pd.to_datetime(daily_dataframe['date'])
 
@@ -176,6 +222,7 @@ def update_plots(selected_station):
         range_y=[0, 31],
         title=f"Tage pro Monat mit Windgeschwindigkeiten über 25 km/h im letzten Jahr",
         labels={"days_over_25": "Tage über 25 km/h", "month": "Monat"},
+        color_discrete_sequence=[STATION_COLOR],
     )
 
     return fig_lineplot, fig_barplot
@@ -212,6 +259,7 @@ def update_yearly_comparison_plot(city_id, year, selected_station):
         y='wind_speed_10m_max',
         color='Ortschaft',
         labels={'wind_speed_10m_max': 'Windgeschwindigkeit', 'date': 'Jahr'},
+        color_discrete_map={station_label: STATION_COLOR, city_label: CITY_COLOR},
         title=f"Vergleich der Windgeschwindigkeiten von {station_label} und {city_label} im Jahr {year}"
     )
     return fig
@@ -222,7 +270,6 @@ def update_yearly_comparison_plot(city_id, year, selected_station):
     [Input('city-dropdown', 'value'), Input('month-dropdown', 'value'), Input("selected-station", "children")]
 )
 def update_monthly_comparison_plot(city_id, month, selected_station):
-
     current_year = datetime.now().year
     years = range(current_year - 34, current_year + 1)  # Last 35 years
 
@@ -268,6 +315,7 @@ def update_monthly_comparison_plot(city_id, month, selected_station):
         barmode='group',
         title='January Days with Wind Speed > 25 km/h Comparison Over the Last 35 Years',
         labels={'value': 'Anzahl Tage', 'variable': 'Ortschaft'},
+        color_discrete_map={station_label: STATION_COLOR, city_label: CITY_COLOR},
     )
 
     return fig
