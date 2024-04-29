@@ -1,3 +1,5 @@
+from datetime import timedelta, datetime
+
 from dash import dcc, html
 from dash.dependencies import Input, Output
 from django_plotly_dash import DjangoDash
@@ -13,8 +15,6 @@ EUROPE_NORTH = 71.5  # North Cape in Norway
 EUROPE_SOUTH = 36  # Punta de Tarifa in Spain
 EUROPE_WEST = -25  # Iceland
 EUROPE_EAST = 60  # Ural Mountains in Russia
-MIN_DATE = "1940-01-01"
-MAX_DATE = "2024-02-29"
 
 # Create a Dash app for displaying stations on a map
 sapp = DjangoDash("StationsMap")
@@ -84,7 +84,10 @@ def fetch_data():
     [Input("selected-station", "children")],
 )
 def update_plots(selected_station):
-    daily_dataframe = call_open_meteo(selected_station)
+    today = pd.Timestamp.now().normalize()  # Get current date without time
+    start_date = (today - timedelta(days=365 + 10)).strftime('%Y-%m-%d')  # One year and 10 days ago
+    end_date = (today - timedelta(days=10)).strftime('%Y-%m-%d')  # 10 days ago
+    daily_dataframe = call_open_meteo(selected_station, start_date, end_date)
 
     # last_year = daily_dataframe['date'].max().year
     last_year = daily_dataframe[daily_dataframe["date"].dt.year >= 2023]
@@ -127,6 +130,7 @@ def update_plots(selected_station):
         monthly_counts,
         x="month",
         y="days_over_25",
+        range_y=[0, 31],
         title=f"Tage pro Monat mit Windgeschwindigkeiten über 25 km/h",
         labels={"days_over_25": "Tage über 25 km/h", "month": "Monat"},
     )
@@ -134,7 +138,7 @@ def update_plots(selected_station):
     return fig_lineplot, fig_barplot
 
 
-def call_open_meteo(selected_station):
+def call_open_meteo(selected_station, start_date, end_date):
     # Setup the Open-Meteo API client with cache and retry on error
     cache_session = requests_cache.CachedSession(".cache", expire_after=-1)
     retry_session = retry(cache_session, retries=5, backoff_factor=0.2)
@@ -145,8 +149,8 @@ def call_open_meteo(selected_station):
     params = {
         "latitude": selected_station["lat"],
         "longitude": selected_station["lon"],
-        "start_date": MIN_DATE,
-        "end_date": MAX_DATE,
+        "start_date": start_date,
+        "end_date": end_date,
         "daily": "wind_speed_10m_max",
         "timezone": "Europe/Berlin",
     }
