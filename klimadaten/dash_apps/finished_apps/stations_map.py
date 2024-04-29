@@ -29,6 +29,47 @@ sapp.layout = html.Div(
                 dcc.Graph(id="wind-speed-barplot", style={"width": "50%", "display": "inline-block"}),
             ],
         ),
+        html.Div(
+            [
+                dcc.Dropdown(
+                    id='city-dropdown',
+                    options=[{'label': city.name, 'value': city.id} for city in City.objects.all()],
+                    value=1756121125,  # Default value Brugg
+                    style={'width': '30%', 'display': 'inline-block'}
+                ),
+                dcc.Dropdown(
+                    id='year-dropdown',
+                    options=[{'label': str(year), 'value': year} for year in range(1940, 2025)],
+                    value=1991,  # Default value
+                    style={'width': '30%', 'display': 'inline-block', 'margin-left': '1%'}
+                ),
+                dcc.Dropdown(
+                    id='month-dropdown',
+                    options=[
+                        {'label': 'Januar', 'value': 1},
+                        {'label': 'Februar', 'value': 2},
+                        {'label': 'März', 'value': 3},
+                        {'label': 'April', 'value': 4},
+                        {'label': 'Mai', 'value': 5},
+                        {'label': 'Juni', 'value': 6},
+                        {'label': 'Juli', 'value': 7},
+                        {'label': 'August', 'value': 8},
+                        {'label': 'September', 'value': 9},
+                        {'label': 'Oktober', 'value': 10},
+                        {'label': 'November', 'value': 11},
+                        {'label': 'Dezember', 'value': 12}
+                    ],
+                    value=4,  # Default value for April
+                    style={'width': '30%', 'display': 'inline-block', 'margin-left': '1%'}
+                )
+            ], style={'padding': '20px'}
+        ),
+        html.Div(
+            [
+                dcc.Graph(id="yearly-comparison-plot", style={"width": "50%", "display": "inline-block"}),
+                dcc.Graph(id="monthly-comparison-plot", style={"width": "50%", "display": "inline-block"})
+            ]
+        )
     ]
 )
 
@@ -36,7 +77,7 @@ sapp.layout = html.Div(
 @sapp.callback(
     Output("station-map", "figure"),
     Output("selected-station", "children"),
-    [Input("station-map", "clickData")],  # Triggered by clicking on the map
+    [Input("station-map", "clickData")],
 )
 def update_map(clickData):
     df = fetch_data()
@@ -45,23 +86,25 @@ def update_map(clickData):
         lat="lat",
         lon="lon",
         hover_name="name",
-        hover_data=["country"],
-        zoom=6,
+        hover_data=["country", "iso2"],
+        zoom=5,
         mapbox_style="open-street-map",
     )
     fig_map.update_layout(coloraxis_colorbar_title_text="Max Wind Speed (km/h)")
     fig_map.update_layout(margin={"r": 0, "t": 0, "l": 0, "b": 0})
     selected_station = {
-        "name": "Namsos",
-        "lat": 64.4656,
-        "lon": 11.4978,
-        "country": "Norway",
+        "name": "Sumba",
+        "lat": 61.405500,
+        "lon": -6.709000,
+        "country": "Faroe Islands",
+        "iso2": "FR",
     }
     if clickData:
         selected_station["name"] = clickData["points"][0]["hovertext"]
         selected_station["lat"] = clickData["points"][0]["lat"]
         selected_station["lon"] = clickData["points"][0]["lon"]
         selected_station["country"] = clickData["points"][0]["customdata"][0]
+        selected_station["iso2"] = clickData["points"][0]["customdata"][1]
     fig_map.update_layout(
         mapbox=dict(
             center=dict(
@@ -75,7 +118,7 @@ def update_map(clickData):
 
 def fetch_data():
     station_data = City.objects.all()
-    df = pd.DataFrame.from_records(station_data.values("name", "lat", "lon", "country"))
+    df = pd.DataFrame.from_records(station_data.values("name", "lat", "lon", "country", "iso2"))
     return df
 
 
@@ -96,7 +139,7 @@ def update_plots(selected_station):
         last_year,
         x="date",
         y="wind_speed_10m_max",
-        title=f"Höchste Windgeschwindigkeit pro Tag in {selected_station['name']}, {selected_station['country']}",
+        title=f"Höchste Windgeschwindigkeit pro Tag in {selected_station['name']}, {selected_station['country']} im letzten Jahr",
         labels={
             "wind_speed_10m_max": "Maximale Windgeschwindigkeit (km/h)",
             "date": "Datum",
@@ -110,7 +153,7 @@ def update_plots(selected_station):
     end = over_25["date"].max()
     # Creating a complete range of months
     all_months = pd.date_range(
-        start="2023-02-01", end="2024-02-29", freq="MS"
+        start=start_date, end=end_date, freq="MS"
     ).to_period("M")
 
     # Counting days over 25 km/h by month
@@ -131,11 +174,103 @@ def update_plots(selected_station):
         x="month",
         y="days_over_25",
         range_y=[0, 31],
-        title=f"Tage pro Monat mit Windgeschwindigkeiten über 25 km/h",
+        title=f"Tage pro Monat mit Windgeschwindigkeiten über 25 km/h im letzten Jahr",
         labels={"days_over_25": "Tage über 25 km/h", "month": "Monat"},
     )
 
     return fig_lineplot, fig_barplot
+
+
+@sapp.callback(
+    Output('yearly-comparison-plot', 'figure'),
+    [Input('city-dropdown', 'value'), Input('year-dropdown', 'value'), Input("selected-station", "children")]
+)
+def update_yearly_comparison_plot(city_id, year, selected_station):
+    start_date = f"{year}-01-01"
+    end_date = f"{year}-12-31"
+    current_year = datetime.now().year
+    if year == current_year:
+        today = pd.Timestamp.now().normalize()
+        start_date = (today - timedelta(days=365 + 10)).strftime('%Y-%m-%d')
+        end_date = (today - timedelta(days=10)).strftime('%Y-%m-%d')
+
+    city = City.objects.get(id=city_id)
+
+    city_data = call_open_meteo({
+        'lat': city.lat,
+        'lon': city.lon
+    }, start_date, end_date)
+
+    station_data = call_open_meteo(selected_station, start_date, end_date)
+    station_label = f"{selected_station['name']} ({selected_station['iso2']})"
+    city_label = f"{city.name} ({city.iso2})"
+
+    # Combine data and create plot
+    fig = px.line(
+        pd.concat([station_data.assign(Ortschaft=station_label), city_data.assign(Ortschaft=city_label)]),
+        x='date',
+        y='wind_speed_10m_max',
+        color='Ortschaft',
+        labels={'wind_speed_10m_max': 'Windgeschwindigkeit', 'date': 'Jahr'},
+        title=f"Vergleich der Windgeschwindigkeiten von {station_label} und {city_label} im Jahr {year}"
+    )
+    return fig
+
+
+@sapp.callback(
+    Output('monthly-comparison-plot', 'figure'),
+    [Input('city-dropdown', 'value'), Input('month-dropdown', 'value'), Input("selected-station", "children")]
+)
+def update_monthly_comparison_plot(city_id, month, selected_station):
+
+    current_year = datetime.now().year
+    years = range(current_year - 34, current_year + 1)  # Last 35 years
+
+    city_days_over_25 = []
+    station_days_over_25 = []
+
+    dropdown_city = City.objects.get(id=city_id)
+
+    for year in years:
+        start_date = f"{year}-01-01"
+        end_date = f"{year}-01-31"
+
+        city_data = call_open_meteo({
+            'lat': dropdown_city.lat,
+            'lon': dropdown_city.lon
+        }, start_date, end_date)
+
+        station_data = call_open_meteo({
+            'lat': selected_station['lat'],
+            'lon': selected_station['lon']
+        }, start_date, end_date)
+
+        # Filter data for wind speed > 25 and count days
+        city_days_count = city_data[city_data['wind_speed_10m_max'] > 25].shape[0]
+        station_days_count = station_data[station_data['wind_speed_10m_max'] > 25].shape[0]
+
+        city_days_over_25.append(city_days_count)
+        station_days_over_25.append(station_days_count)
+        station_label = f"{selected_station['name']} ({selected_station['iso2']})"
+        city_label = f"{dropdown_city.name} ({dropdown_city.iso2})"
+
+    # Create a DataFrame for plotting
+    comparison_df = pd.DataFrame({
+        'Jahre': list(years),
+        station_label: station_days_over_25,
+        city_label: city_days_over_25
+    })
+
+    fig = px.bar(
+        comparison_df,
+        x='Jahre',
+        y=[station_label, city_label],
+        barmode='group',
+        title='January Days with Wind Speed > 25 km/h Comparison Over the Last 35 Years',
+        labels={'value': 'Anzahl Tage', 'variable': 'Ortschaft'},
+    )
+
+    return fig
 
 
 def call_open_meteo(selected_station, start_date, end_date):
