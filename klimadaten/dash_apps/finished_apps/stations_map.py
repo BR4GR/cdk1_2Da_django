@@ -12,7 +12,7 @@ from retry_requests import retry
 
 STATION_COLOR = "orange"
 CITY_COLOR = "red"
-SECONDARY_COLOR = "rgba(135, 206, 250, 0.7)"
+SECONDARY_COLOR = "grey"
 EUROPE_NORTH = 71.5  # North Cape in Norway
 EUROPE_SOUTH = 36  # Punta de Tarifa in Spain
 EUROPE_WEST = -25  # Iceland
@@ -49,7 +49,7 @@ sapp.layout = html.Div(
         ),
         html.Div(
             [
-                html.H3("Langzeitvergleich und Jahresanalyse", style={'textAlign': 'center'}),
+                html.H2("Langzeitvergleich und Jahresanalyse", style={'textAlign': 'center'}),
                 html.P(
                     "Der untere Abschnitt der Anwendung ermöglicht es den Benutzern, historische Winddaten "
                     "tiefergehend zu analysieren. Im linken Diagramm wird der Vergleich der Windgeschwindigkeiten "
@@ -68,7 +68,7 @@ sapp.layout = html.Div(
             [
                 dcc.Dropdown(
                     id='city-dropdown',
-                    options=[{'label': city.name, 'value': city.id} for city in City.objects.all()],
+                    options=[{'label': f"{city.name}, {city.country}", 'value': city.id} for city in City.objects.all()],
                     value=1756121125,  # Default value Brugg
                     style={'width': '30%', 'display': 'inline-block'}
                 ),
@@ -124,7 +124,7 @@ def update_map(clickData):
         hover_data=["country", "iso2"],
         zoom=5,
         mapbox_style="open-street-map",
-        color_discrete_sequence=[STATION_COLOR],
+        color_discrete_sequence=[SECONDARY_COLOR],
     )
     fig_map.update_layout(margin={"r": 0, "t": 0, "l": 0, "b": 0})
     selected_station = {
@@ -142,13 +142,13 @@ def update_map(clickData):
         selected_station["country"] = clickData["points"][0]["customdata"][0]
         selected_station["iso2"] = clickData["points"][0]["customdata"][1]
 
-    # fig_map.add_scattermapbox(
-    #     lat=[selected_station["lat"]],
-    #     lon=[selected_station["lon"]],
-    #     mode='markers',
-    #     marker=dict(size=10, color=STATION_COLOR),
-    #     name="Selected Station"
-    # )
+    fig_map.add_scattermapbox(
+        lat=[selected_station["lat"]],
+        lon=[selected_station["lon"]],
+        mode='markers',
+        marker=dict(size=10, color=STATION_COLOR),
+        name="Selected Station"
+    )
 
     fig_map.update_layout(
         mapbox=dict(
@@ -313,7 +313,7 @@ def update_monthly_comparison_plot(city_id, month, selected_station):
         x='Jahre',
         y=[station_label, city_label],
         barmode='group',
-        title='January Days with Wind Speed > 25 km/h Comparison Over the Last 35 Years',
+        title='Aprill Tage mit über 25km/h für augewählte Ortschaften in den letzten 35 Jahren',
         labels={'value': 'Anzahl Tage', 'variable': 'Ortschaft'},
         color_discrete_map={station_label: STATION_COLOR, city_label: CITY_COLOR},
     )
