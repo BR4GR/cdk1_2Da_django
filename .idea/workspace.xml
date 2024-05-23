@@ -5,9 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd0fa105-535c-41f9-88ec-c56e8f965de0" name="Changes" comment="add bar and lineplot">
+      <change afterPath="$PROJECT_DIR$/templates/klimadaten/Datastory.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/cdk1_2Da.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/cdk1_2Da.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/klimadaten/dash_apps/finished_apps/stations_map.py" beforeDir="false" afterPath="$PROJECT_DIR$/klimadaten/dash_apps/finished_apps/stations_map.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/klimadaten/stations.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/klimadaten/stations.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cdk1_2Da/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/cdk1_2Da/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cdk1_2Da/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/cdk1_2Da/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/klimadaten/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/klimadaten/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/klimadaten/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/klimadaten/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/klimadaten/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/klimadaten/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/klimadaten/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/klimadaten/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +47,18 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "SilasTschopp"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/BR4GR/cdk1_2Da_django.git",
+    "accountId": "4d4492b2-1d77-44ac-a2ab-735654cfbb9b"
+  }
+}]]></component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/cdk1_2Da/urls.py" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -63,10 +83,11 @@
     "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.pycharm.django.structure.promotion.once.per.project": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "django.template.preview.state": "SHOW_EDITOR",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "//wsl$/Debian/home/delfin/miniconda3/bin/blackd",
+    "last_opened_file_path": "C:/Users/silas/PycharmProjects/cdk1_2Da_django_05_23/templates/klimadaten",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -83,6 +104,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\silas\PycharmProjects\cdk1_2Da_django_05_23\templates\klimadaten" />
       <recent name="\\wsl$\Debian\home\delfin\projects\cdk1_2Da_django\klimadaten\management\commands" />
       <recent name="\\wsl$\Debian\home\delfin\projects\cdk1_2Da\klimadaten" />
     </key>
@@ -123,7 +145,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-5a2391486177-2887949eec09-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.13763.11" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-PY-241.14494.241" />
+        <option value="bundled-python-sdk-0509580d9d50-28c9f5db9ffe-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.14494.241" />
       </set>
     </attachedChunks>
   </component>
@@ -140,6 +163,7 @@
       <workItem from="1710363580012" duration="8724000" />
       <workItem from="1710420183822" duration="5051000" />
       <workItem from="1710488061375" duration="36299000" />
+      <workItem from="1716447201254" duration="1701000" />
     </task>
     <task id="LOCAL-00001" summary="use postgres">
       <option name="closed" value="true" />
@@ -252,8 +276,8 @@
     <MESSAGE value="add bar and lineplot" />
     <option name="LAST_COMMIT_MESSAGE" value="add bar and lineplot" />
   </component>
-  <component name="WfRunsListSearchHistory"><![CDATA[{
-  "history": [
+  <component name="WfRunsListSearchHistory">{
+  &quot;history&quot;: [
     {
     },
     {
@@ -265,7 +289,7 @@
     {
     }
   ],
-  "lastFilter": {
+  &quot;lastFilter&quot;: {
   }
-}]]></component>
+}</component>
 </project>
