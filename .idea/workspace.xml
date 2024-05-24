@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd0fa105-535c-41f9-88ec-c56e8f965de0" name="Changes" comment="Datastory erstellt">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="dd0fa105-535c-41f9-88ec-c56e8f965de0" name="Changes" comment="Datastory angepasst und schrift schwarz" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,12 +45,12 @@
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="9a68ae03-f81c-4e84-abcc-099e3a0207fd" />
   </component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/BR4GR/cdk1_2Da_django.git",
-    "accountId": "9a68ae03-f81c-4e84-abcc-099e3a0207fd"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/BR4GR/cdk1_2Da_django.git&quot;,
+    &quot;accountId&quot;: &quot;9a68ae03-f81c-4e84-abcc-099e3a0207fd&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/cdk1_2Da/urls.py" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -163,6 +161,7 @@
       <workItem from="1716447201254" duration="7030000" />
       <workItem from="1716457015044" duration="4091000" />
       <workItem from="1716467500800" duration="143000" />
+      <workItem from="1716533775271" duration="4603000" />
     </task>
     <task id="LOCAL-00001" summary="use postgres">
       <option name="closed" value="true" />
@@ -228,7 +227,23 @@
       <option name="project" value="LOCAL" />
       <updated>1716448956735</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Datastory angepasst">
+      <option name="closed" value="true" />
+      <created>1716544939690</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1716544939690</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Datastory angepasst und schrift schwarz">
+      <option name="closed" value="true" />
+      <created>1716549020155</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1716549020155</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -294,7 +309,9 @@
     <MESSAGE value="blackd" />
     <MESSAGE value="add bar and lineplot" />
     <MESSAGE value="Datastory erstellt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Datastory erstellt" />
+    <MESSAGE value="Datastory angepasst" />
+    <MESSAGE value="Datastory angepasst und schrift schwarz" />
+    <option name="LAST_COMMIT_MESSAGE" value="Datastory angepasst und schrift schwarz" />
   </component>
   <component name="WfRunsListSearchHistory">{
   &quot;history&quot;: [
