@@ -161,7 +161,7 @@ PLOTLY_COMPONENTS = [
 
 STATIC_URL = "static/"
 MEDIA_URL = "media/"
-MEDIA_ROOT = os.path.join(BASE_DIR, "cdk1_2Da", "media")
+MEDIA_ROOT = os.path.join(BASE_DIR, "klimadaten", "data", "images")
 
 STATICFILES_LOCATION = "static"
 STATIC_ROOT = "static"

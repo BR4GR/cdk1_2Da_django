@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd0fa105-535c-41f9-88ec-c56e8f965de0" name="Changes" comment="add bar and lineplot">
-      <change afterPath="$PROJECT_DIR$/templates/klimadaten/Datastory.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/cdk1_2Da.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/cdk1_2Da.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdk1_2Da/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/cdk1_2Da/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdk1_2Da/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/cdk1_2Da/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/klimadaten/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/klimadaten/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/klimadaten/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/klimadaten/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/klimadaten/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/klimadaten/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/klimadaten/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/klimadaten/views.py" afterDir="false" />
-    </list>
+    <list default="true" id="dd0fa105-535c-41f9-88ec-c56e8f965de0" name="Changes" comment="Datastory angepasst und schrift schwarz" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,19 +34,23 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
+    <option name="WARN_ABOUT_LARGE_FILES" value="false" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "SilasTschopp"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;SilasTschopp&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/BR4GR/cdk1_2Da_django.git",
-    "accountId": "4d4492b2-1d77-44ac-a2ab-735654cfbb9b"
+}</component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="9a68ae03-f81c-4e84-abcc-099e3a0207fd" />
+  </component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/BR4GR/cdk1_2Da_django.git&quot;,
+    &quot;accountId&quot;: &quot;9a68ae03-f81c-4e84-abcc-099e3a0207fd&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/cdk1_2Da/urls.py" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -77,31 +69,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Django Server.cdk1_2Da.executor": "Debug",
-    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.pycharm.django.structure.promotion.once.per.project": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "django.template.preview.state": "SHOW_EDITOR",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/silas/PycharmProjects/cdk1_2Da_django_05_23/templates/klimadaten",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Django Server.cdk1_2Da.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.pycharm.django.structure.promotion.once.per.project&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;django.template.preview.state&quot;: &quot;SHOW_EDITOR&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/silas/PycharmProjects/cdk1_2Da_django_05_23/templates/klimadaten&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\silas\PycharmProjects\cdk1_2Da_django_05_23\templates\klimadaten" />
@@ -151,6 +143,9 @@
     </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\silas\AppData\Roaming\Subversion</configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="dd0fa105-535c-41f9-88ec-c56e8f965de0" name="Changes" comment="" />
@@ -163,7 +158,10 @@
       <workItem from="1710363580012" duration="8724000" />
       <workItem from="1710420183822" duration="5051000" />
       <workItem from="1710488061375" duration="36299000" />
-      <workItem from="1716447201254" duration="1701000" />
+      <workItem from="1716447201254" duration="7030000" />
+      <workItem from="1716457015044" duration="4091000" />
+      <workItem from="1716467500800" duration="143000" />
+      <workItem from="1716533775271" duration="4603000" />
     </task>
     <task id="LOCAL-00001" summary="use postgres">
       <option name="closed" value="true" />
@@ -221,7 +219,31 @@
       <option name="project" value="LOCAL" />
       <updated>1710800142845</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Datastory erstellt">
+      <option name="closed" value="true" />
+      <created>1716448956735</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1716448956735</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Datastory angepasst">
+      <option name="closed" value="true" />
+      <created>1716544939690</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1716544939690</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Datastory angepasst und schrift schwarz">
+      <option name="closed" value="true" />
+      <created>1716549020155</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1716549020155</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -237,7 +259,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
         <entry key="aec903b3-e01d-4cc7-a2c7-1e3b52e737d1">
@@ -274,7 +308,10 @@
     <MESSAGE value="add data" />
     <MESSAGE value="blackd" />
     <MESSAGE value="add bar and lineplot" />
-    <option name="LAST_COMMIT_MESSAGE" value="add bar and lineplot" />
+    <MESSAGE value="Datastory erstellt" />
+    <MESSAGE value="Datastory angepasst" />
+    <MESSAGE value="Datastory angepasst und schrift schwarz" />
+    <option name="LAST_COMMIT_MESSAGE" value="Datastory angepasst und schrift schwarz" />
   </component>
   <component name="WfRunsListSearchHistory">{
   &quot;history&quot;: [
