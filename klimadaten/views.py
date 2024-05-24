@@ -3,7 +3,7 @@ from django.db.models import Count
 from klimadaten.models import Station, City
 import plotly.express as px
 import pandas as pd
-
+from .models import Images
 
 EUROPE_NORTH = 71.5  # North Cape in Norway
 EUROPE_SOUTH = 36  # Punta de Tarifa in Spain
@@ -84,3 +84,7 @@ def fetch_station_data(country=None):
         # station_data.values("name", "lat", "lon")
     )
     return df
+
+def Datastory(request):
+    images = Images.objects.all()
+    return render(request, "klimadaten/Datastory.html", {"images": images})

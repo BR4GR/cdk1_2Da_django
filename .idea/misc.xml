@@ -4,5 +4,5 @@
     <option name="executionMode" value="BINARY" />
     <option name="sdkName" value="cdk1_2Da" />
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="cdk1_2Da" project-jdk-type="Python SDK" />
+  <component name="ProjectRootManager" version="2" project-jdk-name="cdk1_new" project-jdk-type="Python SDK" />
 </project>

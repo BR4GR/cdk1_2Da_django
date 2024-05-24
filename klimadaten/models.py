@@ -37,3 +37,9 @@ class Weather(models.Model):
 
     def __str__(self):
         return f"Weather data for {self.city.name} on {self.date}"
+
+class Images(models.Model):
+    title = models.CharField(max_length=255)
+    image = models.ImageField(upload_to="images/")
+    def __str__(self):
+        return self.title
