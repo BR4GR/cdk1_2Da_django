@@ -7,5 +7,5 @@ urlpatterns = [
     path("stations", views.stations, name="stations"),
     path("", views.map_stations, name="map_stations"),
     path("example", views.example, name="example"),
-    path("Datastory", views.Datastory, name="datastory"),
+    path("Datastory", views.datastory, name="datastory"),
 ]

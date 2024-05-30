@@ -1,9 +1,8 @@
-from django.shortcuts import render
 from django.db.models import Count
-from klimadaten.models import Station, City
+from django.shortcuts import render
+from klimadaten.models import Station
 import plotly.express as px
 import pandas as pd
-from .models import Images
 
 EUROPE_NORTH = 71.5  # North Cape in Norway
 EUROPE_SOUTH = 36  # Punta de Tarifa in Spain
@@ -24,6 +23,10 @@ def stations(request):
     map = get_map()
     context = {"barplot": barplot, "map": map}
     return render(request, "klimadaten/stations.html", context)
+
+
+def datastory(request):
+    return render(request, "klimadaten/Datastory.html")
 
 
 def country_count_bar():
@@ -84,7 +87,3 @@ def fetch_station_data(country=None):
         # station_data.values("name", "lat", "lon")
     )
     return df
-
-def Datastory(request):
-    images = Images.objects.all()
-    return render(request, "klimadaten/Datastory.html", {"images": images})
