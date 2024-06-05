@@ -95,6 +95,7 @@ def fetch_data():
 
 # Initial data fetch
 station_data = fetch_data().to_dict('records')
+
 # Initial selected station data
 initial_selected_station = {
     "name": "Sumba",
@@ -109,10 +110,61 @@ app.layout = html.Div(
         dcc.Store(id='station-data', data=station_data),
         dcc.Store(id='selected-station-data', data=initial_selected_station),
         html.Div(id="selected-station"),
-        dcc.Graph(id="station-map"),
         html.Div(
             [
-                html.H2("Klimadaten Challenge", style={'textAlign': 'center', 'margin-top': '70px'}),
+                dcc.Graph(id="station-map", style={"width": "70%", "display": "inline-block"}),
+                html.Div(
+                    [
+                        html.H2(),
+                        html.Label('Windgeschwindigkeit:'),
+                        dcc.Dropdown(
+                            id='windspeed-dropdown',
+                            options=[{'label': f"{scale['name']} ({scale['kmh']} km/h)", 'value': scale['kmh']} for
+                                     scale in BEAUFORT_SCALE.values()],
+                            value=75,
+                        ),
+                        html.H3('für Vergleich und Langzeitanalyse'),
+                        html.Label('Auswahl der zweiten Ortschaft zum Vergleich:'),
+                        dcc.Dropdown(
+                            id='city-dropdown',
+                            options=[{'label': f"{city.name}, {city.country}", 'value': city.id} for city in
+                                     City.objects.all()],
+                            value=1756121125,  # Default value Brugg
+                        ),
+                        html.Label('Jahr das verglichen werden soll:'),
+                        dcc.Dropdown(
+                            id='year-dropdown',
+                            options=[{'label': str(year), 'value': year} for year in range(1940, 2025)],
+                            value=1991,
+                        ),
+                        html.Label('Monat:'),
+                        dcc.Dropdown(
+                            id='month-dropdown',
+                            options=[
+                                {'label': 'Januar', 'value': '01'},
+                                {'label': 'Februar', 'value': '02'},
+                                {'label': 'März', 'value': '03'},
+                                {'label': 'April', 'value': '04'},
+                                {'label': 'Mai', 'value': '05'},
+                                {'label': 'Juni', 'value': '06'},
+                                {'label': 'Juli', 'value': '07'},
+                                {'label': 'August', 'value': '08'},
+                                {'label': 'September', 'value': '09'},
+                                {'label': 'Oktober', 'value': '10'},
+                                {'label': 'November', 'value': '11'},
+                                {'label': 'Dezember', 'value': '12'}
+                            ],
+                            value='04',
+                        ),
+
+                    ],
+                    style={"width": "25%", "display": "inline-block", "verticalAlign": "top", "padding": "20px"}
+                ),
+            ]
+        ),
+        html.Div(
+            [
+                html.H2("Das letzte Jahr", style={'textAlign': 'center', 'margin-top': '70px'}),
                 # html.P(
                 #     "Willkommen zur Klimadaten Challenge! Auf der interaktiven Karte können Sie Wetterstationen "
                 #     "europaweit erkunden und die Windgeschwindigkeiten an verschiedenen Orten visualisieren. "
@@ -134,7 +186,7 @@ app.layout = html.Div(
         ),
         html.Div(
             [
-                html.H2("Langzeitvergleich und Jahresanalyse", style={'textAlign': 'center'}),
+                html.H2("Langzeitvergleich und Saison", style={'textAlign': 'center'}),
                 # html.P(
                 #     "Der untere Abschnitt der Anwendung ermöglicht es den Benutzern, historische Winddaten "
                 #     "tiefergehend zu analysieren. Im linken Diagramm wird der Vergleich der Windgeschwindigkeiten "
@@ -149,48 +201,7 @@ app.layout = html.Div(
                 # )
             ]
         ),
-        html.Div(
-            [
-                dcc.Dropdown(
-                    id='city-dropdown',
-                    options=[{'label': f"{city.name}, {city.country}", 'value': city.id} for city in
-                             City.objects.all()],
-                    value=1756121125,  # Default value Brugg
-                    # style={'width': '30%', 'display': 'inline-block', 'padding-right': '1%'}
-                ),
-                dcc.Dropdown(
-                    id='year-dropdown',
-                    options=[{'label': str(year), 'value': year} for year in range(1940, 2025)],
-                    value=1991,
-                    # style={'width': '20%', 'display': 'inline-block', 'padding-right': '1%'}
-                ),
-                dcc.Dropdown(
-                    id='month-dropdown',
-                    options=[
-                        {'label': 'Januar', 'value': '01'},
-                        {'label': 'Februar', 'value': '02'},
-                        {'label': 'März', 'value': '03'},
-                        {'label': 'April', 'value': '04'},
-                        {'label': 'Mai', 'value': '05'},
-                        {'label': 'Juni', 'value': '06'},
-                        {'label': 'Juli', 'value': '07'},
-                        {'label': 'August', 'value': '08'},
-                        {'label': 'September', 'value': '09'},
-                        {'label': 'Oktober', 'value': '10'},
-                        {'label': 'November', 'value': '11'},
-                        {'label': 'Dezember', 'value': '12'}
-                    ],
-                    value='04',
-                    # style={'width': '20%', 'display': 'inline-block', 'padding-right': '1%'}
-                ),
-                dcc.Dropdown(
-                    id='windspeed-dropdown',
-                    options=[{'label': f"{scale['name']} ({scale['kmh']} km/h)", 'value': scale['kmh']} for scale in BEAUFORT_SCALE.values()],
-                    value=75,
-                    # style={'width': '20%', 'display': 'inline-block', 'padding-right': '1%'}
-                )
-            ], style={'padding': '20px', 'display': 'flex', 'flex-wrap': 'wrap'}
-        ),
+
         html.Div(
             [
                 dcc.Graph(id="yearly-comparison-plot", style={"width": "50%", "display": "inline-block"}),
