@@ -1,7 +1,7 @@
 from datetime import timedelta, datetime
 
 from dash import dcc, html
-from dash.dependencies import Input, Output
+from dash.dependencies import Input, Output, State
 from django_plotly_dash import DjangoDash
 from klimadaten.models import City
 import plotly.express as px
@@ -10,35 +10,120 @@ import openmeteo_requests
 import requests_cache
 from retry_requests import retry
 
-STATION_COLOR = "orange"
-CITY_COLOR = "red"
-SECONDARY_COLOR = "grey"
+BEAUFORT_SCALE = {
+    0: {'ms': 0, 'kmh': 0, 'name': "Windstille, Flaute"},
+    1: {'ms': 0.3, 'kmh': 1, 'name': "Leiser Zug"},
+    2: {'ms': 1.6, 'kmh': 6, 'name': "Leichte Brise"},
+    3: {'ms': 3.4, 'kmh': 12, 'name': "Schwache Brise"},
+    4: {'ms': 5.5, 'kmh': 20, 'name': "Mässige Brise"},
+    5: {'ms': 8, 'kmh': 29, 'name': "Frische Brise"},
+    6: {'ms': 10.8, 'kmh': 39, 'name': "Starker Wind"},
+    7: {'ms': 13.9, 'kmh': 50, 'name': "Steifer Wind"},
+    8: {'ms': 17.2, 'kmh': 62, 'name': "Stürmischer Wind"},
+    9: {'ms': 20.8, 'kmh': 75, 'name': "Sturm"},
+    10: {'ms': 24.5, 'kmh': 89, 'name': "Schwerer Sturm"},
+    11: {'ms': 28.5, 'kmh': 103, 'name': "Orkanartiger Sturm"},
+    12: {'ms': 32.7, 'kmh': 118, 'name': "Orkan"}
+}
+
+MONTH_NAMES = {
+    '01': 'Januar',
+    '02': 'Februar',
+    '03': 'März',
+    '04': 'April',
+    '05': 'Mai',
+    '06': 'Juni',
+    '07': 'Juli',
+    '08': 'August',
+    '09': 'September',
+    '10': 'Oktober',
+    '11': 'November',
+    '12': 'Dezember'
+}
+
+BLUES = {
+    1: '#eff3ff',
+    2: '#bdd7e7',
+    3: '#6baed6',
+    4: '#3182bd',
+    5: '#08519c',
+}  # https://colorbrewer2.org/#type=sequential&scheme=Blues&n=5
+
+REDS = {
+    1: '#fee5d9',
+    2: '#fcae91',
+    3: '#fb6a4a',
+    4: '#de2d26',
+    5: '#a50f15',
+}  # https://colorbrewer2.org/#type=sequential&scheme=Reds&n=5
+
+ORANGES = {
+    1: '#feedde',
+    2: '#fdbe85',
+    3: '#fd8d3c',
+    4: '#e6550d',
+    5: '#a63603',
+}  # https://colorbrewer2.org/#type=sequential&scheme=Oranges&n=5
+
+PURD = {
+    1: '#f1eef6',
+    2: '#d7b5d8',
+    3: '#df65b0',
+    4: '#dd1c77',
+    5: '#980043',
+}  # https://colorbrewer2.org/#type=sequential&scheme=PuRd&n=5
+CHOSEN = PURD
+STATION_COLOR = CHOSEN[4]
+CITY_COLOR = CHOSEN[5]
+SECONDARY_COLOR = CHOSEN[2]
+BACKGROUND_COLOR = CHOSEN[1]
+
 EUROPE_NORTH = 71.5  # North Cape in Norway
 EUROPE_SOUTH = 36  # Punta de Tarifa in Spain
 EUROPE_WEST = -25  # Iceland
 EUROPE_EAST = 60  # Ural Mountains in Russia
 
 # Create a Dash app for displaying stations on a map
-sapp = DjangoDash("StationsMap")
+app = DjangoDash("StationsMap")
 
-sapp.layout = html.Div(
+
+def fetch_data():
+    station_data = City.objects.all()
+    df = pd.DataFrame.from_records(station_data.values("name", "lat", "lon", "country", "iso2"))
+    return df
+
+
+# Initial data fetch
+station_data = fetch_data().to_dict('records')
+# Initial selected station data
+initial_selected_station = {
+    "name": "Sumba",
+    "lat": 61.405500,
+    "lon": -6.709000,
+    "country": "Faroe Islands",
+    "iso2": "FO",
+}
+
+app.layout = html.Div(
     [
+        dcc.Store(id='station-data', data=station_data),
+        dcc.Store(id='selected-station-data', data=initial_selected_station),
         html.Div(id="selected-station"),
         dcc.Graph(id="station-map"),
         html.Div(
             [
                 html.H2("Klimadaten Challenge", style={'textAlign': 'center', 'margin-top': '70px'}),
-                html.P(
-                    "Willkommen zur Klimadaten Challenge! Auf der interaktiven Karte können Sie Wetterstationen "
-                    "europaweit erkunden und die Windgeschwindigkeiten an verschiedenen Orten visualisieren. "
-                    "Klicken Sie auf einen Punkt der Karte, um die höchsten täglichen Windgeschwindigkeiten "
-                    "des letzten Jahres am gewählten Standort zu betrachten. Unterhalb der Karte finden Sie zwei "
-                    "detaillierte Analysen: Eine Liniendiagramm-Darstellung der täglichen Windgeschwindigkeiten und "
-                    "ein Balkendiagramm, das die Anzahl der Tage pro Monat mit Windgeschwindigkeiten über 25 km/h "
-                    "zeigt. Diese Einblicke ermöglichen es Ihnen, Windmuster zu vergleichen und die Variabilität der "
-                    "Windverhältnisse über einen Zeitraum von einem Jahr zu untersuchen.",
-                    style={'margin': '20px'}
-                )
+                # html.P(
+                #     "Willkommen zur Klimadaten Challenge! Auf der interaktiven Karte können Sie Wetterstationen "
+                #     "europaweit erkunden und die Windgeschwindigkeiten an verschiedenen Orten visualisieren. "
+                #     "Klicken Sie auf einen Punkt der Karte, um die höchsten täglichen Windgeschwindigkeiten "
+                #     "des letzten Jahres am gewählten Standort zu betrachten. Unterhalb der Karte finden Sie zwei "
+                #     "detaillierte Analysen: Eine Liniendiagramm-Darstellung der täglichen Windgeschwindigkeiten und "
+                #     "ein Balkendiagramm, das die Anzahl der Tage pro Monat mit Windgeschwindigkeiten über 25 km/h "
+                #     "zeigt. Diese Einblicke ermöglichen es Ihnen, Windmuster zu vergleichen und die Variabilität der "
+                #     "Windverhältnisse über einen Zeitraum von einem Jahr zu untersuchen.",
+                #     style={'margin': '20px'}
+                # )
             ]
         ),
         html.Div(
@@ -50,54 +135,61 @@ sapp.layout = html.Div(
         html.Div(
             [
                 html.H2("Langzeitvergleich und Jahresanalyse", style={'textAlign': 'center'}),
-                html.P(
-                    "Der untere Abschnitt der Anwendung ermöglicht es den Benutzern, historische Winddaten "
-                    "tiefergehend zu analysieren. Im linken Diagramm wird der Vergleich der Windgeschwindigkeiten "
-                    "zwischen zwei Standorten über das ausgewählte Jahr dargestellt. Dies erlaubt eine direkte "
-                    "Gegenüberstellung der Windbedingungen und zeigt auf, wie unterschiedlich das Wetter in "
-                    "verschiedenen Regionen sein kann. Das rechte Balkendiagramm erweitert diese Analyse auf mehrere "
-                    "Jahrzehnte und zeigt die Anzahl der Tage im Januar, an denen die Windgeschwindigkeit 25 km/h "
-                    "überschritten hat. Durch diese Langzeitdarstellung können Nutzerinnen und Nutzer Veränderungen "
-                    "und Muster im Windverhalten über die Jahre erkennen, was für Klimaforschung und langfristige "
-                    "Wettervorhersagen von Bedeutung sein kann.",
-                    style={'margin': '20px'}
-                )
+                # html.P(
+                #     "Der untere Abschnitt der Anwendung ermöglicht es den Benutzern, historische Winddaten "
+                #     "tiefergehend zu analysieren. Im linken Diagramm wird der Vergleich der Windgeschwindigkeiten "
+                #     "zwischen zwei Standorten über das ausgewählte Jahr dargestellt. Dies erlaubt eine direkte "
+                #     "Gegenüberstellung der Windbedingungen und zeigt auf, wie unterschiedlich das Wetter in "
+                #     "verschiedenen Regionen sein kann. Das rechte Balkendiagramm erweitert diese Analyse auf mehrere "
+                #     "Jahrzehnte und zeigt die Anzahl der Tage im Januar, an denen die Windgeschwindigkeit 25 km/h "
+                #     "überschritten hat. Durch diese Langzeitdarstellung können Nutzerinnen und Nutzer Veränderungen "
+                #     "und Muster im Windverhalten über die Jahre erkennen, was für Klimaforschung und langfristige "
+                #     "Wettervorhersagen von Bedeutung sein kann.",
+                #     style={'margin': '20px'}
+                # )
             ]
         ),
         html.Div(
             [
                 dcc.Dropdown(
                     id='city-dropdown',
-                    options=[{'label': f"{city.name}, {city.country}", 'value': city.id} for city in City.objects.all()],
+                    options=[{'label': f"{city.name}, {city.country}", 'value': city.id} for city in
+                             City.objects.all()],
                     value=1756121125,  # Default value Brugg
-                    style={'width': '30%', 'display': 'inline-block'}
+                    # style={'width': '30%', 'display': 'inline-block', 'padding-right': '1%'}
                 ),
                 dcc.Dropdown(
                     id='year-dropdown',
                     options=[{'label': str(year), 'value': year} for year in range(1940, 2025)],
-                    value=1991,  # Default value
-                    style={'width': '30%', 'display': 'inline-block', 'margin-left': '1%'}
+                    value=1991,
+                    # style={'width': '20%', 'display': 'inline-block', 'padding-right': '1%'}
                 ),
                 dcc.Dropdown(
                     id='month-dropdown',
                     options=[
-                        {'label': 'Januar', 'value': 1},
-                        {'label': 'Februar', 'value': 2},
-                        {'label': 'März', 'value': 3},
-                        {'label': 'April', 'value': 4},
-                        {'label': 'Mai', 'value': 5},
-                        {'label': 'Juni', 'value': 6},
-                        {'label': 'Juli', 'value': 7},
-                        {'label': 'August', 'value': 8},
-                        {'label': 'September', 'value': 9},
-                        {'label': 'Oktober', 'value': 10},
-                        {'label': 'November', 'value': 11},
-                        {'label': 'Dezember', 'value': 12}
+                        {'label': 'Januar', 'value': '01'},
+                        {'label': 'Februar', 'value': '02'},
+                        {'label': 'März', 'value': '03'},
+                        {'label': 'April', 'value': '04'},
+                        {'label': 'Mai', 'value': '05'},
+                        {'label': 'Juni', 'value': '06'},
+                        {'label': 'Juli', 'value': '07'},
+                        {'label': 'August', 'value': '08'},
+                        {'label': 'September', 'value': '09'},
+                        {'label': 'Oktober', 'value': '10'},
+                        {'label': 'November', 'value': '11'},
+                        {'label': 'Dezember', 'value': '12'}
                     ],
-                    value=4,  # Default value for April
-                    style={'width': '30%', 'display': 'inline-block', 'margin-left': '1%'}
+                    value='04',
+                    # style={'width': '20%', 'display': 'inline-block', 'padding-right': '1%'}
+                ),
+                dcc.Dropdown(
+                    id='windspeed-dropdown',
+                    options=[{'label': f"{scale['name']} ({scale['kmh']} km/h)", 'value': scale['kmh']} for scale in BEAUFORT_SCALE.values()],
+                    value=75,
+                    # style={'width': '20%', 'display': 'inline-block', 'padding-right': '1%'}
                 )
-            ], style={'padding': '20px'}
+            ], style={'padding': '20px', 'display': 'flex', 'flex-wrap': 'wrap'}
         ),
         html.Div(
             [
@@ -109,13 +201,13 @@ sapp.layout = html.Div(
 )
 
 
-@sapp.callback(
-    Output("station-map", "figure"),
-    Output("selected-station", "children"),
+@app.callback(
+    [Output("station-map", "figure"), Output("selected-station", "children")],
     [Input("station-map", "clickData")],
+    [State("station-data", "data"), State("selected-station-data", "data")]
 )
-def update_map(clickData):
-    df = fetch_data()
+def update_map(clickData, station_data, selected_station):
+    df = pd.DataFrame(station_data)
     fig_map = px.scatter_mapbox(
         df,
         lat="lat",
@@ -127,13 +219,6 @@ def update_map(clickData):
         color_discrete_sequence=[SECONDARY_COLOR],
     )
     fig_map.update_layout(margin={"r": 0, "t": 0, "l": 0, "b": 0})
-    selected_station = {
-        "name": "Sumba",
-        "lat": 61.405500,
-        "lon": -6.709000,
-        "country": "Faroe Islands",
-        "iso2": "FO",
-    }
 
     if clickData:
         selected_station["name"] = clickData["points"][0]["hovertext"]
@@ -141,14 +226,6 @@ def update_map(clickData):
         selected_station["lon"] = clickData["points"][0]["lon"]
         selected_station["country"] = clickData["points"][0]["customdata"][0]
         selected_station["iso2"] = clickData["points"][0]["customdata"][1]
-
-    fig_map.add_scattermapbox(
-        lat=[selected_station["lat"]],
-        lon=[selected_station["lon"]],
-        mode='markers',
-        marker=dict(size=10, color=STATION_COLOR),
-        name="Selected Station"
-    )
 
     fig_map.update_layout(
         mapbox=dict(
@@ -161,17 +238,11 @@ def update_map(clickData):
     return fig_map, selected_station
 
 
-def fetch_data():
-    station_data = City.objects.all()
-    df = pd.DataFrame.from_records(station_data.values("name", "lat", "lon", "country", "iso2"))
-    return df
-
-
-@sapp.callback(
+@app.callback(
     [Output("wind-speed-lineplot", "figure"), Output("wind-speed-barplot", "figure")],
-    [Input("selected-station", "children")],
+    [Input("selected-station", "children"), Input('windspeed-dropdown', 'value')],
 )
-def update_plots(selected_station):
+def update_plots(selected_station, selected_windspeed):
     today = pd.Timestamp.now().normalize()  # Get current date without time
     start_date = (today - timedelta(days=365 + 10)).strftime('%Y-%m-%d')  # One year and 10 days ago
     end_date = (today - timedelta(days=10)).strftime('%Y-%m-%d')  # 10 days ago
@@ -191,46 +262,53 @@ def update_plots(selected_station):
         },
     )
     fig_lineplot.update_traces(line=dict(color=STATION_COLOR))
+    fig_lineplot.update_layout(
+        plot_bgcolor=BACKGROUND_COLOR,
+        # paper_bgcolor=BACKGROUND_COLOR  # Slightly different shade of light grey
+    )
 
     # daily_dataframe['date'] = pd.to_datetime(daily_dataframe['date'])
 
-    over_25 = last_year[last_year["wind_speed_10m_max"] > 25]
-    start = over_25["date"].min()
-    end = over_25["date"].max()
+    # Filter data for wind speed > selected_windspeed and count days
+    over_selected_windspeed = last_year[last_year["wind_speed_10m_max"] > selected_windspeed]
+    start = over_selected_windspeed["date"].min()
+    end = over_selected_windspeed["date"].max()
     # Creating a complete range of months
     all_months = pd.date_range(
         start=start_date, end=end_date, freq="MS"
     ).to_period("M")
 
-    # Counting days over 25 km/h by month
-    over_25["month"] = over_25["date"].dt.to_period("M")
+    # Counting days over selected windspeed by month
+    over_selected_windspeed["month"] = over_selected_windspeed["date"].dt.to_period("M")
     monthly_counts = (
-        over_25.groupby("month")
+        over_selected_windspeed.groupby("month")
         .size()
         .reindex(all_months, fill_value=0)
-        .reset_index(name="days_over_25")
+        .reset_index(name="days_over_selected_windspeed")
     )
 
     # Converting the 'month' period to datetime for plotting
     monthly_counts["month"] = monthly_counts["index"].dt.to_timestamp()
 
-    # Bar plot for days per month with wind speed over 25
+    # Bar plot for days per month with wind speed over selected windspeed
     fig_barplot = px.bar(
         monthly_counts,
         x="month",
-        y="days_over_25",
+        y="days_over_selected_windspeed",
         range_y=[0, 31],
-        title=f"Tage pro Monat mit Windgeschwindigkeiten über 25 km/h im letzten Jahr",
-        labels={"days_over_25": "Tage über 25 km/h", "month": "Monat"},
+        title=f"Tage pro Monat mit Windgeschwindigkeiten über {selected_windspeed} km/h im letzten Jahr",
+        labels={"days_over_selected_windspeed": f"Tage über {selected_windspeed} km/h", "month": "Monat"},
         color_discrete_sequence=[STATION_COLOR],
     )
 
     return fig_lineplot, fig_barplot
 
 
-@sapp.callback(
+@app.callback(
     Output('yearly-comparison-plot', 'figure'),
-    [Input('city-dropdown', 'value'), Input('year-dropdown', 'value'), Input("selected-station", "children")]
+    [Input('city-dropdown', 'value'),
+     Input('year-dropdown', 'value'),
+     Input("selected-station", "children")]
 )
 def update_yearly_comparison_plot(city_id, year, selected_station):
     start_date = f"{year}-01-01"
@@ -265,22 +343,28 @@ def update_yearly_comparison_plot(city_id, year, selected_station):
     return fig
 
 
-@sapp.callback(
+@app.callback(
     Output('monthly-comparison-plot', 'figure'),
-    [Input('city-dropdown', 'value'), Input('month-dropdown', 'value'), Input("selected-station", "children")]
+    [Input('city-dropdown', 'value'),
+     Input('month-dropdown', 'value'),
+     Input("selected-station", "children"),
+     Input('windspeed-dropdown', 'value')]
 )
-def update_monthly_comparison_plot(city_id, month, selected_station):
+def update_monthly_comparison_plot(city_id, month, selected_station, selected_windspeed):
     current_year = datetime.now().year
-    years = range(current_year - 34, current_year + 1)  # Last 35 years
+    years = range(1940, current_year)
 
-    city_days_over_25 = []
-    station_days_over_25 = []
+    city_days_over_selected_windspeed = []
+    station_days_over_selected_windspeed = []
 
     dropdown_city = City.objects.get(id=city_id)
 
     for year in years:
-        start_date = f"{year}-01-01"
-        end_date = f"{year}-01-31"
+        start_date = f"{year}-04-01"
+        end_date = f"{year}-04-31"
+        if isinstance(month, str):
+            start_date = f"{year}-{month}-01"
+            end_date = f"{year}-{month}-31"
 
         city_data = call_open_meteo({
             'lat': dropdown_city.lat,
@@ -292,28 +376,30 @@ def update_monthly_comparison_plot(city_id, month, selected_station):
             'lon': selected_station['lon']
         }, start_date, end_date)
 
-        # Filter data for wind speed > 25 and count days
-        city_days_count = city_data[city_data['wind_speed_10m_max'] > 25].shape[0]
-        station_days_count = station_data[station_data['wind_speed_10m_max'] > 25].shape[0]
+        # Filter data for wind speed > selected_windspeed and count days
+        city_days_count = city_data[city_data['wind_speed_10m_max'] > selected_windspeed].shape[0]
+        station_days_count = station_data[station_data['wind_speed_10m_max'] > selected_windspeed].shape[0]
 
-        city_days_over_25.append(city_days_count)
-        station_days_over_25.append(station_days_count)
+        city_days_over_selected_windspeed.append(city_days_count)
+        station_days_over_selected_windspeed.append(station_days_count)
         station_label = f"{selected_station['name']} ({selected_station['iso2']})"
         city_label = f"{dropdown_city.name} ({dropdown_city.iso2})"
 
     # Create a DataFrame for plotting
     comparison_df = pd.DataFrame({
         'Jahre': list(years),
-        station_label: station_days_over_25,
-        city_label: city_days_over_25
+        station_label: station_days_over_selected_windspeed,
+        city_label: city_days_over_selected_windspeed
     })
+
+    month_name = MONTH_NAMES.get(month, "Monat")
 
     fig = px.bar(
         comparison_df,
         x='Jahre',
         y=[station_label, city_label],
         barmode='group',
-        title='Aprill Tage mit über 25km/h für augewählte Ortschaften in den letzten 35 Jahren',
+        title=f'Tage mit über {selected_windspeed} km/h im {month_name} seit 1940',
         labels={'value': 'Anzahl Tage', 'variable': 'Ortschaft'},
         color_discrete_map={station_label: STATION_COLOR, city_label: CITY_COLOR},
     )

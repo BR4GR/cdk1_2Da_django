@@ -12,7 +12,7 @@ class Command(BaseCommand):
     help = "Load images from directory into the Images database model"
 
     def handle(self, *args, **options):
-        image_dir = settings.BASE_DIR / "klimadaten" / "data" / "Images"
+        image_dir = settings.BASE_DIR / "klimadaten" / "data" / "images"
 
         # Ensure the directory exists
         if not os.path.exists(image_dir):
