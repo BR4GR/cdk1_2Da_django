@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd0fa105-535c-41f9-88ec-c56e8f965de0" name="Changes" comment="Datastory angepasst und schrift schwarz" />
+    <list default="true" id="dd0fa105-535c-41f9-88ec-c56e8f965de0" name="Changes" comment="Datastory angepasst bilder für alle zur verfügung">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/klimadaten/Datastory.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/klimadaten/Datastory.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,7 +67,9 @@
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="2d3X8Mu886FYFB9KpwmpKLphcBF" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -79,7 +84,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;django.template.preview.state&quot;: &quot;SHOW_EDITOR&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/silas/PycharmProjects/cdk1_2Da_django_05_23/templates/klimadaten&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/silas/PycharmProjects/cdk1_2Da_django_05_23/klimadaten/data&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -96,6 +101,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\silas\PycharmProjects\cdk1_2Da_django_05_23\klimadaten\data" />
       <recent name="C:\Users\silas\PycharmProjects\cdk1_2Da_django_05_23\templates\klimadaten" />
       <recent name="\\wsl$\Debian\home\delfin\projects\cdk1_2Da_django\klimadaten\management\commands" />
       <recent name="\\wsl$\Debian\home\delfin\projects\cdk1_2Da\klimadaten" />
@@ -162,6 +168,12 @@
       <workItem from="1716457015044" duration="4091000" />
       <workItem from="1716467500800" duration="143000" />
       <workItem from="1716533775271" duration="4603000" />
+      <workItem from="1716556608875" duration="2599000" />
+      <workItem from="1716625704588" duration="1000" />
+      <workItem from="1716632827257" duration="18000" />
+      <workItem from="1717068688983" duration="298000" />
+      <workItem from="1718271534220" duration="43000" />
+      <workItem from="1718644253603" duration="3220000" />
     </task>
     <task id="LOCAL-00001" summary="use postgres">
       <option name="closed" value="true" />
@@ -243,7 +255,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716549020155</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Datastory angepasst bilder für alle zur verfügung">
+      <option name="closed" value="true" />
+      <created>1716558414386</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1716558414386</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -311,7 +331,8 @@
     <MESSAGE value="Datastory erstellt" />
     <MESSAGE value="Datastory angepasst" />
     <MESSAGE value="Datastory angepasst und schrift schwarz" />
-    <option name="LAST_COMMIT_MESSAGE" value="Datastory angepasst und schrift schwarz" />
+    <MESSAGE value="Datastory angepasst bilder für alle zur verfügung" />
+    <option name="LAST_COMMIT_MESSAGE" value="Datastory angepasst bilder für alle zur verfügung" />
   </component>
   <component name="WfRunsListSearchHistory">{
   &quot;history&quot;: [
