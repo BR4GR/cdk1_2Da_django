@@ -115,6 +115,7 @@ app.layout = html.Div(
                 dcc.Graph(id="station-map", style={"width": "70%", "display": "inline-block"}),
                 html.Div(
                     [
+                        html.P('Wähle eine Ortschaft auf der Karte für Observationen im letzten Jahr.'),
                         html.H2(),
                         html.Label('Windgeschwindigkeit:'),
                         dcc.Dropdown(
@@ -123,7 +124,7 @@ app.layout = html.Div(
                                      scale in BEAUFORT_SCALE.values()],
                             value=75,
                         ),
-                        html.H3('für Vergleich und Langzeitanalyse'),
+                        html.P('für Vergleich und Langzeitanalyse'),
                         html.Label('Auswahl der zweiten Ortschaft zum Vergleich:'),
                         dcc.Dropdown(
                             id='city-dropdown',
