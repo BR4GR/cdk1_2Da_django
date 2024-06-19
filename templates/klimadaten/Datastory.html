@@ -31,10 +31,12 @@
             flex: 1.5;
             padding-left: 10px;
         }
+
         .center-coloumn {
             flex: 1.5;
         }
-        .right-column-pic{
+
+        .right-column-pic {
             flex: 1.5;
             display: flex;
             justify-content: center;
@@ -45,85 +47,132 @@
             max-width: 100%;
             height: auto;
         }
+
         .
     </style>
 </head>
 <body>
 <div class="container">
     <div class="center-coloumn">
-        <p> </p>
+        <p></p>
         <h1>Der Sturm der Weihnachten zerstörte</h1>
-        <p>Am frühen Morgen des 26. Dezember 1999 erwachte Europa zu einem unheilvollen Schauspiel der Natur. Der Himmel war düster, die Luft geladen mit einer unheimlichen Spannung. Innerhalb weniger Stunden verwandelte sich ein scheinbar normaler zweiter Weihnachtstag in ein apokalyptisches Szenario, das als "Jahrhundertsturm Lothar" in die Geschichtsbücher eingehen sollte. Mit zerstörerischen Winden von bis zu 200 km/h fegte Lothar über den Kontinent und hinterliess eine Spur der Verwüstung. Wälder wurden dem Erdboden gleichgemacht, Dächer abgedeckt und ganze Landstriche lagen unter einer Decke aus Trümmern. Dies war nicht nur ein Sturm, sondern ein brutaler Kraftakt der Natur, der das Leben von Millionen Menschen für immer veränderte.</p>
+        <p>Am frühen Morgen des 26. Dezember 1999 erwachte Europa zu einem unheilvollen Schauspiel der Natur. Der Himmel
+            war düster, die Luft geladen mit einer unheimlichen Spannung. Innerhalb weniger Stunden verwandelte sich ein
+            scheinbar normaler zweiter Weihnachtstag in ein apokalyptisches Szenario, das als "Jahrhundertsturm Lothar"
+            in die Geschichtsbücher eingehen sollte. Mit zerstörerischen Winden von bis zu 200 km/h fegte Lothar über
+            den Kontinent und hinterliess eine Spur der Verwüstung. Wälder wurden dem Erdboden gleichgemacht, Dächer
+            abgedeckt und ganze Landstriche lagen unter einer Decke aus Trümmern. Dies war nicht nur ein Sturm, sondern
+            ein brutaler Kraftakt der Natur, der das Leben von Millionen Menschen für immer veränderte.</p>
         <div class="center-coloumn">
-            <div class="gallery">
-                {% for image in images %}
-                    {% if image.title == "Bild001" %}
-                        <div class="image">
-                            <img src="{{ image.image.url }}" alt="{{ image.title }}">
-                        </div>
-                    {% endif %}
-                {% endfor %}
-             </div>
-         </div>
-        <p> </p>
-        <p> </p>
+            <div class="image">
+                <img src="{% static 'img/Bild001.png' %}" alt="an image">
+            </div>
+        </div>
+        <p></p>
+        <p></p>
     </div>
 </div>
 <div class="container">
     <div class="center-coloumn">
-        <p> </p>
-        <p> </p>
+        <p></p>
+        <p></p>
         <h1>Verlauf und Einordnung</h1>
-        <p>Orkan Lothar entstand in der Nacht vom 25. auf den 26. Dezember 1999 über der Biskaya und erreichte schnell die Bretagne, wo er mit ersten schweren Sturmböen registriert wurde. Am Morgen des 26. Dezember fegte Lothar mit Windgeschwindigkeiten von über 150 Kilometern pro Stunde über Frankreich hinweg. In Paris wurden Böen von über 170 Kilometern pro Stunde gemessen. Der Sturm zerstörte auf seinem Weg durch Frankreich zahlreiche Wälder, Gebäude und historische Bauwerke wie die Kathedrale Notre-Dame in Rouen.</p>
-        <p>Nachdem Lothar Frankreich verwüstet hatte, zog er weiter nach Südwestdeutschland, wo er innerhalb weniger Stunden immense Schäden anrichtete. Besonders betroffen waren das Saarland, Baden-Württemberg und Bayern. In Karlsruhe wurden Windgeschwindigkeiten von 151 Kilometern pro Stunde gemessen, und umgestürzte Bäume blockierten mehrere Tage lang wichtige Verkehrswege. </p>
-        <p>Der Sturm setzte seinen zerstörerischen Weg durch die Schweiz, Österreich und Tschechien fort. Im schweizerischen Kanton Nidwalden wurden ein Fünftel aller Gebäude beschädigt. Insgesamt war die Kommunikation vielerorts zusammengebrochen, was die Hilfsmaßnahmen erschwerte. Lothar hinterließ eine breite Schneise der Verwüstung in ganz Mitteleuropa, bevor er schließlich an Kraft verlor.</p>
-        <div class="gallery">
-                {% for image in images %}
-                    {% if image.title == "Einstieg" %}
-                        <div class="image">
-                            <img src="{{ image.image.url }}" alt="{{ image.title }}">
-                        </div>
-                    {% endif %}
-                {% endfor %}
-             </div>
+        <p>Orkan Lothar entstand in der Nacht vom 25. auf den 26. Dezember 1999 über der Biskaya und erreichte schnell
+            die Bretagne, wo er mit ersten schweren Sturmböen registriert wurde. Am Morgen des 26. Dezember fegte Lothar
+            mit Windgeschwindigkeiten von über 150 Kilometern pro Stunde über Frankreich hinweg. In Paris wurden Böen
+            von über 170 Kilometern pro Stunde gemessen. Der Sturm zerstörte auf seinem Weg durch Frankreich zahlreiche
+            Wälder, Gebäude und historische Bauwerke wie die Kathedrale Notre-Dame in Rouen.</p>
+        <p>Nachdem Lothar Frankreich verwüstet hatte, zog er weiter nach Südwestdeutschland, wo er innerhalb weniger
+            Stunden immense Schäden anrichtete. Besonders betroffen waren das Saarland, Baden-Württemberg und Bayern. In
+            Karlsruhe wurden Windgeschwindigkeiten von 151 Kilometern pro Stunde gemessen, und umgestürzte Bäume
+            blockierten mehrere Tage lang wichtige Verkehrswege. </p>
+        <p>Der Sturm setzte seinen zerstörerischen Weg durch die Schweiz, Österreich und Tschechien fort. Im
+            schweizerischen Kanton Nidwalden wurden ein Fünftel aller Gebäude beschädigt. Insgesamt war die
+            Kommunikation vielerorts zusammengebrochen, was die Hilfsmaßnahmen erschwerte. Lothar hinterließ eine breite
+            Schneise der Verwüstung in ganz Mitteleuropa, bevor er schließlich an Kraft verlor.</p>
+        <div class="image">
+            <img src="{% static 'img/Einstieg.png' %}"
+                 alt="Das Bild besteht aus vier separaten Fotografien, die jeweils wetterbedingte Schäden in
+                 verschiedenen Regionen zeigen. Das obere linke und das obere rechte Bild zeigen Szenen aus der Schweiz.
+                  Oben links ist ein umgestürzter Baum zu sehen, der in Trümmern verstrickt ist, und oben rechts eine
+                  Baustelle mit beschädigtem Gerüst. Das untere linke Bild, beschriftet mit Belgien, zeigt eine
+                  überflutete Straße, durch die Menschen waten, und das untere rechte Bild, beschriftet mit Stuttgart,
+                  zeigt ein Gebäude mit einem stark beschädigten Dach, auf das ein kKran gefallen ist">
+        </div>
     </div>
 </div>
-<p> </p>
-<p> </p>
-<div class = "container">
-    <div class = center-coloumn">
+<p></p>
+<p></p>
+<div class="container">
+    <div class=center-coloumn">
         <h2> Herausforderungen der Sturmvorhersage</h2>
-        <p>Der Orkan Lothar war nicht nur aufgrund seiner zerstörerischen Kraft bemerkenswert, sondern auch wegen der erheblichen Kritik an den meteorologischen Vorhersagemethoden. Die Untersuchung dieser Aspekte beleuchtet sowohl die technischen Herausforderungen als auch die Verbesserungen, die daraus in der Wettervorhersage resultierten.</p>
+        <p>Der Orkan Lothar war nicht nur aufgrund seiner zerstörerischen Kraft bemerkenswert, sondern auch wegen der
+            erheblichen Kritik an den meteorologischen Vorhersagemethoden. Die Untersuchung dieser Aspekte beleuchtet
+            sowohl die technischen Herausforderungen als auch die Verbesserungen, die daraus in der Wettervorhersage
+            resultierten.</p>
     </div>
 </div>
 <div class="container">
     <div class="left-column">
         <h2>Herausforderungen bei der Vorhersage</h2>
-        <p>Ende 1999 herrschte in der Schweiz eine allgemeine Unsicherheit. Während die Welt sich auf mögliche technische Probleme zum Millenniumswechsel vorbereitete, traf der Wintersturm Lothar am 26. Dezember 1999 mit voller Wucht ein und verursachte massive Zerstörungen und Tragödien. An diesem Tag übernahm Gaudenz Truog, ein erfahrener Meteorologe bei MeteoSchweiz, die Schichtleitung in Zürich. Früh am Morgen begann er die Wettersituation zu analysieren und erkannte schnell die drohende Gefahr: „Ein Sturm war angekündigt, doch die kontinuierlich eintreffenden Meldungen bereiteten mir zunehmend Sorgen“, erinnerte sich Truog später.</p>
-        <p>Um 07:20 Uhr notierte er in seinem Logbuch: „In Rouen (Nordwest-Frankreich) 25,8 hPa Druckabfall in drei Stunden! So etwas habe ich noch nie über dem Kontinent gesehen. Damit ist endgültig klar, dass sich etwas Aussergewöhnliches anbahnt.“ Zu diesem Zeitpunkt zog Lothar rasch ostwärts. Um 07:31 Uhr warnte Truog in einem Interview auf Radio DRS1 vor einem besonders heftigen Sturm. Trotz landesweiter Warnungen von MeteoSchweiz stiess dies zunächst auf wenig Resonanz.</p>
-        <p>Um 08:30 Uhr gab Truog eine weitere Wetterwarnung heraus: „Flash: Aus Westen wird ein heftiger Sturm mit Windspitzen von 90–150 km/h im Flachland, bis 200 km/h in höheren Lagen über die Alpennordseite fegen.“ Trotz dieser Warnungen blieb das öffentliche Interesse gering, bis die ersten Schäden bekannt wurden.</p>
+        <p>Ende 1999 herrschte in der Schweiz eine allgemeine Unsicherheit. Während die Welt sich auf mögliche
+            technische Probleme zum Millenniumswechsel vorbereitete, traf der Wintersturm Lothar am 26. Dezember 1999
+            mit voller Wucht ein und verursachte massive Zerstörungen und Tragödien. An diesem Tag übernahm Gaudenz
+            Truog, ein erfahrener Meteorologe bei MeteoSchweiz, die Schichtleitung in Zürich. Früh am Morgen begann er
+            die Wettersituation zu analysieren und erkannte schnell die drohende Gefahr: „Ein Sturm war angekündigt,
+            doch die kontinuierlich eintreffenden Meldungen bereiteten mir zunehmend Sorgen“, erinnerte sich Truog
+            später.</p>
+        <p>Um 07:20 Uhr notierte er in seinem Logbuch: „In Rouen (Nordwest-Frankreich) 25,8 hPa Druckabfall in drei
+            Stunden! So etwas habe ich noch nie über dem Kontinent gesehen. Damit ist endgültig klar, dass sich etwas
+            Aussergewöhnliches anbahnt.“ Zu diesem Zeitpunkt zog Lothar rasch ostwärts. Um 07:31 Uhr warnte Truog in
+            einem Interview auf Radio DRS1 vor einem besonders heftigen Sturm. Trotz landesweiter Warnungen von
+            MeteoSchweiz stiess dies zunächst auf wenig Resonanz.</p>
+        <p>Um 08:30 Uhr gab Truog eine weitere Wetterwarnung heraus: „Flash: Aus Westen wird ein heftiger Sturm mit
+            Windspitzen von 90–150 km/h im Flachland, bis 200 km/h in höheren Lagen über die Alpennordseite fegen.“
+            Trotz dieser Warnungen blieb das öffentliche Interesse gering, bis die ersten Schäden bekannt wurden.</p>
     </div>
     <div class="right-column">
         <h2>Verlauf des Sturms in der Schweiz</h2>
-        <p>Um 10 Uhr erreichte Lothar den Neuenburger Jura. Die Kaltfront bewegte sich keilförmig und mit hoher Geschwindigkeit Richtung Bern und die Zentralschweiz. Auf dem Chasseral erreichte der Sturm bereits Windspitzen von 177 km/h. Erst jetzt begannen die Medien, über die sich anbahnende Katastrophe zu berichten. Die Luftmassen zogen mit grosser Wucht ins Berner Oberland. In Brienz zeigte der Windmesser einen unglaublich hohen Wert von 181 km/h. Über dem Alpenraum baute sich ein grosses Nord-Süd-Druckgefälle auf, das einen Föhnsturm auslöste und insbesondere im Berner Simmental katastrophale Waldschäden anrichtete. Dann zog die Front weiter ostwärts.</p>
-        <p>Zwischen 11:15 und 11:45 Uhr überquerte der Sturm Zürich. „Es wird schwarz über dem Uetliberg, dann die unglaublich heftigen Windstösse. Fenster zittern, starker Regen“, schrieb Truog in sein Logbuch. Trotz der Verwüstungen ausserhalb nahm Truog aufgrund der vielen Aufgaben im Büro wenig davon wahr.</p>
-        <p>Innerhalb weniger Stunden richtete Lothar die grösste Naturkatastrophe in der Geschichte der Schweiz an und verursachte Schäden von über 1,8 Milliarden Franken. 14 Menschen fielen direkt dem Sturm zum Opfer, weitere 15 starben bei den Aufräumarbeiten. Kurz nach 14 Uhr übergab Truog seine Schicht, ausgelaugt und müde.</p>
+        <p>Um 10 Uhr erreichte Lothar den Neuenburger Jura. Die Kaltfront bewegte sich keilförmig und mit hoher
+            Geschwindigkeit Richtung Bern und die Zentralschweiz. Auf dem Chasseral erreichte der Sturm bereits
+            Windspitzen von 177 km/h. Erst jetzt begannen die Medien, über die sich anbahnende Katastrophe zu berichten.
+            Die Luftmassen zogen mit grosser Wucht ins Berner Oberland. In Brienz zeigte der Windmesser einen
+            unglaublich hohen Wert von 181 km/h. Über dem Alpenraum baute sich ein grosses Nord-Süd-Druckgefälle auf,
+            das einen Föhnsturm auslöste und insbesondere im Berner Simmental katastrophale Waldschäden anrichtete. Dann
+            zog die Front weiter ostwärts.</p>
+        <p>Zwischen 11:15 und 11:45 Uhr überquerte der Sturm Zürich. „Es wird schwarz über dem Uetliberg, dann die
+            unglaublich heftigen Windstösse. Fenster zittern, starker Regen“, schrieb Truog in sein Logbuch. Trotz der
+            Verwüstungen ausserhalb nahm Truog aufgrund der vielen Aufgaben im Büro wenig davon wahr.</p>
+        <p>Innerhalb weniger Stunden richtete Lothar die grösste Naturkatastrophe in der Geschichte der Schweiz an und
+            verursachte Schäden von über 1,8 Milliarden Franken. 14 Menschen fielen direkt dem Sturm zum Opfer, weitere
+            15 starben bei den Aufräumarbeiten. Kurz nach 14 Uhr übergab Truog seine Schicht, ausgelaugt und müde.</p>
     </div>
 </div>
 </body>
 <body>
-<div class = "container">
-    <div class = "center-coloumn">
+<div class="container">
+    <div class="center-coloumn">
         <h1>Einordnung</h1>
-        <p>Lothar zählt zu den heftigsten Stürmen der letzten Jahrzehnte und war der teuerste und zerstörerischste bis zu diesem Zeitpunkt. Er wird in einem Atemzug mit weiteren extremen Stürmen wie Orkan Kyrill (2007) und Orkan Klaus (2009) genannt. Diese Stürme brachten ebenfalls immense Schäden und Todesopfer mit sich, wobei Kyrill 47 Menschenleben und Klaus 32 Menschenleben forderten.</p>
-        <div class="gallery">
-            {% for image in images %}
-                {% if image.title == "Bild007"%}
-                    <div class="image">
-                        <img src="{{ image.image.url }}" alt="{{ image.title }}">
-                    </div>
-                {% endif %}
-            {% endfor %}
+        <p>Lothar zählt zu den heftigsten Stürmen der letzten Jahrzehnte und war der teuerste und zerstörerischste bis
+            zu diesem Zeitpunkt. Er wird in einem Atemzug mit weiteren extremen Stürmen wie Orkan Kyrill (2007) und
+            Orkan Klaus (2009) genannt. Diese Stürme brachten ebenfalls immense Schäden und Todesopfer mit sich, wobei
+            Kyrill 47 Menschenleben und Klaus 32 Menschenleben forderten.</p>
+        <div class="image">
+            <img src="{% static 'img/Bild007.jpg' %}" alt="Die Grafik zeigt die zehn teuersten Winterstürme, die jemals
+            Europa getroffen haben, einschließlich der finanziellen Verluste und der Todesopferzahlen.
+            Die Daten wurden in Euro umgerechnet (Stand 8.12.15).
+            - **1999 Wintersturm Lothar**: €10.6 Mrd. Verluste, 110 Todesopfer
+            - **2007 Wintersturm Kyrill**: €9.2 Mrd. Verluste, 49 Todesopfer
+            - **1990 Wintersturm Daria**: €6.3 Mrd. Verluste, 94 Todesopfer
+            - **2010 Wintersturm Xynthia**: €5.6 Mrd. Verluste, 65 Todesopfer
+            - **2005 Wintersturm Erwin**: €5.5 Mrd. Verluste, 18 Todesopfer
+            - **1987 Wintersturm 87J**: €4.9 Mrd. Verluste, 37 Todesopfer
+            - **2009 Wintersturm Klaus**: €4.7 Mrd. Verluste, 26 Todesopfer
+            - **1990 Wintersturm Martin**: €2.8 Mrd. Verluste, 30 Todesopfer
+            - **1990 Wintersturm Vivian**: €2.9 Mrd. Verluste, 52 Todesopfer
+            - **1999 Wintersturm Anatol**: €2.9 Mrd. Verluste, 20 Todesopfer
+            Die Grafik verdeutlicht sowohl die finanziellen Auswirkungen als auch die menschlichen Verluste dieser
+            extremen Wetterereignisse in Europa.">
         </div>
     </div>
 </div>
@@ -131,7 +180,9 @@
 <div class="container">
     <div class="center-coloumn">
         <h1>Die Unmittelbaren Schäden</h1>
-        <p>Orkan Lothar war durch seine aussergewöhnliche Intensität und Geschwindigkeit gekennzeichnet, was zu weitreichenden direkten Schäden in mehreren europäischen Ländern führte. Die primären Auswirkungen lassen sich in zwei Hauptkategorien unterteilen: Infrastrukturschäden und Waldschäden.</p>
+        <p>Orkan Lothar war durch seine aussergewöhnliche Intensität und Geschwindigkeit gekennzeichnet, was zu
+            weitreichenden direkten Schäden in mehreren europäischen Ländern führte. Die primären Auswirkungen lassen
+            sich in zwei Hauptkategorien unterteilen: Infrastrukturschäden und Waldschäden.</p>
     </div>
 </div>
 </body>
@@ -139,30 +190,42 @@
 <div class="container">
     <div class="left-column">
         <h2>Infrastrukturschäden</h2>
-        <p>Die Zerstörung der Infrastruktur war immens. In Deutschland, Frankreich, der Schweiz und Österreich wurden zahlreiche Gebäude beschädigt oder zerstört. Besonders betroffen waren Dächer, Fenster und Fassaden. In vielen Regionen kam es zu grossflächigen Stromausfällen, die teilweise Tage andauerten, da Stromleitungen durch umstürzende Bäume beschädigt wurden. Verkehrssysteme, einschliesslich wichtiger Bahnlinien und Strassenverbindungen, lagen unter Trümmern oder waren unpassierbar, was die Mobilität stark einschränkte und die Aufräumarbeiten erschwerte. Betrachten wir mal die Schäden in der Schweiz.</p>
+        <p>Die Zerstörung der Infrastruktur war immens. In Deutschland, Frankreich, der Schweiz und Österreich wurden
+            zahlreiche Gebäude beschädigt oder zerstört. Besonders betroffen waren Dächer, Fenster und Fassaden. In
+            vielen Regionen kam es zu grossflächigen Stromausfällen, die teilweise Tage andauerten, da Stromleitungen
+            durch umstürzende Bäume beschädigt wurden. Verkehrssysteme, einschliesslich wichtiger Bahnlinien und
+            Strassenverbindungen, lagen unter Trümmern oder waren unpassierbar, was die Mobilität stark einschränkte und
+            die Aufräumarbeiten erschwerte. Betrachten wir mal die Schäden in der Schweiz.</p>
         <div class="gallery">
-            {% for image in images %}
-                {% if image.title == "Bild005"%}
-                    <div class="image">
-                        <img src="{{ image.image.url }}" alt="{{ image.title }}">
-                    </div>
-                {% endif %}
-            {% endfor %}
+            <div class="image">
+                <img src="{% static 'img/Bild005.png' %}" alt="Das Bild zeigt eine entgleiste Lokomotive in einer
+            verschneiten Waldlandschaft. Die Lokomotive liegt schräg zwischen umgestürzten Bäumen, die offenbar durch
+            einen Sturm oder eine Naturkatastrophe entwurzelt wurden. Im Hintergrund sind dichte, hohe Nadelbäume zu
+            sehen, die teilweise noch stehen, während der Vordergrund von umgekippten und gebrochenen Baumstämmen
+            dominiert wird. Die Szenerie vermittelt ein Bild von Zerstörung und der Gewalt der Natur.">
+            </div>
         </div>
     </div>
     <div class="right-column">
         <h2>Waldschäden</h2>
-        <p>Die Waldschäden waren beispiellos. In den betroffenen Ländern wurden insgesamt Millionen Kubikmeter Holz zu Boden geworfen, was zu einem erheblichen ökologischen und wirtschaftlichen Schaden führte. In Deutschland fiel das Dreifache des jährlichen Holzeinschlags dem Sturm zum Opfer, und in der Schweiz wurden zehn Millionen Bäume entwurzelt. Diese massiven Waldschäden hatten langfristige Auswirkungen auf die Forstwirtschaft und die Biodiversität der Regionen. Wie an der Graphik zu sehen ist, zerstörte der Orkan Lothar in den meisten Ländern mehr, als ein Land pro Jahr an Holz benötigt. Lediglich in Deutschland und Österreich war der Schaden kleiner als die Jahresnutzung. Die kann in Deutschland daran liegen, dass die grössten Schäden nur im Süden des Landes waren. In Österreich sahen wir in den Winddaten, dass der Orkan nicht mehr so stark war wie in den anderen Ländern.</p>
-        <div class="gallery">
-                {% for image in images %}
-                    {% if image.title == "Bild002" %}
-                        <div class="image">
-                            <img src="{{ image.image.url }}" alt="{{ image.title }}">
-                        </div>
-                    {% endif %}
-                {% endfor %}
-            </div>
-        <p>Wie in dieser Grafik zu erkennen, beliefen sich die Schäden auf rund 1.2 Milliarden Franken. Die Infrastruktur beläuft sich auf rund 450 Millionen Franken.</p>
+        <p>Die Waldschäden waren beispiellos. In den betroffenen Ländern wurden insgesamt Millionen Kubikmeter Holz zu
+            Boden geworfen, was zu einem erheblichen ökologischen und wirtschaftlichen Schaden führte. In Deutschland
+            fiel das Dreifache des jährlichen Holzeinschlags dem Sturm zum Opfer, und in der Schweiz wurden zehn
+            Millionen Bäume entwurzelt. Diese massiven Waldschäden hatten langfristige Auswirkungen auf die
+            Forstwirtschaft und die Biodiversität der Regionen. Wie an der Graphik zu sehen ist, zerstörte der Orkan
+            Lothar in den meisten Ländern mehr, als ein Land pro Jahr an Holz benötigt. Lediglich in Deutschland und
+            Österreich war der Schaden kleiner als die Jahresnutzung. Die kann in Deutschland daran liegen, dass die
+            grössten Schäden nur im Süden des Landes waren. In Österreich sahen wir in den Winddaten, dass der Orkan
+            nicht mehr so stark war wie in den anderen Ländern.</p>
+        <div class="image">
+            <img src="{% static 'img/Bild002.png' %}" alt="Das Bild zeigt ein Donut-Diagramm, das die durch Orkan Lothar
+             verursachten Schäden in der Schweiz darstellt. In der Mitte des Diagramms steht der Gesamtbetrag von 1,2
+             Milliarden CHF. Das Diagramm ist in zwei Bereiche unterteilt:
+             Der blaue Bereich repräsentiert Infrastrukturschäden mit einem Betrag von 450 Millionen CHF.
+             Der orange Bereich repräsentiert Waldschäden mit einem Betrag von 750 Millionen CHF.">
+        </div>
+        <p>Wie in dieser Grafik zu erkennen, beliefen sich die Schäden auf rund 1.2 Milliarden Franken. Die
+            Infrastruktur beläuft sich auf rund 450 Millionen Franken.</p>
     </div>
 </div>
 </body>
@@ -170,66 +233,81 @@
 <div class="container">
     <div class="center-coloumn">
         <h1>Langfristige Auswirkungen von Orkan</h1>
-        <p>Nach den unmittelbaren Schäden, die der Orkan verursachte, traten zahlreiche sekundäre Folgen zutage, die sowohl die sozialen Strukturen als auch die wirtschaftliche und ökologische Stabilität der betroffenen Regionen beeinflussten. Diese langfristigen Auswirkungen zeichnen ein Bild der nachhaltigen Veränderungen, die durch das Extremereignis verursacht wurden.</p>
+        <p>Nach den unmittelbaren Schäden, die der Orkan verursachte, traten zahlreiche sekundäre Folgen zutage, die
+            sowohl die sozialen Strukturen als auch die wirtschaftliche und ökologische Stabilität der betroffenen
+            Regionen beeinflussten. Diese langfristigen Auswirkungen zeichnen ein Bild der nachhaltigen Veränderungen,
+            die durch das Extremereignis verursacht wurden.</p>
     </div>
 </div>
 <div class="container">
     <div class="left-column">
         <h2>Ökonomische Auswirkungen</h2>
-        <p>Die wirtschaftlichen Folgen von Lothar waren tiefgreifend. Die Gesamtkosten für die Beseitigung der Schäden und die Wiederherstellung der Infrastruktur beliefen sich, wie bereits zuvor erwähnt, auf mehrere Milliarden Franken. Es ist nicht verwunderlich, dass die Forstwirtschaft unter enormen Verlustenlitt, da die Zerstörung von Waldflächen zu einem drastischen Rückgang der Holzproduktion führte. Dies hatte auch Auswirkungen auf verwandte Industrien wie die Papier- und Möbelproduktion. Versicherungsgesellschaften standen vor aussergewöhnlich hohen Schadensansprüchen, was in einigen Fällen zu einer Überprüfung der Versicherungspolicen und Prämienerhöhungen führte.</p>
-        <div class="gallery">
-            {% for image in images %}
-                {% if image.title == "Bild003" %}
-                    <div class="image">
-                        <img src="{{ image.image.url }}" alt="{{ image.title }}">
-                    </div>
-                {% endif %}
-            {% endfor %}
+        <p>Die wirtschaftlichen Folgen von Lothar waren tiefgreifend. Die Gesamtkosten für die Beseitigung der Schäden
+            und die Wiederherstellung der Infrastruktur beliefen sich, wie bereits zuvor erwähnt, auf mehrere Milliarden
+            Franken. Es ist nicht verwunderlich, dass die Forstwirtschaft unter enormen Verlustenlitt, da die Zerstörung
+            von Waldflächen zu einem drastischen Rückgang der Holzproduktion führte. Dies hatte auch Auswirkungen auf
+            verwandte Industrien wie die Papier- und Möbelproduktion. Versicherungsgesellschaften standen vor
+            aussergewöhnlich hohen Schadensansprüchen, was in einigen Fällen zu einer Überprüfung der
+            Versicherungspolicen und Prämienerhöhungen führte.</p>
+        <div class="image">
+            <img src="{% static 'img/Bild003.png' %}" alt="Das Bild zeigt ein Balkendiagramm, das die Schadholzmenge und
+             die Jahresnutzung von Holz in verschiedenen Ländern vergleicht. Die aufgelisteten Länder umfassen
+             Frankreich, Deutschland, Schweiz und Österreich. Frankreich weist die höchste Schadholzmenge mit über
+             140 Mio. m³ auf, gefolgt von Deutschland, das ebenfalls eine signifikante Menge an Schadholz und
+             Jahresnutzung zeigt circa 35 Mio. m³. Die Schweiz und Österreich haben deutlich geringere Mengen, wobei
+             die Schweiz eine niedrige Schadholzmenge und eine geringere Jahresnutzung aufweist. Österreich zeigt einen
+
+             kleinen orangefarbenen Balken, was auf eine geringere Jahresnutzung hinweist.">
         </div>
-        <p>Die Schäden an der Infrastruktur und den Wäldern führten zu einer sofortigen und umfassenden Reaktion von Einsatzkräften und Hilfsdiensten. Die Aufräumarbeiten begannen oft noch am Tag des Sturms, unterstützt durch nationale und internationale Hilfsteams, einschliesslich Feuerwehr, Technischem Hilfswerk und sogar Einheiten der Armee.</p>
+        <p>Die Schäden an der Infrastruktur und den Wäldern führten zu einer sofortigen und umfassenden Reaktion von
+            Einsatzkräften und Hilfsdiensten. Die Aufräumarbeiten begannen oft noch am Tag des Sturms, unterstützt durch
+            nationale und internationale Hilfsteams, einschliesslich Feuerwehr, Technischem Hilfswerk und sogar
+            Einheiten der Armee.</p>
     </div>
     <div class="right-column">
         <h2>Soziale und gesellschaftliche Folgen</h2>
-        <p>Die sozialen Auswirkungen des Sturms waren ebenfalls erheblich. Viele Menschen verloren ihr Zuhause oder ihre Arbeitsstätten, was temporäre und in einigen Fällen dauerhafte Umsiedlungen nach sich zog. Die psychologischen Auswirkungen auf die betroffenen Gemeinschaften waren tiefgehend, wobei Trauer um Verluste und die Angst vor zukünftigen Stürmen weit verbreitet waren. In vielen Gemeinden stärkte die gemeinsame Bewältigung der Krise jedoch auch den sozialen Zusammenhalt.</p>
-        <div class="gallery">
-            {% for image in images %}
-                {% if image.title == "Bild006"%}
-                    <div class="image">
-                        <img src="{{ image.image.url }}" alt="{{ image.title }}">
-                    </div>
-                {% endif %}
-            {% endfor %}
+        <p>Die sozialen Auswirkungen des Sturms waren ebenfalls erheblich. Viele Menschen verloren ihr Zuhause oder ihre
+            Arbeitsstätten, was temporäre und in einigen Fällen dauerhafte Umsiedlungen nach sich zog. Die
+            psychologischen Auswirkungen auf die betroffenen Gemeinschaften waren tiefgehend, wobei Trauer um Verluste
+            und die Angst vor zukünftigen Stürmen weit verbreitet waren. In vielen Gemeinden stärkte die gemeinsame
+            Bewältigung der Krise jedoch auch den sozialen Zusammenhalt.</p>
+        <div class="image">
+            <img src="{% static 'img/Bild006.jpg' %}" alt="Das Bild zeigt eine Kirche in einer ländlichen Gegend, die
+            von einem Friedhof umgeben ist. Die Kirche hat ein hohes, rechteckiges Kirchturm mit einer Uhr. Im
+            Vordergrund sind zahlreiche Grabsteine und Denkmäler auf dem Friedhof zu sehen, während im Hintergrund
+            einige Wohnhäuser und Hügel die Landschaft dominieren.">
         </div>
     </div>
 </div>
 <div class="container">
     <div class="left-column">
-        <p> </p>
+        <p></p>
         <h2>Ökologische Auswirkungen</h2>
-        <p>Ökologisch betrachtet führte der massive Verlust von Waldflächen zu einer Veränderung der Biodiversität und der Ökosystemdienstleistungen. In vielen Gebieten veränderte sich die Flora und Fauna, da neue Arten in die durch den Sturm geschaffenen offenen Flächen einwanderten, während andere verschwanden. Die langfristige Regeneration der Wälder erforderte umfangreiche Wiederaufforstungsprogramme, die teilweise bis heute andauern.</p>
-        <div class="gallery">
-            {% for image in images %}
-                {% if image.title == "Bild008"%}
-                    <div class="image">
-                        <img src="{{ image.image.url }}" alt="{{ image.title }}">
-                    </div>
-                {% endif %}
-            {% endfor %}
+        <p>Ökologisch betrachtet führte der massive Verlust von Waldflächen zu einer Veränderung der Biodiversität und
+            der Ökosystemdienstleistungen. In vielen Gebieten veränderte sich die Flora und Fauna, da neue Arten in die
+            durch den Sturm geschaffenen offenen Flächen einwanderten, während andere verschwanden. Die langfristige
+            Regeneration der Wälder erforderte umfangreiche Wiederaufforstungsprogramme, die teilweise bis heute
+            andauern.</p>
+        <div class="image">
+            <img src="{% static 'img/Bild008.jpg' %}" alt="Die Karte zeigt die Schweiz und markiert mit roten Punkten
+            die Gebiete, die von Sturmschäden betroffen sind. Die betroffenen Gebiete konzentrieren sich hauptsächlich
+            im Mittelland.">
         </div>
         <p>Diese Karte zeigt auf, welche Gebiete in der Schweiz betroffen waren von langfristigen Waldschäden.</p>
     </div>
     <div class="right-column">
-        <p> </p>
+        <p></p>
         <h2>Kulturelle und pädagogische Nachwirkungen</h2>
-        <p>In einigen Regionen führte der Sturm zur Errichtung von Mahnmalen und zur Einrichtung von Bildungspfaden, wie dem Lotharpfad im Schwarzwald, die Besuchern die Kräfte der Natur und die Resilienz der Wälder näherbringen sollen. Diese Initiativen tragen dazu bei, das Bewusstsein für Naturkatastrophen zu schärfen und das Wissen über die Notwendigkeit von Anpassungsstrategien zu verbreiten.</p>
-        <div class="gallery">
-            {% for image in images %}
-                {% if image.title == "Bild009"%}
-                    <div class="image">
-                        <img src="{{ image.image.url }}" alt="{{ image.title }}">
-                    </div>
-                {% endif %}
-            {% endfor %}
+        <p>In einigen Regionen führte der Sturm zur Errichtung von Mahnmalen und zur Einrichtung von Bildungspfaden, wie
+            dem Lotharpfad im Schwarzwald, die Besuchern die Kräfte der Natur und die Resilienz der Wälder näherbringen
+            sollen. Diese Initiativen tragen dazu bei, das Bewusstsein für Naturkatastrophen zu schärfen und das Wissen
+            über die Notwendigkeit von Anpassungsstrategien zu verbreiten.</p>
+        <div class="image">
+            <img src="{% static 'img/Bild009.jpg' %}" alt="Das Bild zeigt die Schäden eines Gebäudes nach einem Sturm.
+            Das Gebäude hat ein teilweise eingestürztes Dach und erhebliche strukturelle Schäden. Im Vordergrund liegen
+            umgestürzte Bäume, und mehrere Arbeiter oder Rettungskräfte in Schutzkleidung und Helmen begutachten die
+            Schäden. Der Hintergrund zeigt eine hügelige, ländliche Landschaft mit kahlen Bäumen und grünen Wiesen.
+            Das Bild vermittelt den Eindruck der Verwüstung, die der Sturm in dieser ländlichen Region angerichtet hat.">
         </div>
     </div>
 </div>
@@ -237,8 +315,8 @@
 </body>
 <body>
 <div class="container">
-    <div class = "center-coloumn">
-    <h1>Lehren aus dem Jahrhundertsturm Lothar</h1>
+    <div class="center-coloumn">
+        <h1>Lehren aus dem Jahrhundertsturm Lothar</h1>
     </div>
 </div>
 </body>
@@ -246,31 +324,65 @@
 <div class="container">
     <div class="left-column">
         <h2>Kritik an den meteorologischen Diensten</h2>
-        <p>Die meteorologischen Dienste wurden dafür kritisiert, die Intensität des Sturms unterschätzt und die Bevölkerung nicht ausreichend informiert zu haben. In der Schweiz war die Kritik besonders laut, da die Sturmwarnungen teilweise zu spät kamen und viele Menschen im Schlaf überrascht wurden. Truog resümierte später: „Im Nachhinein hätten wir die Medien noch viel aktiver auf das Ereignis hinweisen sollen. Das hätte Menschenleben retten können.“</p>
+        <p>Die meteorologischen Dienste wurden dafür kritisiert, die Intensität des Sturms unterschätzt und die
+            Bevölkerung nicht ausreichend informiert zu haben. In der Schweiz war die Kritik besonders laut, da die
+            Sturmwarnungen teilweise zu spät kamen und viele Menschen im Schlaf überrascht wurden. Truog resümierte
+            später: „Im Nachhinein hätten wir die Medien noch viel aktiver auf das Ereignis hinweisen sollen. Das hätte
+            Menschenleben retten können.“</p>
     </div>
-    <div class = "right-column">
+    <div class="right-column">
         <h2>Verbesserungen in der Wettervorhersage</h2>
-        <p>Als Reaktion auf die Ereignisse und die daraus resultierende Kritik haben meteorologische Institute in ganz Europa ihre Vorhersagemethoden überarbeitet. Dies umfasste die Einführung verbesserter Modelle für die Wettervorhersage, die eine genauere und zeitgerechtere Vorhersage von extremen Wetterereignissen ermöglichen. Zusätzlich wurden die Kommunikationskanäle verstärkt, um sicherzustellen, dass Warnungen schneller und verständlicher an die Öffentlichkeit gelangen. In der Schweiz wurde ein neues Warnsystem etabliert, das eine frühzeitigere und präzisere Ausgabe von Sturmwarnungen ermöglicht. Auch in anderen europäischen Ländern wurden ähnliche Massnahmen ergriffen, um die Bevölkerung besser vor zukünftigen Wetterkatastrophen zu schützen.</p>
-        <p>Orkan Lothar bleibt ein prägnantes Beispiel für die zerstörerische Kraft von Naturgewalten und die Herausforderungen, die solche Extremereignisse für Gesellschaften darstellen. Die Erfahrungen und Erkenntnisse aus diesem Ereignis haben wichtige Lehren für die Zukunft geliefert, sowohl im Hinblick auf die Bewältigung der direkten Schäden als auch in der Vorbereitung auf und Reaktion auf ähnliche Ereignisse.</p>
+        <p>Als Reaktion auf die Ereignisse und die daraus resultierende Kritik haben meteorologische Institute in ganz
+            Europa ihre Vorhersagemethoden überarbeitet. Dies umfasste die Einführung verbesserter Modelle für die
+            Wettervorhersage, die eine genauere und zeitgerechtere Vorhersage von extremen Wetterereignissen
+            ermöglichen. Zusätzlich wurden die Kommunikationskanäle verstärkt, um sicherzustellen, dass Warnungen
+            schneller und verständlicher an die Öffentlichkeit gelangen. In der Schweiz wurde ein neues Warnsystem
+            etabliert, das eine frühzeitigere und präzisere Ausgabe von Sturmwarnungen ermöglicht. Auch in anderen
+            europäischen Ländern wurden ähnliche Massnahmen ergriffen, um die Bevölkerung besser vor zukünftigen
+            Wetterkatastrophen zu schützen.</p>
+        <p>Orkan Lothar bleibt ein prägnantes Beispiel für die zerstörerische Kraft von Naturgewalten und die
+            Herausforderungen, die solche Extremereignisse für Gesellschaften darstellen. Die Erfahrungen und
+            Erkenntnisse aus diesem Ereignis haben wichtige Lehren für die Zukunft geliefert, sowohl im Hinblick auf die
+            Bewältigung der direkten Schäden als auch in der Vorbereitung auf und Reaktion auf ähnliche Ereignisse.</p>
     </div>
 </div>
 </body>
 <body>
-<div class = "container">
+<div class="container">
     <div class="left-column">
         <h2>Wichtige Erkenntnisse</h2>
         <ul>
-        <li><strong>Verbesserte Vorbereitung und Frühwarnsysteme:</strong> Lothar hat die Notwendigkeit aufgezeigt, effiziente und weitreichende Warnsysteme zu implementieren, um die Bevölkerung rechtzeitig vor bevorstehenden Stürmen zu warnen. Die Fortschritte in der meteorologischen Technologie und Kommunikation haben dazu beigetragen, dass die Vorhersagen genauer und die Warnungen schneller erfolgen.</li>
-        <li><strong>Bedeutung der Infrastrukturresilienz:</strong> Die massiven Infrastrukturschäden unterstreichen die Bedeutung des Aufbaus und der Wartung von sturmsicherer Infrastruktur, besonders in sturmgefährdeten Gebieten.</li>
-        <li><strong>Ökologische und wirtschaftliche Nachhaltigkeit:</strong> Die langfristigen ökologischen und wirtschaftlichen Schäden haben die Wichtigkeit einer nachhaltigen Forstwirtschaft und Landnutzung verdeutlicht, um die Resilienz gegenüber natürlichen Störungen zu erhöhen.</li>
+            <li><strong>Verbesserte Vorbereitung und Frühwarnsysteme:</strong> Lothar hat die Notwendigkeit aufgezeigt,
+                effiziente und weitreichende Warnsysteme zu implementieren, um die Bevölkerung rechtzeitig vor
+                bevorstehenden Stürmen zu warnen. Die Fortschritte in der meteorologischen Technologie und Kommunikation
+                haben dazu beigetragen, dass die Vorhersagen genauer und die Warnungen schneller erfolgen.
+            </li>
+            <li><strong>Bedeutung der Infrastrukturresilienz:</strong> Die massiven Infrastrukturschäden unterstreichen
+                die Bedeutung des Aufbaus und der Wartung von sturmsicherer Infrastruktur, besonders in sturmgefährdeten
+                Gebieten.
+            </li>
+            <li><strong>Ökologische und wirtschaftliche Nachhaltigkeit:</strong> Die langfristigen ökologischen und
+                wirtschaftlichen Schäden haben die Wichtigkeit einer nachhaltigen Forstwirtschaft und Landnutzung
+                verdeutlicht, um die Resilienz gegenüber natürlichen Störungen zu erhöhen.
+            </li>
         </ul>
     </div>
-    <div class = "right-column">
+    <div class="right-column">
         <h2>Ausblick</h2>
-        <p>Die durch Lothar gewonnenen Einsichten führen weiterhin zu Anpassungen in vielen Bereichen, von der regionalen Planung und Bauvorschriften bis hin zur globalen Klimapolitik. Die zunehmende Häufigkeit und Intensität von Sturmereignissen, die möglicherweise mit dem Klimawandel zusammenhängen, erfordern eine fortlaufende Evaluierung und Anpassung unserer Strategien zur Schadensminderung und Katastrophenprävention.</p>
+        <p>Die durch Lothar gewonnenen Einsichten führen weiterhin zu Anpassungen in vielen Bereichen, von der
+            regionalen Planung und Bauvorschriften bis hin zur globalen Klimapolitik. Die zunehmende Häufigkeit und
+            Intensität von Sturmereignissen, die möglicherweise mit dem Klimawandel zusammenhängen, erfordern eine
+            fortlaufende Evaluierung und Anpassung unserer Strategien zur Schadensminderung und
+            Katastrophenprävention.</p>
         <ul>
-            <li><strong>Forschung und Bildung: </strong>Weiterführende Forschung zu den Zusammenhängen zwischen Klimawandel und Extremwetterereignissen sowie Bildungsprogramme können dazu beitragen, das Bewusstsein und Verständnis in der Bevölkerung zu schärfen.</li>
-            <li><strong>Internationale Kooperation: </strong>Die grenzüberschreitende Natur von Sturmereignissen wie Lothar betont die Notwendigkeit internationaler Zusammenarbeit in den Bereichen Wettervorhersage, Notfallplanung und Katastrophenhilfe.</li>
+            <li><strong>Forschung und Bildung: </strong>Weiterführende Forschung zu den Zusammenhängen zwischen
+                Klimawandel und Extremwetterereignissen sowie Bildungsprogramme können dazu beitragen, das Bewusstsein
+                und Verständnis in der Bevölkerung zu schärfen.
+            </li>
+            <li><strong>Internationale Kooperation: </strong>Die grenzüberschreitende Natur von Sturmereignissen wie
+                Lothar betont die Notwendigkeit internationaler Zusammenarbeit in den Bereichen Wettervorhersage,
+                Notfallplanung und Katastrophenhilfe.
+            </li>
         </ul>
     </div>
 </div>
@@ -278,7 +390,11 @@
 <body>
 <div class="container">
     <div class="center-coloumn">
-        <p>Lothar hat deutlich gemacht, dass die Gesellschaft nicht nur bei der Sturmvorhersage dazulernen muss, sondern auch in vielen anderen Bereichen wie Infrastrukturresilienz und nachhaltiger Landnutzung. Diese Lehren sind besonders wichtig, da der Klimawandel voraussichtlich zu einer Zunahme der Häufigkeit und Intensität von Stürmen führen wird. Anpassungsstrategien und präventive Massnahmen sind unerlässlich, um zukünftige Schäden zu minimieren und die Resilienz der betroffenen Regionen zu stärken.</p>
+        <p>Lothar hat deutlich gemacht, dass die Gesellschaft nicht nur bei der Sturmvorhersage dazulernen muss, sondern
+            auch in vielen anderen Bereichen wie Infrastrukturresilienz und nachhaltiger Landnutzung. Diese Lehren sind
+            besonders wichtig, da der Klimawandel voraussichtlich zu einer Zunahme der Häufigkeit und Intensität von
+            Stürmen führen wird. Anpassungsstrategien und präventive Massnahmen sind unerlässlich, um zukünftige Schäden
+            zu minimieren und die Resilienz der betroffenen Regionen zu stärken.</p>
     </div>
 </div>
 </body>
@@ -287,16 +403,36 @@
     <div class="center-coloumn">
         <h1>Literaturverzeichnis</h1>
         <ol>
-        <li>Niall McCarthy (2015). The costliest winter storms ever to hit Europe. Abgerufen von <a href="https://www.statista.com/chart/4147/the-costliest-winter-storms-ever-to-hit-europe/">https://www.statista.com/chart/4147/the-costliest-winter-storms-ever-to-hit-europe/</a></li>
-        <li>Der Autor ist unbekannt (2019). Der Sturm, den niemand vergisst. Abgerufen von <a href="https://www.srf.ch/news/regional/bern-freiburg-wallis/20-jahre-lothar-der-sturm-den-niemand-vergisst">https://www.srf.ch/news/regional/bern-freiburg-wallis/20-jahre-lothar-der-sturm-den-niemand-vergisst</a></li>
-        <li>Eugen Müller, Stephan Bader, Patrick Hächler (2009). 19991226 03 Orkan Lothar. Abgerufen von <a href="https://sturmarchiv.ch/index.php/19991226_03_Orkan_Lothar">https://sturmarchiv.ch/index.php/19991226_03_Orkan_Lothar</a></li>
-        <li>Der Autor ist unbekannt. (2023). Orkan Lothar. Abgerufen von <a href="https://de.wikipedia.org/wiki/Orkan_Lothar">https://de.wikipedia.org/wiki/Orkan_Lothar</a></li>
-        <li>Der Autor ist unbekannt (1999). Unwetter im Rückblick. Abgerufen von <a href="https://www.wetteronline.ch/extremwetter/der-weihnachtsorkan-lothar-teuerster-sturm-in-europa-1999-12-26-ol">https://www.wetteronline.ch/extremwetter/der-weihnachtsorkan-lothar-teuerster-sturm-in-europa-1999-12-26-ol</a></li>
-        <li>Bundesamt für Umwelt BAFU. (2019). 20 Jahre nach «Lothar»: Der Wald hat sein Terrain zurückerobert. Abgerufen von <a href="https://www.bafu.admin.ch/bafu/de/home/themen/thema-wald-und-holz/wald-und-holz--dossiers/magazin2019-4-der-wald-hat-sein-terrain-zurueckerobert.html">https://www.bafu.admin.ch/bafu/de/home/themen/thema-wald-und-holz/wald-und-holz--dossiers/magazin2019-4-der-wald-hat-sein-terrain-zurueckerobert.html</a></li>
-        <li>Swiss Re (Das Jahr ist unbekannt). Weihnachten vor 20 Jahren: Die Stürme Lothar und Martin richten verheerende Schäden in ganz Europa an. Abgerufen von <a href="https://www.swissre.com/risk-knowledge/mitigating-climate-risk/winter-storms-in-europe/weihnachten-vor-20-jahren-die-sturme-lothar-martin.html">https://www.swissre.com/risk-knowledge/mitigating-climate-risk/winter-storms-in-europe/weihnachten-vor-20-jahren-die-sturme-lothar-martin.html</a></li>
-        <li>SRF (1999). Sturm "Lothar" im Kanton Bern. Abgerufen von <a href="https://www.srf.ch/play/tv/tagesschau/video/sturm-lothar-im-kanton-bern?urn=urn:srf:video:e49bbfba-a189-42d1-a22f-51a3c7d3efd5">https://www.srf.ch/play/tv/tagesschau/video/sturm-lothar-im-kanton-bern?urn=urn:srf:video:e49bbfba-a189-42d1-a22f-51a3c7d3efd5</a></li>
-        <li>Das Protokoll des Jahrhundert Orkans. Abgerufen von <a href="https://www.20min.ch/story/das-protokoll-des-jahrhundert-orkans-398320869110">https://www.20min.ch/story/das-protokoll-des-jahrhundert-orkans-398320869110</a></li>
-    </ol>
+            <li>Niall McCarthy (2015). The costliest winter storms ever to hit Europe. Abgerufen von <a
+                    href="https://www.statista.com/chart/4147/the-costliest-winter-storms-ever-to-hit-europe/">https://www.statista.com/chart/4147/the-costliest-winter-storms-ever-to-hit-europe/</a>
+            </li>
+            <li>Der Autor ist unbekannt (2019). Der Sturm, den niemand vergisst. Abgerufen von <a
+                    href="https://www.srf.ch/news/regional/bern-freiburg-wallis/20-jahre-lothar-der-sturm-den-niemand-vergisst">https://www.srf.ch/news/regional/bern-freiburg-wallis/20-jahre-lothar-der-sturm-den-niemand-vergisst</a>
+            </li>
+            <li>Eugen Müller, Stephan Bader, Patrick Hächler (2009). 19991226 03 Orkan Lothar. Abgerufen von <a
+                    href="https://sturmarchiv.ch/index.php/19991226_03_Orkan_Lothar">https://sturmarchiv.ch/index.php/19991226_03_Orkan_Lothar</a>
+            </li>
+            <li>Der Autor ist unbekannt. (2023). Orkan Lothar. Abgerufen von <a
+                    href="https://de.wikipedia.org/wiki/Orkan_Lothar">https://de.wikipedia.org/wiki/Orkan_Lothar</a>
+            </li>
+            <li>Der Autor ist unbekannt (1999). Unwetter im Rückblick. Abgerufen von <a
+                    href="https://www.wetteronline.ch/extremwetter/der-weihnachtsorkan-lothar-teuerster-sturm-in-europa-1999-12-26-ol">https://www.wetteronline.ch/extremwetter/der-weihnachtsorkan-lothar-teuerster-sturm-in-europa-1999-12-26-ol</a>
+            </li>
+            <li>Bundesamt für Umwelt BAFU. (2019). 20 Jahre nach «Lothar»: Der Wald hat sein Terrain zurückerobert.
+                Abgerufen von <a
+                        href="https://www.bafu.admin.ch/bafu/de/home/themen/thema-wald-und-holz/wald-und-holz--dossiers/magazin2019-4-der-wald-hat-sein-terrain-zurueckerobert.html">https://www.bafu.admin.ch/bafu/de/home/themen/thema-wald-und-holz/wald-und-holz--dossiers/magazin2019-4-der-wald-hat-sein-terrain-zurueckerobert.html</a>
+            </li>
+            <li>Swiss Re (Das Jahr ist unbekannt). Weihnachten vor 20 Jahren: Die Stürme Lothar und Martin richten
+                verheerende Schäden in ganz Europa an. Abgerufen von <a
+                        href="https://www.swissre.com/risk-knowledge/mitigating-climate-risk/winter-storms-in-europe/weihnachten-vor-20-jahren-die-sturme-lothar-martin.html">https://www.swissre.com/risk-knowledge/mitigating-climate-risk/winter-storms-in-europe/weihnachten-vor-20-jahren-die-sturme-lothar-martin.html</a>
+            </li>
+            <li>SRF (1999). Sturm "Lothar" im Kanton Bern. Abgerufen von <a
+                    href="https://www.srf.ch/play/tv/tagesschau/video/sturm-lothar-im-kanton-bern?urn=urn:srf:video:e49bbfba-a189-42d1-a22f-51a3c7d3efd5">https://www.srf.ch/play/tv/tagesschau/video/sturm-lothar-im-kanton-bern?urn=urn:srf:video:e49bbfba-a189-42d1-a22f-51a3c7d3efd5</a>
+            </li>
+            <li>Das Protokoll des Jahrhundert Orkans. Abgerufen von <a
+                    href="https://www.20min.ch/story/das-protokoll-des-jahrhundert-orkans-398320869110">https://www.20min.ch/story/das-protokoll-des-jahrhundert-orkans-398320869110</a>
+            </li>
+        </ol>
     </div>
 </div>
 </html>
