@@ -74,7 +74,7 @@ PURD = {
 }  # https://colorbrewer2.org/#type=sequential&scheme=PuRd&n=5
 CHOSEN = PURD
 STATION_COLOR = CHOSEN[4]
-CITY_COLOR = CHOSEN[5]
+CITY_COLOR = BLUES[4]
 SECONDARY_COLOR = CHOSEN[2]
 BACKGROUND_COLOR = CHOSEN[1]
 
@@ -432,7 +432,7 @@ def call_open_meteo(selected_station, start_date, end_date):
         "longitude": selected_station["lon"],
         "start_date": start_date,
         "end_date": end_date,
-        "daily": "wind_speed_10m_max",
+        "daily": "wind_gusts_10m_max",
         "timezone": "Europe/Berlin",
     }
     responses = openmeteo.weather_api(url, params=params)
@@ -442,7 +442,7 @@ def call_open_meteo(selected_station, start_date, end_date):
 
     # Process daily data. The order of variables needs to be the same as requested.
     daily = response.Daily()
-    daily_wind_speed_10m_max = daily.Variables(0).ValuesAsNumpy()
+    daily_wind_gusts_10m_max = daily.Variables(0).ValuesAsNumpy()
 
     daily_data = {
         "date": pd.date_range(
@@ -451,7 +451,7 @@ def call_open_meteo(selected_station, start_date, end_date):
             freq=pd.Timedelta(seconds=daily.Interval()),
             inclusive="left",
         ),
-        "wind_speed_10m_max": daily_wind_speed_10m_max,
+        "wind_speed_10m_max": daily_wind_gusts_10m_max,
     }
 
     daily_dataframe = pd.DataFrame(data=daily_data)

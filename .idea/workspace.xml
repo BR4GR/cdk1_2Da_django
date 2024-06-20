@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd0fa105-535c-41f9-88ec-c56e8f965de0" name="Changes" comment="Datastory angepasst bilder für alle zur verfügung">
+    <list default="true" id="dd0fa105-535c-41f9-88ec-c56e8f965de0" name="Changes" comment="Datastory stand 17.06">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/klimadaten/Datastory.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/klimadaten/Datastory.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,7 +172,8 @@
       <workItem from="1716632827257" duration="18000" />
       <workItem from="1717068688983" duration="298000" />
       <workItem from="1718271534220" duration="43000" />
-      <workItem from="1718644253603" duration="3220000" />
+      <workItem from="1718644253603" duration="3577000" />
+      <workItem from="1718726656492" duration="117000" />
     </task>
     <task id="LOCAL-00001" summary="use postgres">
       <option name="closed" value="true" />
@@ -263,7 +263,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716558414386</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Datastory stand 17.06">
+      <option name="closed" value="true" />
+      <created>1718647631608</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1718647631608</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -332,7 +340,8 @@
     <MESSAGE value="Datastory angepasst" />
     <MESSAGE value="Datastory angepasst und schrift schwarz" />
     <MESSAGE value="Datastory angepasst bilder für alle zur verfügung" />
-    <option name="LAST_COMMIT_MESSAGE" value="Datastory angepasst bilder für alle zur verfügung" />
+    <MESSAGE value="Datastory stand 17.06" />
+    <option name="LAST_COMMIT_MESSAGE" value="Datastory stand 17.06" />
   </component>
   <component name="WfRunsListSearchHistory">{
   &quot;history&quot;: [
