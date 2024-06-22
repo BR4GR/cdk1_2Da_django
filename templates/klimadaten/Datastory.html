@@ -51,10 +51,14 @@
         .
     </style>
 </head>
-<body>
+
+<body id="page-top">
+<!-- Topbar -->
+{% include 'partials/_topbar.html' %}
+<!-- End of Topbar -->
 <div class="container">
     <div class="center-coloumn">
-        <p></p>
+        <br>
         <h1>Der Sturm der Weihnachten zerstörte</h1>
         <p>Am frühen Morgen des 26. Dezember 1999 erwachte Europa zu einem unheilvollen Schauspiel der Natur. Der Himmel
             war düster, die Luft geladen mit einer unheimlichen Spannung. Innerhalb weniger Stunden verwandelte sich ein
@@ -68,14 +72,12 @@
                 <img src="{% static 'img/Bild001.png' %}" alt="an image">
             </div>
         </div>
-        <p></p>
-        <p></p>
     </div>
 </div>
+<br>
+
 <div class="container">
     <div class="center-coloumn">
-        <p></p>
-        <p></p>
         <h1>Verlauf und Einordnung</h1>
         <p>Orkan Lothar entstand in der Nacht vom 25. auf den 26. Dezember 1999 über der Biskaya und erreichte schnell
             die Bretagne, wo er mit ersten schweren Sturmböen registriert wurde. Am Morgen des 26. Dezember fegte Lothar
@@ -101,8 +103,8 @@
         </div>
     </div>
 </div>
-<p></p>
-<p></p>
+<br>
+<br>
 <div class="container">
     <div class=center-coloumn">
         <h2> Herausforderungen der Sturmvorhersage</h2>
@@ -148,8 +150,8 @@
             15 starben bei den Aufräumarbeiten. Kurz nach 14 Uhr übergab Truog seine Schicht, ausgelaugt und müde.</p>
     </div>
 </div>
-</body>
-<body>
+<br>
+
 <div class="container">
     <div class="center-coloumn">
         <h1>Einordnung</h1>
@@ -176,7 +178,7 @@
         </div>
     </div>
 </div>
-<body>
+<br>
 <div class="container">
     <div class="center-coloumn">
         <h1>Die Unmittelbaren Schäden</h1>
@@ -185,8 +187,6 @@
             sich in zwei Hauptkategorien unterteilen: Infrastrukturschäden und Waldschäden.</p>
     </div>
 </div>
-</body>
-<body>
 <div class="container">
     <div class="left-column">
         <h2>Infrastrukturschäden</h2>
@@ -228,8 +228,8 @@
             Infrastruktur beläuft sich auf rund 450 Millionen Franken.</p>
     </div>
 </div>
-</body>
-<body>
+<br>
+
 <div class="container">
     <div class="center-coloumn">
         <h1>Langfristige Auswirkungen von Orkan</h1>
@@ -281,7 +281,7 @@
 </div>
 <div class="container">
     <div class="left-column">
-        <p></p>
+        <br>
         <h2>Ökologische Auswirkungen</h2>
         <p>Ökologisch betrachtet führte der massive Verlust von Waldflächen zu einer Veränderung der Biodiversität und
             der Ökosystemdienstleistungen. In vielen Gebieten veränderte sich die Flora und Fauna, da neue Arten in die
@@ -296,7 +296,7 @@
         <p>Diese Karte zeigt auf, welche Gebiete in der Schweiz betroffen waren von langfristigen Waldschäden.</p>
     </div>
     <div class="right-column">
-        <p></p>
+        <br>
         <h2>Kulturelle und pädagogische Nachwirkungen</h2>
         <p>In einigen Regionen führte der Sturm zur Errichtung von Mahnmalen und zur Einrichtung von Bildungspfaden, wie
             dem Lotharpfad im Schwarzwald, die Besuchern die Kräfte der Natur und die Resilienz der Wälder näherbringen
@@ -311,16 +311,12 @@
         </div>
     </div>
 </div>
-<p></p>
-</body>
-<body>
+<br>
 <div class="container">
     <div class="center-coloumn">
         <h1>Lehren aus dem Jahrhundertsturm Lothar</h1>
     </div>
 </div>
-</body>
-<body>
 <div class="container">
     <div class="left-column">
         <h2>Kritik an den meteorologischen Diensten</h2>
@@ -346,8 +342,6 @@
             Bewältigung der direkten Schäden als auch in der Vorbereitung auf und Reaktion auf ähnliche Ereignisse.</p>
     </div>
 </div>
-</body>
-<body>
 <div class="container">
     <div class="left-column">
         <h2>Wichtige Erkenntnisse</h2>
@@ -386,8 +380,6 @@
         </ul>
     </div>
 </div>
-</body>
-<body>
 <div class="container">
     <div class="center-coloumn">
         <p>Lothar hat deutlich gemacht, dass die Gesellschaft nicht nur bei der Sturmvorhersage dazulernen muss, sondern
@@ -397,42 +389,48 @@
             zu minimieren und die Resilienz der betroffenen Regionen zu stärken.</p>
     </div>
 </div>
-</body>
-<body>
+<br>
 <div class="container">
     <div class="center-coloumn">
         <h1>Literaturverzeichnis</h1>
         <ol>
             <li>Niall McCarthy (2015). The costliest winter storms ever to hit Europe. Abgerufen von <a
-                    href="https://www.statista.com/chart/4147/the-costliest-winter-storms-ever-to-hit-europe/">https://www.statista.com/chart/4147/the-costliest-winter-storms-ever-to-hit-europe/</a>
+                    href="https://www.statista.com/chart/4147/the-costliest-winter-storms-ever-to-hit-europe/"
+                    target="_blank">https://www.statista.com/chart/4147/the-costliest-winter-storms-ever-to-hit-europe/</a>
             </li>
             <li>Der Autor ist unbekannt (2019). Der Sturm, den niemand vergisst. Abgerufen von <a
-                    href="https://www.srf.ch/news/regional/bern-freiburg-wallis/20-jahre-lothar-der-sturm-den-niemand-vergisst">https://www.srf.ch/news/regional/bern-freiburg-wallis/20-jahre-lothar-der-sturm-den-niemand-vergisst</a>
+                    href="https://www.srf.ch/news/regional/bern-freiburg-wallis/20-jahre-lothar-der-sturm-den-niemand-vergisst"
+                    target="_blank">https://www.srf.ch/news/regional/bern-freiburg-wallis/20-jahre-lothar-der-sturm-den-niemand-vergisst</a>
             </li>
             <li>Eugen Müller, Stephan Bader, Patrick Hächler (2009). 19991226 03 Orkan Lothar. Abgerufen von <a
-                    href="https://sturmarchiv.ch/index.php/19991226_03_Orkan_Lothar">https://sturmarchiv.ch/index.php/19991226_03_Orkan_Lothar</a>
+                    href="https://sturmarchiv.ch/index.php/19991226_03_Orkan_Lothar" target="_blank">https://sturmarchiv.ch/index.php/19991226_03_Orkan_Lothar</a>
             </li>
             <li>Der Autor ist unbekannt. (2023). Orkan Lothar. Abgerufen von <a
-                    href="https://de.wikipedia.org/wiki/Orkan_Lothar">https://de.wikipedia.org/wiki/Orkan_Lothar</a>
+                    href="https://de.wikipedia.org/wiki/Orkan_Lothar" target="_blank">https://de.wikipedia.org/wiki/Orkan_Lothar</a>
             </li>
             <li>Der Autor ist unbekannt (1999). Unwetter im Rückblick. Abgerufen von <a
-                    href="https://www.wetteronline.ch/extremwetter/der-weihnachtsorkan-lothar-teuerster-sturm-in-europa-1999-12-26-ol">https://www.wetteronline.ch/extremwetter/der-weihnachtsorkan-lothar-teuerster-sturm-in-europa-1999-12-26-ol</a>
+                    href="https://www.wetteronline.ch/extremwetter/der-weihnachtsorkan-lothar-teuerster-sturm-in-europa-1999-12-26-ol"
+                    target="_blank">https://www.wetteronline.ch/extremwetter/der-weihnachtsorkan-lothar-teuerster-sturm-in-europa-1999-12-26-ol</a>
             </li>
             <li>Bundesamt für Umwelt BAFU. (2019). 20 Jahre nach «Lothar»: Der Wald hat sein Terrain zurückerobert.
                 Abgerufen von <a
-                        href="https://www.bafu.admin.ch/bafu/de/home/themen/thema-wald-und-holz/wald-und-holz--dossiers/magazin2019-4-der-wald-hat-sein-terrain-zurueckerobert.html">https://www.bafu.admin.ch/bafu/de/home/themen/thema-wald-und-holz/wald-und-holz--dossiers/magazin2019-4-der-wald-hat-sein-terrain-zurueckerobert.html</a>
+                        href="https://www.bafu.admin.ch/bafu/de/home/themen/thema-wald-und-holz/wald-und-holz--dossiers/magazin2019-4-der-wald-hat-sein-terrain-zurueckerobert.html"
+                        target="_blank">https://www.bafu.admin.ch/bafu/de/home/themen/thema-wald-und-holz/wald-und-holz--dossiers/magazin2019-4-der-wald-hat-sein-terrain-zurueckerobert.html</a>
             </li>
             <li>Swiss Re (Das Jahr ist unbekannt). Weihnachten vor 20 Jahren: Die Stürme Lothar und Martin richten
                 verheerende Schäden in ganz Europa an. Abgerufen von <a
-                        href="https://www.swissre.com/risk-knowledge/mitigating-climate-risk/winter-storms-in-europe/weihnachten-vor-20-jahren-die-sturme-lothar-martin.html">https://www.swissre.com/risk-knowledge/mitigating-climate-risk/winter-storms-in-europe/weihnachten-vor-20-jahren-die-sturme-lothar-martin.html</a>
+                        href="https://www.swissre.com/risk-knowledge/mitigating-climate-risk/winter-storms-in-europe/weihnachten-vor-20-jahren-die-sturme-lothar-martin.html"
+                        target="_blank">https://www.swissre.com/risk-knowledge/mitigating-climate-risk/winter-storms-in-europe/weihnachten-vor-20-jahren-die-sturme-lothar-martin.html</a>
             </li>
             <li>SRF (1999). Sturm "Lothar" im Kanton Bern. Abgerufen von <a
-                    href="https://www.srf.ch/play/tv/tagesschau/video/sturm-lothar-im-kanton-bern?urn=urn:srf:video:e49bbfba-a189-42d1-a22f-51a3c7d3efd5">https://www.srf.ch/play/tv/tagesschau/video/sturm-lothar-im-kanton-bern?urn=urn:srf:video:e49bbfba-a189-42d1-a22f-51a3c7d3efd5</a>
+                    href="https://www.srf.ch/play/tv/tagesschau/video/sturm-lothar-im-kanton-bern?urn=urn:srf:video:e49bbfba-a189-42d1-a22f-51a3c7d3efd5"
+                    target="_blank">https://www.srf.ch/play/tv/tagesschau/video/sturm-lothar-im-kanton-bern?urn=urn:srf:video:e49bbfba-a189-42d1-a22f-51a3c7d3efd5</a>
             </li>
             <li>Das Protokoll des Jahrhundert Orkans. Abgerufen von <a
-                    href="https://www.20min.ch/story/das-protokoll-des-jahrhundert-orkans-398320869110">https://www.20min.ch/story/das-protokoll-des-jahrhundert-orkans-398320869110</a>
+                    href="https://www.20min.ch/story/das-protokoll-des-jahrhundert-orkans-398320869110" target="_blank">https://www.20min.ch/story/das-protokoll-des-jahrhundert-orkans-398320869110</a>
             </li>
         </ol>
     </div>
 </div>
+</body>
 </html>
