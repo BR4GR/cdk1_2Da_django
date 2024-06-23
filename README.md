@@ -1,6 +1,13 @@
 
 To start postgres from the terminal use the following command:
 
+
+```bash
+sudo apt update
+sudo apt upgrade -y
+sudo apt install git python3 python3-venv python3-pip -y
+```
+
 # Klone das Repository
 ```bash
 git clone https://github.com/BR4GR/cdk1_2Da_django.git
