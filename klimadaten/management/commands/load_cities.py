@@ -24,6 +24,7 @@ class Command(BaseCommand):
         ]
 
         for _, row in df_europe.iterrows():
+            print(row["city"])
             City.objects.update_or_create(
                 id=row["id"],
                 defaults={

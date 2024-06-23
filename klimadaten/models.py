@@ -25,23 +25,3 @@ class City(models.Model):
     def __str__(self):
         return f"{self.name} in {self.country}"
 
-
-class Weather(models.Model):
-    city = models.ForeignKey(
-        City, on_delete=models.CASCADE, related_name="weather_data"
-    )
-    date = models.DateField()
-    max_windspeed = models.DecimalField(
-        max_digits=10, decimal_places=7, verbose_name="Wind Speed"
-    )
-
-    def __str__(self):
-        return f"Weather data for {self.city.name} on {self.date}"
-
-
-class Images(models.Model):
-    title = models.CharField(max_length=255)
-    image = models.ImageField(upload_to="images/")
-
-    def __str__(self):
-        return self.title

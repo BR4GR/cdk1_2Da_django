@@ -107,6 +107,7 @@ ENV/
 env.bak/
 venv.bak/
 environment.yml
+cdk1_2Da_env/
 
 # mkdocs documentation
 /site
